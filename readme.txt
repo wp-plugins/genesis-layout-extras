@@ -1,7 +1,7 @@
 === Genesis Layout Extras ===
 Contributors: daveshine
 Donate link: http://genesisthemes.de/en/donate/
-Tags: genesis, genesiswp, genesis framework, layout, layouts, layout manager, post, page, singular, attachment, search, taxonomoy, 404 error, 404 page, bbPress, CPT, AgentPress Listings, agentpress
+Tags: genesis, genesiswp, genesis framework, layout, layouts, layout manager, post, page, singular, attachment, search, taxonomoy, 404 error, 404 page, bbPress, CPT, AgentPress Listings, agentpress, deckerweb
 Requires at least: 3.2
 Tested up to: 3.3-aortic-dissection
 Stable tag: 1.0
@@ -95,7 +95,7 @@ First (and to date only) release under former plugin name and by former plugin a
 == Translations ==
 
 * English - default, always included
-* Deutsch - immer dabei! [Download auch via deckerweb.de](http://deckerweb.de/material/sprachdateien/genesis-plugins/#genesis-layout-extras)
+* German: Deutsch - immer dabei! [Download auch via deckerweb.de](http://deckerweb.de/material/sprachdateien/genesis-plugins/#genesis-layout-extras)
 
 == Other Info ==
 **Security:** The plugin uses the Genesis Sanitization class for checking and filtering all custom inputs. Further, the plugin uses WordPress and Genesis Framework APIs and coding standards to the highest possible extend. Just to make sure you get a quality, future-proof product.

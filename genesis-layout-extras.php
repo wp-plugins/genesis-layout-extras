@@ -60,14 +60,14 @@ function ddw_genesis_layout_extras_activation_check() {
 
 	if ( basename( get_template_directory() ) != 'genesis' ) {
 		deactivate_plugins( plugin_basename( __FILE__ ) );  // Deactivate ourself
-		wp_die( sprintf( __( 'Sorry, you can&rsquo;t activate unless you have installed the %1$sGenesis Framework%2$s', GLE_DOMAIN ), '<a href="http://deckerweb.de/go/genesis/" target="_new">', '</a>' ) );
+		wp_die( sprintf( __( 'Sorry, you can&rsquo;t activate unless you have installed the %1$sGenesis Framework%2$s', GLE_DOMAIN ), '<a href="http://deckerweb.de/go/genesis/" target="_new" title="Genesis Framework ...">', '</a>' ) );
 	}
 
 	$version = ddw_genesis_layout_extras_truncate( $theme_info['Version'], 3 );
 
 	if ( version_compare( $version, $latest, '<' ) ) {
 		deactivate_plugins( plugin_basename( __FILE__ ) );  // Deactivate ourself
-		wp_die( sprintf( __( 'Sorry, you can&rsquo;t activate without %1$sGenesis Framework %2$s%3$s or greater', GLE_DOMAIN ), '<a href="http://deckerweb.de/go/genesis/" target="_new">', $latest, '</a>' ) );
+		wp_die( sprintf( __( 'Sorry, you can&rsquo;t activate without %1$sGenesis Framework %2$s%3$s or greater', GLE_DOMAIN ), '<a href="http://deckerweb.de/go/genesis/" target="_new" title="Genesis Framework ...">', $latest, '</a>' ) );
 	}
 }
 
