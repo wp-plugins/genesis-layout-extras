@@ -34,7 +34,7 @@ As a smart bonus the plugin also includes the layout setting for the new bbPress
 * German - always included
 * Your translation? - [Just send it in](http://genesisthemes.de/en/contact/)
 
-**Please note: The plugin requires the [Genesis Theme Framework](http://deckerweb.de/go/genesis/)** (aff link)
+**Please note: The plugin requires the Genesis Theme Framework.**
 
 Credit where credit is due: This plugin here is based on the work of WPChildThemes for the great "Genesis Layout Manager" Plugin.
 
