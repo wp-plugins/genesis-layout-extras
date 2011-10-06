@@ -1,0 +1,391 @@
+# Copyright (C) 2011 Genesis Layout Extras by David Decker of deckerweb.de
+# This file is distributed under the same license as the Genesis Layout Extras package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Genesis Layout Extras Plugin\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tags/genesis-layout-extras?forum_id=10\n"
+"POT-Creation-Date: 2011-10-01 09:39+0100\n"
+"PO-Revision-Date: 2011-10-06 21:39+0100\n"
+"Last-Translator: David Decker <deckerweb.mobil@googlemail.com>\n"
+"Language-Team: DECKERWEB <deckerweb.mobil@googlemail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#@ genesis-layout-extras
+#. translators: plugin header field 'Name'
+#: genesis-layout-extras.php:0
+#: genesis-layout-extras.php:293
+#: genesis-layout-extras.php:324
+msgid "Genesis Layout Extras"
+msgstr "Genesis Layout-Extras"
+
+#@ genesis-layout-extras
+#. translators: plugin header field 'PluginURI'
+#: genesis-layout-extras.php:0
+msgid "http://genesisthemes.de/en/wp-plugins/genesis-layout-extras/"
+msgstr "http://genesisthemes.de/plugins/genesis-layout-extras/"
+
+#@ genesis-layout-extras
+#. translators: plugin header field 'Description'
+#: genesis-layout-extras.php:0
+msgid "This plugin for Genesis Theme Framework allows modifying of default layouts for homepage, singular, archive, attachment, search, 404 and even bbPress 2.0 pages via Genesis theme settings."
+msgstr "Dieses Plugin für das Genesis Theme Framework erlaubt es, verschiedene Layouts festzulegen für besondere Bereiche: Homepage, Einzelansichten, Archivseiten, Anhangsseiten (Attachments), Suchergebnisseiten, 404-Fehlerseiten und sogar für Seiten von Plugins wie bbPress 2.0 Forum und AgentPress Listings (sofern entsprechend installiert/ aktiviert). Und dies alles innerhalb der Genesis Theme-Einstellungen."
+
+#@ genesis-layout-extras
+#. translators: plugin header field 'Author'
+#: genesis-layout-extras.php:0
+msgid "David Decker - DECKERWEB"
+msgstr "David Decker - DECKERWEB.de"
+
+#@ genesis-layout-extras
+#. translators: plugin header field 'AuthorURI'
+#: genesis-layout-extras.php:0
+msgid "http://deckerweb.de/"
+msgstr "http://deckerweb.de/"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:64
+#, php-format
+msgid "Sorry, you can&rsquo;t activate unless you have installed the %1$sGenesis Framework%2$s"
+msgstr "Hinweis: Dieses Plugin kann <em>nicht</em> aktiviert werden, solange das %1$sGenesis Framework%2$s nicht installiert ist."
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:71
+#, php-format
+msgid "Sorry, you can&rsquo;t activate without %1$sGenesis Framework %2$s%3$s or greater"
+msgstr "Hinweis: Dieses Plugin kann <em>nicht</em> aktiviert werden, au&szlig;er das %1$sGenesis Framework Version %2$s%3$s oder h&ouml;her ist installiert."
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:109
+msgid "Settings"
+msgstr "Einstellungen"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:149
+msgid "Plugin: Genesis Layout Extras"
+msgstr "Plugin: Genesis Layout-Extras"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:293
+msgid "Layout Extras"
+msgstr "Layout-Extras"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:336
+msgid "Special Sections"
+msgstr "Besondere Bereiche"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:338
+msgid "Hompage Layout: "
+msgstr "Layout der Homepage: "
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:342
+msgid "Search Page Layout: "
+msgstr "Layout der Suchergebnis-Seiten: "
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:343
+msgid "404 Page Layout: "
+msgstr "Layout der 404-Fehlerseite: "
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:348
+msgid "Singular Pages"
+msgstr "Layout für Einzelansichten"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:350
+msgid "Post Page Layout: "
+msgstr "Layout einer Artikel-/ Beitragsseite: "
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:351
+msgid "Page Page Layout: "
+msgstr "Layout einer Seite (Page): "
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:352
+msgid "Attachment Page Layout: "
+msgstr "Layout einer Anhangs-Seite: "
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:357
+msgid "Archive Sections"
+msgstr "Inhaltsarchive"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:359
+msgid "Author Page Layout: "
+msgstr "Layout von Autoren-Seiten: "
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:360
+msgid "Date Archive Page Layout: "
+msgstr "Layout von Datumsarchiven: "
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:367
+msgid "Category Page Layout: "
+msgstr "Layout von Kategorieseiten: "
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:368
+msgid "Tag Page Layout: "
+msgstr "Layout von Schlagwortseiten (Tags): "
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:369
+msgid "Taxonomy Page Layout: "
+msgstr "Layout von Taxonomie-Seiten: "
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:383
+msgid "Plugin: bbPress 2.0 Forum Section"
+msgstr "Plugin: bbPress 2.0 Forumsbereich"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:402
+msgid "Full Width Content"
+msgstr "Inhalt in voller Breite"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:528
+msgid "Genesis - Layout Extras"
+msgstr "Genesis - Layout-Extras"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:532
+#: genesis-layout-extras.php:543
+msgid "Save Settings"
+msgstr "Einstellungen speichern"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:533
+#: genesis-layout-extras.php:544
+msgid "Reset Settings"
+msgstr "Einstellungen zurücksetzen"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:151
+msgid "What the Plugin Does"
+msgstr "Was das Plugin bewirkt"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:152
+msgid "This plugin for the Genesis Theme Framework allows modifying of default layouts for homepage, singular, archive, attachment, search and 404 pages via an options page under the Genesis menu. In addition you can also modify the default layout option for pages generated by the bbPress 2.0+ forum plugin and the AgentPress Listings plugin."
+msgstr "Dieses Plugin für das Genesis Theme Framework erlaubt es, Standardlayouts für Bereiche wie Homepage, Einzelansichts-, Archiv-, Anhangs-, Suchergebnis- und 404-Seiten festzulegen. Dies geschieht über eine Optionsseite innerhalb der Genesis Theme-Einstellungen (Genesis-Menü). Als Zusatzbonus können ebenfalls Layouts für Seiten/ Bereiche der Plugins bbPress 2.0 (Forum) und AgentPress Listings festgelegt werden."
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:154
+msgid "FAQ - Frequently Asked Questions"
+msgstr "FAQ - Häufig gestellte Fragen"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:157
+msgid "<strong>Q.:</strong> <em>What means Reset of settings?</em><br /><strong>A.:</strong> Actually it just restores the default layout setting which is always defined in regular layout settings on the Genesis Theme Settings page."
+msgstr "<strong>F.:</strong> <em>Was bedeutet das Zurücksetzen der Einstellungen (Reset)?</em><br /><strong>A.:</strong> Es werden einfach die Standardeinstellungen wiederhergestellt, welche immer in den regulären Layouteinstellungen auf der Genesis Theme-Einstellungsseite ferstgelegt wurden."
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:159
+msgid "<strong>Q.:</strong> <em>With my child theme some of the layout options have no effect, what happens here?</em><br /><strong>A.:</strong> This is the case when a child theme does not support one or more specific layout options. For example: When a child has unregistered the layout option \"Sidebar-Sidebar-Content\" then the plugin setting of \"Sidebar-Sidebar-Content\" will have no effect at all. This is absolutely logical behavior because the plugin can only set options which are supported by the active child theme."
+msgstr "<strong>Q.:</strong> <em>Bei meinem Child Theme haben einige Layoutoptionen keine Auswirkung, was passiert dabei?</em><br /><strong>A.:</strong> Dies ist der Fall, wenn ein Child Theme ein oder mehrere Layout(s) nicht unterstützt. Ein Beispiel: Wenn ein Child Theme die Layoutoption \"Sidebar-Sidebar-Inhalt\" deaktiviert hat, kann die Plugin-Einstellung zu \"Sidebar-Sidebar-Inhalt\" nichts bewirken. Dies ist absolut logisches Verhalten, denn dieses Plugin kann nur Einstellungen festlegen, wenn diese vom aktiven Child Theme auch unterstützt werden."
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:162
+#, php-format
+msgid "<strong>Author:</strong> David Decker of %1$sdeckerweb.de%2$s and %3$sGenesisThemes%4$s - Join me at %5$sTwitter%6$s, %7$sFacebook%8$s and %9$sGoogle Plus%10$s :-)"
+msgstr "<strong>Autor:</strong> David Decker von %1$sdeckerweb.de%2$s und %3$sGenesisThemes.de%4$s - Mich unterstützen bei %5$sTwitter%6$s, %7$sFacebook%8$s und %9$sGoogle Plus%10$s :-)"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:163
+#, php-format
+msgid "<strong>License:</strong> GPL v2 - %1$sMore info on the GPL license ...%2$s"
+msgstr "<strong>Lizenz:</strong> GPL v2 - %1$sMehr Informationen zur GPL-Lizenz (Engl.) ...%2$s"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:164
+#, php-format
+msgid "<strong>Donations:</strong> Please %1$sdonate to support the further maintenance and development%2$s of the plugin. <em>Thank you in advance!</em>"
+msgstr "<strong>Spenden:</strong> Bitte %1$sspenden für die weitere Pflege und Entwicklung dieses Plugins%2$s. <em>Bereits im Voraus vielen Dank für jede Unterstützung!</em>"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:165
+#, php-format
+msgid "<strong>Support:</strong> Done via %1$sWordPress.org plugin page support forum%2$s. - Maybe I will setup my own support forum in the future, though."
+msgstr "<strong>Unterstützung (Support):</strong> Erfolgt via %1$sWordPress.org Plugin-Supportforum%2$s. - Hinweis: Eventuell wird es in Zukunft ein eigenes Supportforum geben."
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:274
+msgid "ALL extra layout settings were reset to their Genesis default option."
+msgstr "ALLE Extra-Layouteinstellungen wurden auf die entsprechende Standardeinstellung von Genesis zurückgesetzt."
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:276
+msgid "The extra layout settings have been saved successfully."
+msgstr "Die Extra-Layouteinstellungen wurden erfolgreich gespeichert."
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:387
+#, php-format
+msgid "For this setting to take any effect the %1$splugin <em>bbPress 2.0+</em>%2$s needs to be installed first."
+msgstr "Damit diese Einstellung irgendeine Auswirkung hat, muss zuerst das %1$sPlugin <em>bbPress 2.0+</em>%2$s installiert werden."
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:396
+msgid "Genesis Default"
+msgstr "Genesis-Standard"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:397
+msgid "Content-Sidebar"
+msgstr "Inhalt-Sidebar"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:398
+msgid "Sidebar-Content"
+msgstr "Sidebar-Inhalt"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:399
+msgid "Content-Sidebar-Sidebar"
+msgstr "Inhalt-Sidebar-Sidebar"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:400
+msgid "Sidebar-Sidebar-Content"
+msgstr "Sidebar-Sidebar-Inhalt"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:401
+msgid "Sidebar-Content-Sidebar"
+msgstr "Sidebar-Inhalt-Sidebar"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:533
+#: genesis-layout-extras.php:544
+msgid "Are you sure you want to reset? - When resetting, ALL extra layout settings will be set to their Genesis default option!"
+msgstr "Sind Sie sicher, dass Sie die Einstellungen zurücksetzen wollen? - Beim Zurücksetzen werden ALLE Extra-Layouteinstellungen auf ihre entsprechende Genesis-Standardeinstellung zurückgesetzt!"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:331
+#, php-format
+msgid "Here you can set up a <strong>default</strong> layout option for various extra archive pages and other special pages. %1$sGenesis Default%2$s in the drop-down menus below always means the chosen default layout option in the regular <a href=\"%3$s\">Genesis layout settings</a>."
+msgstr "Hier können <strong>Standard</strong>-Layoutoptionen für verschiedene Bereiche und andere besondere Seiten festgelegt werden. %1$sGenesis-Standard%2$s in den Aufklappmenüs unten meint immer die entsprechend gewählte Standard-Layoutoption in den regulären <a href=\"%3$s\">Genesis Theme-Einstellungen</a>."
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:158
+msgid "<strong>Q.:</strong> <em>Which settings are effected when doing a reset?</em><br /><strong>A.:</strong> ALL available options <em>on this page</em> are resetted to their defaults! So if you only want to reset <em>one</em> option and leave all other as they are then only change this one section and then click the SAVE button and you are done."
+msgstr "<strong>F.:</strong> <em>Welche Einstellungen werden vom Zurücksetzen (Reset) berührt?</em><br /><strong>A.:</strong> ALLE verfügbaren Optionen auf <em>dieser Einstellungsseite</em> werden auf den Standard zurückgesetzt! Wenn also nur <em>eine</em> Option zurücksetzt werden soll und alle anderen unberührt bleiben sollen, ist es besser nur diese eine Sektion erneut zu ändern und ganz normal über den Button 'Einstellungen speichern' fortzufahren."
+
+#@ genesis-layout-extras
+#. translators: plugin header field 'Version'
+#: genesis-layout-extras.php:0
+msgid "1.1"
+msgstr "1.1"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:109
+msgid "Go to the settings page"
+msgstr "Zur Einstellungsseite des Plugins"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:130
+msgid "FAQ"
+msgstr "FAQ - Häufige Fragen"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:131
+msgid "Support"
+msgstr "Hilfe und Unterstützung (Support)"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:132
+msgid "Donate"
+msgstr "Spenden"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:155
+msgid "<strong>Q.:</strong> <em>Some settings seem to have no effect at all, what happens here?</em><br /><strong>A.:</strong> This has to do with priorities. In general, if there is a template for a specific page (archive) type, for example <code>image.php</code> for image attachment display, then Genesis & WordPress will always use that first for the content output AS LONG AS there is an layout setting function or filter in there. Only if there are no templates with layout settings found, the layout option settings will take full effect. So, if our example <code>image.php</code> has a layout filter set in this then has the higher priority but if there is no layout filter in there then the layout setting of the plugin will take effect! - Well, if you experience such cases just leave these fields on \"Genesis Default\" and you are good to go :-)."
+msgstr "<strong>F.:</strong> <em>Einige Einstellungen scheinen keinen Effekt zu haben, was passiert da?</em><br /><strong>A.:</strong> Dies hängt mit verschiedenen Prioritäten zusammen. Allgemein ist es so, wenn ein WordPress-Template für eine besondere (Archiv-) Seite vorhanden ist, zum Beispiel <code>image.php</code> für die Bildanhangs-Anzeige, dann wird WordPress dies immer zuerst anzeigen, SOLANGE dort bereits eine Layout-Einstellung via Funktion oder Filter deklariert wurde. Nur wenn es keine solchen Templates mit einer Layout-Deklaration gibt, wird die Layout-Einstellung von hier einen Effekt haben. Ein Beispiel: Wenn das Template <code>image.php</code> eine Layout-Einstellung besitzt, hat diese eine höhrere Priorität - ist jedoch keine vorhanden, wird die Plugin-Einstellung wirksam! - Wenn solche Anwendungsfälle auftreten, dann am besten die Plugin-Einstellung für diesen Bereich auf \"Genesis-Standard\" belassen :-)."
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:161
+msgid "Author - License - Donations - Support - Rating &amp; Tips"
+msgstr "Autor - Lizenz - Spenden - Unterstützung (Support) - Bewertung &amp; Tipps"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:132
+#: genesis-layout-extras.php:164
+msgid "http://genesisthemes.de/en/donate/"
+msgstr "http://genesisthemes.de/spenden/"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:166
+#, php-format
+msgid "<strong>Rating &amp; Tips:</strong> If you like the plugin please %1$srate at WordPress.org%2$s with 5 stars. <em>Thank you!</em> &mdash; %3$sMore plugins for Genesis by DECKERWEB%4$s"
+msgstr "<strong>Bewerten &amp; Tipps:</strong> Wenn das Plugin gefällt, einfach %1$sbei WordPress.org%2$s mit 5 Sternen bewerten. <em>Vielen Dank! :)</em> &mdash; %3$sMehr Plugins für Genesis von DECKERWEB%4$s"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:362
+#, php-format
+msgid "This is the general setting for date archives and overwrites the following three settings (Year, Month, Day)! So, if you setup any of the following three settings then let this one here on %1$sGenesis Default%2$s."
+msgstr "Dies ist die allgemeinde Einstellung für Datumsarchive und überschreibt die folgenden drei Einstellungen (Jahr, Monat, Tag)! Ist also eine der folgenden Einstellungen aktiv, sollte hier der Wert auf %1$sGenesis-Standard%2$s belassen werden."
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:364
+msgid "Date Archive - Year Page Layout: "
+msgstr "Datumsarchiv - Jahresarchiv-Layout: "
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:365
+msgid "Date Archive - Month Page Layout: "
+msgstr "Datumsarchiv - Monatsarchiv-Layout: "
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:366
+msgid "Date Archive - Day Page Layout: "
+msgstr "Datumsarchiv - Tagesarchiv-Layout: "
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:374
+msgid "Special Custom Post Type Sections"
+msgstr "Sektionen von benutzerdefinierten Inhaltstypen (Custom Post Types)"
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:376
+msgid "AgentPress Listing Post Type Layout (archive): "
+msgstr "AgentPress Listing, Layout des Inhaltstyps (Archiv): "
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:385
+msgid "bbPress 2.0 Forum Layout (all areas): "
+msgstr "Layout des bbPress 2.0 Forum (alle Bereiche): "
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:156
+#, php-format
+msgid "<strong>Q.:</strong> <em>There is a layout option for the plugin AgentPress Listings post type. What does that mean?</em><br /><strong>A.:</strong> You just can set the layout option for the archive pages of the \"listings\" post type. - &mdash; Of course, the plugin (and so the setting here) could be used with the %3$sAgentPress child theme%4$s and also with any other Genesis child theme, so this setting might come in really handy ;-)."
+msgstr "<strong>F.:</strong> <em>Es gibt eine Layout-Einstellung für das Plugin AgentPress Listings und dessen Inhaltstyp (Post Type). Was hat dies für Auswirkungen?</em><br /><strong>A.:</strong> Es kann damit die Layout-Einstellung für die Archiv-Seiten des Inhaltstyps \"Listings\" festgelegt werden. - Natürlich kann das Plugin mit dem %3$s\"AgentPress\" Child Theme%4$s benutzt werden, aber genauso mit jedem anderen Genesis Child Theme, wo die Layout-Einstellungen dieses Plugins sehr nützlich sein können ;-)."
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:340
+#, php-format
+msgid "This setting works for homepage templates (file %1$shome.php%2$s is there - %1$sis_home()%2$s) <u>and</u> also for static pages as front page (%1$sis_front_page()%2$s)."
+msgstr "Diese Einstellung funktioniert für Homepage-Templates (wenn Datei %1$shome.php%2$s vorhanden - %1$sis_home()%2$s) <u>und</u> auch für statische Seiten, die als Homepage deklariert werden (%1$sis_front_page()%2$s)."
+
+#@ genesis-layout-extras
+#: genesis-layout-extras.php:378
+#, php-format
+msgid "For this setting to take any effect the %1$splugin <em>AgentPress Listings</em>%2$s needs to be installed first. &mdash; Of course, the plugin (and so the setting here) could be used with the %3$sAgentPress child theme%4$s and also with any other Genesis child theme, so this setting might come in really handy ;-)."
+msgstr "Damit diese Einstellung irgendeine Auswirkung hat, muss zuerst das %1$sPlugin <em>AgentPress Listings</em>%2$s installiert werden. &mdash; - Natürlich kann das Plugin mit dem %3$s\"AgentPress\" Child Theme%4$s benutzt werden, aber genauso mit jedem anderen Genesis Child Theme, wo die Layout-Einstellungen dieses Plugins sehr nützlich sein können ;-)."
+
