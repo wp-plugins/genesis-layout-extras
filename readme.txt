@@ -32,7 +32,7 @@ As a smart bonus the plugin also includes the layout setting for the new bbPress
 = Localization =
 * English (default) - always included
 * German - always included
-* .pot file (`genesis-layout-extras`) for translators is also always included :)
+* .pot file (`genesis-layout-extras.pot`) for translators is also always included :)
 * Your translation? - [Just send it in](http://genesisthemes.de/en/contact/)
 
 **Please note: The plugin requires the Genesis Theme Framework**
