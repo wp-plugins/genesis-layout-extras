@@ -3,7 +3,7 @@ Contributors: daveshine
 Donate link: http://genesisthemes.de/en/donate/
 Tags: genesis, genesiswp, genesis framework, layout, layouts, layout manager, post, page, singular, attachment, search, taxonomoy, 404 error, 404 page, bbPress, CPT, AgentPress Listings, agentpress, deckerweb
 Requires at least: 3.2
-Tested up to: 3.3-aortic-dissection
+Tested up to: 3.3 Beta 1
 Stable tag: 1.1
 
 This plugin for Genesis Framework allows modifying of default layouts for homepage, various archive, attachment, search, 404 pages via theme options.
