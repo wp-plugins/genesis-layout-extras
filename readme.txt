@@ -3,8 +3,8 @@ Contributors: daveshine
 Donate link: http://genesisthemes.de/en/donate/
 Tags: genesis, genesiswp, genesis framework, layout, layouts, layout manager, post, page, singular, attachment, search, taxonomoy, 404 error, 404 page, bbPress, CPT, AgentPress Listings, agentpress, deckerweb
 Requires at least: 3.2
-Tested up to: 3.3 Beta 1
-Stable tag: 1.1
+Tested up to: 3.3
+Stable tag: 1.2
 
 This plugin for Genesis Framework allows modifying of default layouts for homepage, various archive, attachment, search, 404 pages via theme options.
 
@@ -12,7 +12,7 @@ This plugin for Genesis Framework allows modifying of default layouts for homepa
 
 With this plugin for the popular Genesis Framework you can very easily modify the default layouts for homepage, singular pages (for posts and pages), various archive sections, author pages, attachment pages, search results pages, the 404 page - all done via a new theme options page. Just look for it at the submenu: Genesis > "Layout Extras".
 
-As a smart bonus the plugin also includes the layout setting for the new bbPress 2.0 forum plugin which itself is compatible to Genesis. Also added is the layout setting for the plugin "AgentPress Listings" which includes the custom post type "listings".
+As a smart bonus the plugin also includes the layout setting for the new bbPress 2.x forum plugin which itself is compatible to Genesis. Also added is the layout setting for the plugin "AgentPress Listings" which includes the custom post type "listings".
 
 = Included Sections for a Default Layout Setting =
 * Home Page (works with home.php or static page as front page)
@@ -27,15 +27,17 @@ As a smart bonus the plugin also includes the layout setting for the new bbPress
 * Tag Page
 * Taxonomy Page
 * Plugin: AgentPress Listings (Archive Page for Custom Post Type "listing")
-* Plugin: bbPress 2.0 Forum (all areas)
+* Plugin: bbPress 2.x Forum (all areas)
 
 = Localization =
 * English (default) - always included
 * German - always included
+* Italian - user-submitted, thanks to [Marco Rosselli](http://www.prenotazionetraghetti.com/)
 * .pot file (`genesis-layout-extras.pot`) for translators is also always included :)
 * Your translation? - [Just send it in](http://genesisthemes.de/en/contact/)
 
 **Please note: The plugin requires the Genesis Theme Framework**
+The plugin has been tested with WordPress 3.2, 3.3 without any issues. It also works within Multisite installs - single activated and also network activated. Running with latest versions of Genesis and WordPress is always recommended.
 
 Credit where credit is due: This plugin here is based on the work of WPChildThemes for the great "Genesis Layout Manager" Plugin.
 
@@ -61,6 +63,8 @@ Credit where credit is due: This plugin here is based on the work of WPChildThem
 * Sidebar-Content-Sidebar
 * Full Width Content
 
+Note: This plugin has been tested with WordPress 3.2, 3.3 without any issues. It also works within Multisite installs - single activated and network activated, too. Remember, running with latest versions of Genesis and WordPress is always recommended.
+
 == Frequently Asked Questions ==
 
 = You can modify the layout of the plugin's AgentPress Listings post type. What does this mean? =
@@ -85,6 +89,16 @@ So if you for example only want to reset *one* option and leave all other as the
 2. Contextual help tab open
 
 == Changelog ==
+
+= 1.2 =
+* Added new help tab system for WordPress 3.3 -- this time the plugin is also still compatible with old contextual help prior WP 3.3 but PLEASE NOT that I will remove this soon and then the plugin will require WordPress 3.3+ so please update now your WordPress installation!
+* Bugfix: Wrapped conditional around `genesis_get_option` function to allow error-free theme changing (from Genesis to a non-Genesis theme) -- Please note: this also fixes the Multisite errors when plugin is network activated! -- Props to WP.org user "greghile" for reporting the Multisite issue!
+* Minor code and code documentation improvements
+* Wording: Changed strings "bbPress 2.0" to "bbPress 2.x" to reflect ongoing development & releases of that forum plugin
+* Added new Italian translation by [Marco Rosselli](http://www.prenotazionetraghetti.com/)
+* Updated German translation files
+* Updated included .pot file (`genesis-layout-extras.pot`) for translators
+* Added banner image on WordPress.org for better plugin branding :)
 
 = 1.1 =
 * Improved homepage layout setting with adding the conditional statement `is_front_page()` so also static pages set as homepage (in WordPress: Settings > Reading) are now supported!
@@ -112,6 +126,9 @@ So if you for example only want to reset *one* option and leave all other as the
 
 == Upgrade Notice ==
 
+= 1.2 =
+Several changes - Bugfix regarding theme changes and Multisite installs. Updated help system to fit better into WordPress 3.3. Added Italian translation. Other minor tweaks and improvements. Also updated German translations and .pot file for all translators.
+
 = 1.1 =
 Several changes - Enhanced homepage and date archive settings, improved info, help and documentation texts (contextual help and plugin's readme.txt).
 
@@ -125,8 +142,9 @@ First (and to date only) release under former plugin name and by former plugin a
 
 * English - default, always included
 * German: Deutsch - immer dabei! [Download auch via deckerweb.de](http://deckerweb.de/material/sprachdateien/genesis-plugins/#genesis-layout-extras)
+* Italian: Italiano - user-submitted by [Marco Rosselli](http://www.prenotazionetraghetti.com/)
 
 == Additional Info ==
 **Security:** The plugin uses the Genesis Sanitization class for checking and filtering all custom inputs. Further, the plugin uses WordPress and Genesis Framework APIs and coding standards to the highest possible extend. Just to make sure you get a quality, future-proof product.
 
-**Idea Behind / Philosophy:** I had liked the general approach of the former plugin (I forked from) - which provided a simple and great way to set a few needed options. Since it seemed no longer to be developed and updated I just decided to make a fork of it and add some additional functionality like setting the layout setting for the (awesome!) bbPress 2.0 forum plugin in Genesis. And, I wanted this all on an extra options page, divided from the general Genesis settings because that is much more user friendly IMHO. In addition I added full inline documentation including the contextual help function provided by WordPress itself to create a more seamless user experience.
+**Idea Behind / Philosophy:** I had liked the general approach of the former plugin (I forked from) - which provided a simple and great way to set a few needed options. Since it seemed no longer to be developed and updated I just decided to make a fork of it and add some additional functionality like setting the layout setting for the (awesome!) bbPress 2.x forum plugin in Genesis. And, I wanted this all on an extra options page, divided from the general Genesis settings because that is much more user friendly IMHO. In addition I added full inline documentation including the contextual help function provided by WordPress itself to create a more seamless user experience.
