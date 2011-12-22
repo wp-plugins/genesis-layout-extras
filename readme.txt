@@ -18,8 +18,8 @@ As a smart bonus the plugin also includes the layout setting for the new bbPress
 * Home Page (works with home.php or static page as front page)
 * Search Page
 * 404 Page
-* "Post" Page
-* "Page" Page
+* "Post" Page (singular post views)
+* "Page" Page (singular page views)
 * Attachment Page (singluar attachment view)
 * Author Page
 * Date Archive Page (optional with setting for Year, Month, Day)
