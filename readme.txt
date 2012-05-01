@@ -4,7 +4,7 @@ Donate link: http://genesisthemes.de/en/donate/
 Tags: genesis, genesiswp, genesis framework, layout, layouts, layout manager, post, page, singular, attachment, search, taxonomoy, 404 error, 404 page, bbPress, CPT, AgentPress Listings, agentpress, deckerweb
 Requires at least: 3.2
 Tested up to: 3.4
-Stable tag: 1.2
+Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.opensource.org/licenses/gpl-license.php
 
