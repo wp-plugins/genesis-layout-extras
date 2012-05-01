@@ -45,8 +45,8 @@ As a smart bonus the plugin also includes the layout setting for the new bbPress
 = Localization =
 * English (default) - always included
 * German - always included
-* French - user-submitted, thanks to [Grégoire Noyelle](http://www.gregoirenoyelle.com/) - currently 79% ready for v1.3
-* Italian - user-submitted, thanks to [Marco Rosselli](http://www.prenotazionetraghetti.com/) - currently 79% ready for v1.3
+* French - user-submitted, thanks to [Grégoire Noyelle](http://www.gregoirenoyelle.com/) - currently 79% complete for v1.3
+* Italian - user-submitted, thanks to [Marco Rosselli](http://www.prenotazionetraghetti.com/) - currently 79% complete for v1.3
 * .pot file (`genesis-layout-extras.pot`) for translators is also always included :)
 * *Your translation? - [Just send it in](http://genesisthemes.de/en/contact/)*
 
