@@ -57,6 +57,16 @@ Credit where credit is due: This plugin here is based on the work of WPChildThem
 
 [A plugin from deckerweb.de and GenesisThemes](http://genesisthemes.de/en/)
 
+= Check out my other Genesis Plugins =
+* [Genesis Social Profiles Menu](http://wordpress.org/extend/plugins/genesis-social-profiles-menu/) - get social
+* [Genesis Toolbar Extras](http://wordpress.org/extend/plugins/genesis-toolbar-extras/) - one plugin to rule them all :)
+* [Genesis Dashboard News](http://wordpress.org/extend/plugins/genesis-dashboard-news/) - #GenesisWP news right there in your dashboard!
+* [Genesis Printstyle Plus](http://wordpress.org/extend/plugins/genesis-printstyle-plus/) - just print it out - only what's needed
+* [Genesis Single Post Navigation](http://wordpress.org/extend/plugins/genesis-single-post-navigation/) - browse your single posts
+* [Genesis Widgetized Footer](http://wordpress.org/extend/plugins/genesis-widgetized-footer/) - easily set up your copyright/ credits/ back to top
+* [Genesis Widgetized Not Found & 404](http://wordpress.org/extend/plugins/genesis-widgetized-notfound/) - be prepared for the edge cases
+* [Genesis Connect for Easy Digital Downloads](http://wordpress.org/extend/plugins/genesis-connect-edd/) - plugin for easy & elegant integration
+
 = Feedback =
 * I am open for your suggestions and feedback - Thank you for using or trying out one of my plugins!
 * Drop me a line [@deckerweb](http://twitter.com/#!/deckerweb) on Twitter
@@ -206,6 +216,16 @@ First (and to date only) release under former plugin name and by former plugin a
 * For custom and update-secure language files please upload them to `/wp-content/languages/genesis-layout-extras/` (just create this folder) - This enables you to use fully custom translations that won't be overridden on plugin updates. Also, complete custom English wording is possible with that as well, just use a language file like `genesis-layout-extras-en_US.mo/.po` to achieve that.
 
 *Note:* All my plugins are internationalized/ translateable by default. This is very important for all users worldwide. So please contribute your language to the plugin to make it even more useful. For translating I recommend the awesome ["Codestyling Localization" plugin](http://wordpress.org/extend/plugins/codestyling-localization/) and for validating the ["Poedit Editor"](http://www.poedit.net/), which works fine on Windows, Mac and Linux.
+
+== Check out my other Genesis Plugins ==
+* [Genesis Social Profiles Menu](http://wordpress.org/extend/plugins/genesis-social-profiles-menu/) - get social
+* [Genesis Toolbar Extras](http://wordpress.org/extend/plugins/genesis-toolbar-extras/) - one plugin to rule them all :)
+* [Genesis Dashboard News](http://wordpress.org/extend/plugins/genesis-dashboard-news/) - #GenesisWP news right there in your dashboard!
+* [Genesis Printstyle Plus](http://wordpress.org/extend/plugins/genesis-printstyle-plus/) - just print it out - only what's needed
+* [Genesis Single Post Navigation](http://wordpress.org/extend/plugins/genesis-single-post-navigation/) - browse your single posts
+* [Genesis Widgetized Footer](http://wordpress.org/extend/plugins/genesis-widgetized-footer/) - easily set up your copyright/ credits/ back to top
+* [Genesis Widgetized Not Found & 404](http://wordpress.org/extend/plugins/genesis-widgetized-notfound/) - be prepared for the edge cases
+* [Genesis Connect for Easy Digital Downloads](http://wordpress.org/extend/plugins/genesis-connect-edd/) - plugin for easy & elegant integration
 
 == Additional Info ==
 **Security:** The plugin uses the Genesis Sanitization class for checking and filtering all custom inputs. Further, the plugin uses WordPress and Genesis Framework APIs and coding standards to the highest possible extend. Just to make sure you get a quality, future-proof product.
