@@ -36,7 +36,7 @@ As a smart bonus the plugin also includes the layout setting for the new bbPress
 * Plugin: **bbPress 2.x Forum** (all areas) - Integration plugin recommended: [bbPress Genesis Extend](http://wordpress.org/extend/plugins/bbpress-genesis-extend/)
 * Plugin: **WooCommerce**: for all taxonomy pages for "Product Categories" and "Product Tags" - Integration plugin recommended: [Genesis Connect for WooCommerce](http://wordpress.org/extend/plugins/genesis-connect-woocommerce/)
 * Plugin: **Jigoshop**: for all taxonomy pages for "Product Categories" and "Product Tags" - Integration plugin recommended: [Genesis Connect for Jigoshop](http://jigoshop.com/extend/genesis-connect-for-jigoshop/)
-* Plugin: **Easy Digital Downloads**: Archive Page for Custom Type "Downloads" - plus taxonomies "Download Categories" and "Download Tags" - Integration plugin recommended: [Genesis Connect for Easy Digital Downloads](http://wordpress.org/extend/plugins/genesis-connect-woocommerce/)
+* Plugin: **Easy Digital Downloads**: Archive Page for Custom Type "Downloads" - plus taxonomies "Download Categories" and "Download Tags" - Integration plugin recommended: [Genesis Connect for Easy Digital Downloads](http://wordpress.org/extend/plugins/genesis-connect-edd/)
 
 = Supported Custom Post Types set by Child Themes =
 * Child Theme: **Clip Cart** by Themedy Themes: Archive Page for Custom Post Type "Products" - plus taxonomy "Product Categories"
@@ -51,7 +51,7 @@ As a smart bonus the plugin also includes the layout setting for the new bbPress
 * *Your translation? - [Just send it in](http://genesisthemes.de/en/contact/)*
 
 **Please note: The plugin requires the Genesis Theme Framework**
-The plugin has been tested with WordPress 3.2, 3.3 without any issues. It also works within Multisite installs - single activated and also network activated. Running with latest versions of Genesis and WordPress is always recommended.
+The plugin has been tested with WordPress 3.2, 3.3+ and 3.4-beta3 without any issues. It also works within Multisite installs - single activated and also network activated. Running with latest versions of Genesis and WordPress is always recommended.
 
 Credit where credit is due: This plugin here is based on the work of WPChildThemes for the great "Genesis Layout Manager" Plugin.
 
@@ -137,10 +137,10 @@ Yes, you could. -- Still, a per site use is recommended.
  * NEW: Performance optimization - restructuring and splitting of code into several files, loading only where and if needed. Plugin support stuff only appears now if one of the supported plugins is active!
  * NEW: Added new option for 'Search not found' page - when there are NO search results (for example very handy to set a full-width layout for this case...).
  * NEW: Added support for more custom post type by plugins:
-  * "Genesis Media Project" by Nick Croft (free)
-  * "Easy Digital Downloads" by Pippins Williamson at PippinsPlugins.com (free)
-  * "WooCommerce" by WooThemes (free)
-  * "Jigoshop" by Jigowatt Ltd. (free)
+  * --> "Genesis Media Project" by Nick Croft (free)
+  * --> "Easy Digital Downloads" by Pippins Williamson at PippinsPlugins.com (free)
+  * --> "WooCommerce" by WooThemes (free)
+  * --> "Jigoshop" by Jigowatt Ltd. (free)
  * NEW: Added support for custom post type by child themes: "Clip Cart" and "Stage" both by Themedy Themes brand.
  * NEW: Added support for "Features" taxonomy of the already supported AgentPress Listings plugin.
  * NEW: Up to three meta boxes on options page - draggable and settings via "Screen options"
