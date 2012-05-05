@@ -48,6 +48,7 @@ As a smart bonus the plugin also includes the layout setting for the new bbPress
 * French - user-submitted, thanks to [Grégoire Noyelle](http://www.gregoirenoyelle.com/) - currently 79% complete for v1.3
 * Italian - user-submitted, thanks to [Marco Rosselli](http://www.prenotazionetraghetti.com/) - currently 79% complete for v1.3
 * .pot file (`genesis-layout-extras.pot`) for translators is also always included :)
+* Easy plugin translation platform with GlotPress tool: [Translate "Genesis Layout Extras"...](http://translate.wpautobahn.com/projects/genesis-plugins-deckerweb/genesis-layout-extras)
 * *Your translation? - [Just send it in](http://genesisthemes.de/en/contact/)*
 
 **Please note: The plugin requires the Genesis Theme Framework**
@@ -96,6 +97,8 @@ Credit where credit is due: This plugin here is based on the work of WPChildThem
 **Note:** This plugin has been tested with WordPress 3.2, 3.3+, 3.4-beta without any issues. It also works within Multisite installs - single activated and network activated, too. Remember, running with latest versions of Genesis and WordPress is always recommended.
 
 **Also Note:** Installed/active Genesis Framework, version 1.7 or higher (1.8+ recommended!), is required for this plugin in order to work!
+
+**Own translation/wording:** For custom and update-secure language files please upload them to `/wp-content/languages/genesis-layout-extras/` (just create this folder) - This enables you to use fully custom translations that won't be overridden on plugin updates. Also, complete custom English wording is possible with that, just use a language file like `genesis-layout-extras-en_US.mo/.po` to achieve that (for creating one see the tools on "Other Notes").
 
 == Frequently Asked Questions ==
 
@@ -155,6 +158,7 @@ Yes, you could. -- Still, a per site use is recommended.
 * NEW: Added new French translation by [Grégoire Noyelle](http://www.gregoirenoyelle.com/)
 * UPDATE: Updated German and Italian translations and also the .pot file for all translators!
 * UPDATE: Extended GPL License info in readme.txt as well as main plugin file.
+* NEW: Easy plugin translation platform with GlotPress tool: [Translate "Genesis Layout Extras"...](http://translate.wpautobahn.com/projects/genesis-plugins-deckerweb/genesis-layout-extras)
 
 = 1.2 (2011-12-22) =
 * Added new help tab system for WordPress 3.3 -- this time the plugin is also still compatible with old contextual help prior WP 3.3 but PLEASE NOT that I will remove this soon and then the plugin will require WordPress 3.3+ so please update now your WordPress installation!
@@ -207,13 +211,21 @@ All changed - Actually a whole new plugin, updated all over the place. Also the 
 = 0.1 =
 First (and to date only) release under former plugin name and by former plugin author.
 
-== Translations ==
+== Plugin Links ==
+* [Translations (GlotPres)](http://translate.wpautobahn.com/projects/genesis-plugins-deckerweb/genesis-layout-extras)
+* [User support forums](http://wordpress.org/tags/genesis-layout-extras?forum_id=10)
 
+== Donate ==
+Enjoy using *Genesis Layout Extras*? Please consider [making a small donation](http://genesisthemes.de/en/donate/) to support the project's continued development.
+
+== Translations ==
 * English - default, always included
 * German: Deutsch - immer dabei! [Download auch via deckerweb.de](http://deckerweb.de/material/sprachdateien/genesis-plugins/#genesis-layout-extras)
 * French: Français - user-submitted by [Grégoire Noyelle](http://www.gregoirenoyelle.com/)
 * Italian: Italiano - user-submitted by [Marco Rosselli](http://www.prenotazionetraghetti.com/)
 * For custom and update-secure language files please upload them to `/wp-content/languages/genesis-layout-extras/` (just create this folder) - This enables you to use fully custom translations that won't be overridden on plugin updates. Also, complete custom English wording is possible with that as well, just use a language file like `genesis-layout-extras-en_US.mo/.po` to achieve that.
+
+**Easy plugin translation platform with GlotPress tool: [Translate "Genesis Layout Extras"...](http://translate.wpautobahn.com/projects/genesis-plugins-deckerweb/genesis-layout-extras)**
 
 *Note:* All my plugins are internationalized/ translateable by default. This is very important for all users worldwide. So please contribute your language to the plugin to make it even more useful. For translating I recommend the awesome ["Codestyling Localization" plugin](http://wordpress.org/extend/plugins/codestyling-localization/) and for validating the ["Poedit Editor"](http://www.poedit.net/), which works fine on Windows, Mac and Linux.
 
