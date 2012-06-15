@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Genesis Layout Extras Plugin\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/genesis-layout-extras\n"
 "POT-Creation-Date: 2012-04-30 20:39+0100\n"
-"PO-Revision-Date: 2012-06-16 00:23+0100\n"
+"PO-Revision-Date: 2012-06-16 00:48+0100\n"
 "Last-Translator: David Decker <deckerweb.mobil@googlemail.com>\n"
 "Language-Team: DECKERWEB <deckerweb.mobil@googlemail.com>\n"
 "MIME-Version: 1.0\n"
@@ -388,7 +388,7 @@ msgstr "%1$sGenesis-Standard%2$s in den Aufklappmenüs unten meint immer die ent
 #@ genesis-layout-extras
 #: includes/gle-admin-options.php:142
 msgid "For regular search results display &ndash; if there are any results."
-msgstr "Für die reguläre Suchergebnisanzeige &ndash; - wenn Treffer vorhanden sind."
+msgstr "Für die reguläre Suchergebnisanzeige &ndash; wenn Treffer vorhanden sind."
 
 #@ genesis-layout-extras
 #: includes/gle-admin-options.php:144
