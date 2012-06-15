@@ -49,6 +49,21 @@ function ddw_genesis_layout_extras_help_tabs() {
 			'<p><strong>' . __( 'Question', 'genesis-layout-extras' ) . ':</strong> <em>' . __( 'Which settings are effected when doing a reset?', 'genesis-layout-extras' ). '</em><br /><strong>' . __( 'Answer', 'genesis-layout-extras' ) . ':</strong> ' . __( 'ALL available options <em>on this page</em> are resetted to their defaults! So if you only want to reset <em>one</em> option and leave all other as they are then only change this one section and then click the SAVE button and you are done.', 'genesis-layout-extras' ) . '</p>' .
 			'<p><strong>' . __( 'Question', 'genesis-layout-extras' ) . ':</strong> <em>' . __( 'With my child theme some of the layout options have no effect, what happens here?', 'genesis-layout-extras' ) . '</em><br /><strong>' . __( 'Answer', 'genesis-layout-extras' ) . ':</strong> ' . __( 'This is the case when a child theme does not support one or more specific layout options. For example: When a child has unregistered the layout option "Sidebar-Sidebar-Content" then the plugin setting of "Sidebar-Sidebar-Content" will have no effect at all. This is absolutely logical behavior because the plugin can only set options which are supported by the active child theme.', 'genesis-layout-extras' ) . '</p>';
 
+	/** Help content: translations */
+	$gle_help_translations =
+		'<h3>' . __( 'Plugin: Genesis Layout Extras', 'genesis-layout-extras' ) . '</h3>' .
+			'<h4>' . __( 'Translations', 'genesis-layout-extras' ) . '</h4>' .
+			'<p>' . sprintf( __( 'Please contribute to existing or new translations on %sour free translations platform%s powered by GlotPress.', 'genesis-layout-extras' ), '<a href="' . GLE_URL_TRANSLATE . '" target="_new" title="' . __( 'Translations', 'genesis-layout-extras' ) . '"><strong>', '</strong></a>' ) . '</p>' .
+		'<p><strong><em>&mdash; ' . __( 'Thank You!', 'genesis-layout-extras' ) . '</em></strong></p>';
+
+	/** Help content: support, donation, rating, tips */
+	$gle_help_support_donation_rating_tips =
+		'<h3>' . __( 'Plugin: Genesis Layout Extras', 'genesis-layout-extras' ) . '</h3>' .
+			'<h4>' . __( 'Support - Donations - Rating &amp; Tips', 'genesis-layout-extras' ) . '</h4>' .
+			'<p>&bull; <strong>' . __( 'Donations', 'genesis-layout-extras' ) . ':</strong> ' . sprintf( __( 'Please %1$sdonate to support the further maintenance and development%2$s of the plugin. <em>Thank you in advance!</em>', 'genesis-layout-extras' ), '<a href="' . GLE_URL_DONATE . '" target="_new">', '</a>' ) . '</p>' .
+			'<p>&bull; <strong>' . __( 'Support', 'genesis-layout-extras' ). ':</strong> ' . sprintf( __( 'Done via %1$sWordPress.org plugin page support forum%2$s. - Maybe I will setup my own support forum in the future, though.', 'genesis-layout-extras' ), '<a href="' . GLE_URL_WPORG_FORUM . '" target="_new" title="WordPress.org Plugin Support Forum ...">', '</a>' ) . '</p>' .
+			'<p>&bull; <strong>' . __( 'Rating &amp; Tips', 'genesis-layout-extras' ) . ':</strong> ' . sprintf( __( 'If you like the plugin please %1$srate at WordPress.org%2$s with 5 stars. <em>Thank you!</em> &mdash; %3$sMore plugins for Genesis Framework and WordPress in general by DECKERWEB%4$s', 'genesis-layout-extras' ), '<a href="' . GLE_URL_WPORG_PLUGIN . '" target="_new">', '</a>', '<a href="' . GLE_URL_WPORG_DDW . '" target="_new" title="DECKERWEB Genesis and WordPress Plugins ...">', '</a>' ) . '</p>';
+
 	/** Help content: author, license */
 	$gle_help_author_license =
 		'<h3>' . __( 'Plugin: Genesis Layout Extras', 'genesis-layout-extras' ) . '</h3>' .
@@ -56,19 +71,11 @@ function ddw_genesis_layout_extras_help_tabs() {
 			'<p>&bull; <strong>' . __( 'Author', 'genesis-layout-extras' ) . ':</strong> ' . sprintf( __( 'David Decker of %1$sdeckerweb.de%2$s and %3$sGenesisThemes%4$s', 'genesis-layout-extras' ), '<a href="http://deckerweb.de/" target="_new">', '</a>', '<a href="' . __( 'http://genesisthemes.de/en/', 'genesis-layout-extras' ). '" target="_new">', '</a>' ) . '</p>' .
 			'<p>&bull; <strong>' . __( 'License', 'genesis-layout-extras' ) . ':</strong> ' . sprintf( __( 'GPLv2 or later - %1$sMore info on the GPL license ...%2$s', 'genesis-layout-extras' ), '<a href="http://www.opensource.org/licenses/gpl-license.php" target="_new" title="GPL ...">', '</a>' ) . '</p>';
 
-	/** Help content: support, donation, rating, tips */
-	$gle_help_support_donation_rating_tips =
-		'<h3>' . __( 'Plugin: Genesis Layout Extras', 'genesis-layout-extras' ) . '</h3>' .
-			'<h4>' . __( 'Support - Donations - Rating &amp; Tips', 'genesis-layout-extras' ) . '</h4>' .
-			'<p>&bull; <strong>' . __( 'Donations', 'genesis-layout-extras' ) . ':</strong> ' . sprintf( __( 'Please %1$sdonate to support the further maintenance and development%2$s of the plugin. <em>Thank you in advance!</em>', 'genesis-layout-extras' ), '<a href="' . __( 'http://genesisthemes.de/en/donate/', 'genesis-layout-extras' ) . '" target="_new">', '</a>' ) . '</p>' .
-			'<p>&bull; <strong>' . __( 'Support', 'genesis-layout-extras' ). ':</strong> ' . sprintf( __( 'Done via %1$sWordPress.org plugin page support forum%2$s. - Maybe I will setup my own support forum in the future, though.', 'genesis-layout-extras' ), '<a href="http://wordpress.org/tags/genesis-layout-extras?forum_id=10" target="_new" title="WordPress.org Plugin Support Forum ...">', '</a>' ) . '</p>' .
-			'<p>&bull; <strong>' . __( 'Rating &amp; Tips', 'genesis-layout-extras' ) . ':</strong> ' . sprintf( __( 'If you like the plugin please %1$srate at WordPress.org%2$s with 5 stars. <em>Thank you!</em> &mdash; %3$sMore plugins for Genesis Framework and WordPress in general by DECKERWEB%4$s', 'genesis-layout-extras' ), '<a href="http://wordpress.org/extend/plugins/genesis-layout-extras/" target="_new">', '</a>', '<a href="http://wordpress.org/extend/plugins/tags/deckerweb" target="_new" title="DECKERWEB Genesis and WordPress Plugins ...">', '</a>' ) . '</p>';
-
 	/** Add the help tabs */
 	$screen->add_help_tab(array(
 		'id' => 'gle-usage',
 		'title' => __( 'What the Plugin Does', 'genesis-layout-extras' ),
-		'content' => apply_filters( 'gle_help_tab', $gle_help_usage, 'gle-usage' ),
+		'content' => apply_filters( 'gle_help_tab_usage', $gle_help_usage, 'gle-usage' ),
 	) );
 
 	/** Help tab only if supported plugins active */
@@ -82,7 +89,6 @@ function ddw_genesis_layout_extras_help_tabs() {
 		$screen->add_help_tab(array(
 			'id' => 'gle-plugin-support',
 			'title' => __( 'Plugin Support', 'genesis-layout-extras' ),
-			//'content' => apply_filters( 'gle_help_tab', $gle_help_plugin_support, 'gle-plugin-support' ),
 			'callback' => 'ddw_gle_admin_help_plugins',
 		) );
 
@@ -96,7 +102,6 @@ function ddw_genesis_layout_extras_help_tabs() {
 		$screen->add_help_tab(array(
 			'id' => 'gle-child-theme-support',
 			'title' => __( 'Child Theme Support', 'genesis-layout-extras' ),
-			//'content' => apply_filters( 'gle_help_tab', $gle_help_child_theme_support, 'gle-child-theme-support' ),
 			'callback' => 'ddw_gle_admin_help_themedy',
 		) );
 
@@ -108,25 +113,30 @@ function ddw_genesis_layout_extras_help_tabs() {
 	$screen->add_help_tab(array(
 		'id' => 'gle-faq',
 		'title' => __( 'FAQ - Frequently Asked Questions', 'genesis-layout-extras' ),
-		'content' => apply_filters( 'gle_help_tab', $gle_help_faq, 'gle-faq' ),
+		'content' => apply_filters( 'gle_help_tab_faq', $gle_help_faq, 'gle-faq' ),
 	) );
 	$screen->add_help_tab(array(
-		'id' => 'gle-author-license',
-		'title' => __( 'Author - License', 'genesis-layout-extras' ),
-		'content' => apply_filters( 'gle_help_tab', $gle_help_author_license, 'gle-author-license' ),
+		'id' => 'gle-translations',
+		'title' => __( 'Translations', 'genesis-layout-extras' ),
+		'content' => apply_filters( 'gle_help_tab_translations', $gle_help_translations, 'gle-translations' ),
 	) );
 	$screen->add_help_tab(array(
 		'id' => 'gle-support-donation-rating-tips',
 		'title' => __( 'Support - Donations - Rating &amp; Tips', 'genesis-layout-extras' ),
-		'content' => apply_filters( 'gle_help_tab', $gle_help_support_donation_rating_tips, 'gle-support-donation-rating-tips' ),
+		'content' => apply_filters( 'gle_help_tab_support_donations', $gle_help_support_donation_rating_tips, 'gle-support-donation-rating-tips' ),
+	) );
+	$screen->add_help_tab(array(
+		'id' => 'gle-author-license',
+		'title' => __( 'Author - License', 'genesis-layout-extras' ),
+		'content' => apply_filters( 'gle_help_tab_author_license', $gle_help_author_license, 'gle-author-license' ),
 	) );
 
 	/** Add help sidebar */
 	$screen->set_help_sidebar(
 		'<p><strong>' . __( 'Feedback and more about the Author', 'genesis-layout-extras' ) . '</strong></p>' .
-		'<p><a href="' . __( 'http://genesisthemes.de/en/', 'genesis-layout-extras' ) . '" target="_blank" title="' . __( 'Website', 'genesis-layout-extras' ) . '">' . __( 'Website', 'genesis-layout-extras' ) . '</a> | <a href="http://wordpress.org/tags/genesis-layout-extras?forum_id=10" target="_blank" title="' . __( 'Forum', 'genesis-layout-extras' ) . '">' . __( 'Forum', 'genesis-layout-extras' ) . '</a></p>' .
+		'<p><a href="' . __( 'http://genesisthemes.de/en/', 'genesis-layout-extras' ) . '" target="_blank" title="' . __( 'Website', 'genesis-layout-extras' ) . '">' . __( 'Website', 'genesis-layout-extras' ) . '</a> | <a href="' . GLE_URL_WPORG_FORUM . '" target="_blank" title="' . __( 'Forum', 'genesis-layout-extras' ) . '">' . __( 'Forum', 'genesis-layout-extras' ) . '</a></p>' .
 		'<p>' . __( 'Social:', 'genesis-layout-extras' ) . '<br /><a href="http://twitter.com/#!/deckerweb" target="_blank">' . __( 'Twitter', 'genesis-layout-extras' ) . '</a> | <a href="http://www.facebook.com/deckerweb.service" target="_blank">' . __( 'Facebook', 'genesis-layout-extras' ) . '</a> | <a href="http://deckerweb.de/gplus" target="_blank">' . __( 'Google+', 'genesis-layout-extras' ) . '</a></p>' .
-		'<p><a href="http://profiles.wordpress.org/users/daveshine/" target="_blank">' . __( 'at WordPress.org', 'genesis-layout-extras' ) . '</a></p>'
+		'<p><a href="' . GLE_URL_WPORG_PROFILE . '" target="_blank">' . __( 'at WordPress.org', 'genesis-layout-extras' ) . '</a></p>'
 	);
 
 }  // ddw_genesis_layout_extras_help_tabs

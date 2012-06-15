@@ -149,7 +149,7 @@ function ddw_genesis_layout_extras_box() {
 
 			echo '<p><span class="description">' . sprintf( __( 'If a page/URL is not found. Regarding the %1$s404.php%2$s error page template from Genesis core or from current child theme.', 'genesis-layout-extras' ), '<code style="font-style: normal; color: #333;">', '</code>' ) . '</span></p>';
 
-		echo '<div class="bottom-buttons"><input type="submit" class="button button-highlighted" value="' . __('Save', 'genesis-layout-extras' ) . '" /></div>';
+		echo '<div class="bottom-buttons"><input type="submit" class="button button-highlighted" value="' . __( 'Save', 'genesis-layout-extras' ) . '" /></div>';
 
 		echo '<hr class="div" />';
 
@@ -160,7 +160,7 @@ function ddw_genesis_layout_extras_box() {
 		ddw_genesis_layout_extras_option( __( 'Page Page Layout', 'genesis-layout-extras' ) . ': ', 'ddw_genesis_layout_page' );
 		ddw_genesis_layout_extras_option( __( 'Attachment Page Layout', 'genesis-layout-extras' ) . ': ', 'ddw_genesis_layout_attachment' );
 
-		echo '<div class="bottom-buttons"><input type="submit" class="button button-highlighted" value="' . __('Save', 'genesis-layout-extras' ) . '" /></div>';
+		echo '<div class="bottom-buttons"><input type="submit" class="button button-highlighted" value="' . __( 'Save', 'genesis-layout-extras' ) . '" /></div>';
 
 		echo '<hr class="div" />';
 
@@ -179,7 +179,7 @@ function ddw_genesis_layout_extras_box() {
 		ddw_genesis_layout_extras_option( __( 'Tag Page Layout', 'genesis-layout-extras' ) . ': ', 'ddw_genesis_layout_tag' );
 		ddw_genesis_layout_extras_option( __( 'Taxonomy Page Layout', 'genesis-layout-extras' ) . ': ', 'ddw_genesis_layout_taxonomy' );
 
-		echo '<div class="bottom-buttons"><input type="submit" class="button button-highlighted" value="' . __('Save', 'genesis-layout-extras' ) . '" /></div>';
+		echo '<div class="bottom-buttons"><input type="submit" class="button button-highlighted" value="' . __( 'Save', 'genesis-layout-extras' ) . '" /></div>';
 
 }  // end of function ddw_genesis_layout_extras_box
 

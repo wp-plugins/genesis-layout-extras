@@ -21,7 +21,7 @@ add_filter( 'genesis_pre_get_option_site_layout', 'ddw_genesis_layout_extras_fil
  * @uses filter: genesis_pre_get_option_site_layout
  *
  * @since 0.1
- * @version 1.2
+ * @version 1.3
  *
  * @global mixed $wp_query
  * @param $opt
@@ -80,7 +80,7 @@ function ddw_genesis_layout_extras_filter( $opt ) {
 	 * Exceptions, because setup extra:
 	 *    features, slideshow, video-category, video-tag, product_cat, product_tag, product-category, galleries
 	 */
-	elseif ( is_tax() && ! ( is_tax( array( features, product_cat, product_tag, slideshow, video-category, video-tag, product-category, galleries ) ) ) && genesis_get_option( 'ddw_genesis_layout_taxonomy', GLE_SETTINGS_FIELD ) )
+	elseif ( is_tax() && ! ( is_tax( array( 'features', 'product_cat', 'product_tag', 'slideshow', 'video-category', 'video-tag', 'product-category', 'galleries' ) ) ) && genesis_get_option( 'ddw_genesis_layout_taxonomy', GLE_SETTINGS_FIELD ) )
 		$opt = genesis_get_option( 'ddw_genesis_layout_taxonomy', GLE_SETTINGS_FIELD );
 
 	/** Posts (all!) */
