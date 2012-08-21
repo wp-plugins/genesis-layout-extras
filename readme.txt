@@ -3,7 +3,7 @@ Contributors: daveshine, deckerweb
 Donate link: http://genesisthemes.de/en/donate/
 Tags: genesis, genesiswp, genesis framework, layout, layouts, layout manager, post, page, singular, attachment, search, taxonomoy, 404 error, 404 page, bbPress, CPT, AgentPress Listings, agentpress, deckerweb
 Requires at least: 3.2
-Tested up to: 3.4
+Tested up to: 3.4.1
 Stable tag: 1.4
 License: GPLv2 or later
 License URI: http://www.opensource.org/licenses/gpl-license.php
@@ -71,7 +71,7 @@ Credit where credit is due: This plugin here is based on the work of WPChildThem
 
 = Feedback =
 * I am open for your suggestions and feedback - Thank you for using or trying out one of my plugins!
-* Drop me a line [@deckerweb](http://twitter.com/#!/deckerweb) on Twitter
+* Drop me a line [@deckerweb](http://twitter.com/deckerweb) on Twitter
 * Follow me on [my Facebook page](http://www.facebook.com/deckerweb.service)
 * Or follow me on [+David Decker](http://deckerweb.de/gplus) on Google Plus ;-)
 
