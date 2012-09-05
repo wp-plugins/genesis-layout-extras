@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Genesis Layout Extras package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2012-06-16 00:20+0100\n"
+"PO-Revision-Date: 2012-09-05 17:20+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,18 +14,38 @@ msgstr ""
 "Language-Team: \n"
 
 #: includes/gle-admin-help-themedy.php:25
-#: includes/gle-admin-options.php:110
+#: includes/gle-admin-options.php:111
 msgid "Custom Post Types by Child Themes"
-msgstr ""
+msgstr "Conternu personnalisé du thème enfant"
 
 #: genesis-layout-extras.php:0
-msgid "1.4"
-msgstr "1.4"
+msgid "1.5"
+msgstr "1.5"
+
+#: includes/gle-admin-help-plugins.php:78
+#: includes/gle-admin-options-plugins.php:123
+msgid "Sugar Events Calendar"
+msgstr "Sugar Events Calendar"
+
+#: includes/gle-admin-options-plugins.php:117
+#: includes/gle-admin-options-plugins.php:123
+msgid "Plugin: Sugar Events Calendar"
+msgstr "Plugin: Sugar Events Calendar"
+
+#: includes/gle-admin-help-plugins.php:80
+#: includes/gle-admin-options-plugins.php:119
+msgid "Event Post Type Layout (archive)"
+msgstr "Option de maquette pour contenus Event (événement) (archives)"
+
+#: includes/gle-admin-help-plugins.php:81
+#: includes/gle-admin-options-plugins.php:121
+msgid "Event Categories Taxonomy Layout"
+msgstr "Option de maquette pour les catégories Video"
 
 #: includes/gle-admin-extras.php:76
 #: includes/gle-admin-help.php:55
 #: includes/gle-admin-help.php:56
-#: includes/gle-admin-help.php:120
+#: includes/gle-admin-help.php:121
 msgid "Translations"
 msgstr "Traductions"
 
@@ -37,8 +57,8 @@ msgstr "S'il vous plaît contribuer à des traductions existantes ou nouvelles s
 msgid "Thank You!"
 msgstr "Merci!"
 
-#: includes/gle-admin-options.php:278
-#: includes/gle-admin-options.php:289
+#: includes/gle-admin-options.php:279
+#: includes/gle-admin-options.php:290
 msgid "Reset Settings"
 msgstr "Réinitialiser les réglages"
 
@@ -52,7 +72,7 @@ msgid "This plugin for the Genesis Theme Framework allows modifying of default l
 msgstr "Ce plugin pour le Framework Genesis permet de modifier les options de maquette pour la page d'accueil, les pages d'article, les archives, les pages de fichier, les recherches, les 404. Les réglages s'effectuent par les réglages du thème Genesis. En complément, vous pouvez aussi modifier les options par défaut des pages générées par le plugin de forum bbPress 2.x et la plugin AgentPress Listings."
 
 #: includes/gle-admin-help.php:45
-#: includes/gle-admin-help.php:115
+#: includes/gle-admin-help.php:116
 msgid "FAQ - Frequently Asked Questions"
 msgstr "FAQ - Foire Aux Questions"
 
@@ -64,32 +84,32 @@ msgstr "TOUT les maquettes en extra ont été réinitialisé avec les options de
 msgid "The extra layout settings have been saved successfully."
 msgstr "Les réglages des maquettes en extra ont été sauvegardé avec succès."
 
-#: includes/gle-admin-options.php:202
+#: includes/gle-admin-options.php:203
 msgid "Genesis Default"
 msgstr "Réglage par défaut Genesis"
 
-#: includes/gle-admin-options.php:203
+#: includes/gle-admin-options.php:204
 msgid "Content-Sidebar"
 msgstr "Contenu-Barre latérale"
 
-#: includes/gle-admin-options.php:204
+#: includes/gle-admin-options.php:205
 msgid "Sidebar-Content"
 msgstr "Barre latérale-Contenu"
 
-#: includes/gle-admin-options.php:205
+#: includes/gle-admin-options.php:206
 msgid "Content-Sidebar-Sidebar"
 msgstr "Contenu-Barre latérale-Barre latérale"
 
-#: includes/gle-admin-options.php:206
+#: includes/gle-admin-options.php:207
 msgid "Sidebar-Sidebar-Content"
 msgstr "Barre latérale-Barre latérale-Contenu"
 
-#: includes/gle-admin-options.php:207
+#: includes/gle-admin-options.php:208
 msgid "Sidebar-Content-Sidebar"
 msgstr "Barre latérale-Contenu-Barre latérale"
 
-#: includes/gle-admin-options.php:278
-#: includes/gle-admin-options.php:289
+#: includes/gle-admin-options.php:279
+#: includes/gle-admin-options.php:290
 msgid "Are you sure you want to reset? - When resetting, ALL extra layout settings will be set to their Genesis default option!"
 msgstr "Etes-vous sûr de vouloir réinitialiser? Si vous le faites, tous les maquettes en extra vont revenir aux réglages par défaut de Genesis"
 
@@ -110,311 +130,309 @@ msgstr "Support"
 msgid "Donate"
 msgstr "Faire un don"
 
-#: includes/gle-admin-options.php:173
+#: includes/gle-admin-options.php:174
 msgid "This is the general setting for date archives and overwrites the following three settings (Year, Month, Day)! So, if you setup any of the following three settings then let this one here on %1$sGenesis Default%2$s."
 msgstr "Ce sont les réglages généraux pour les archives de date. Ils vont écraser ces trois réglages (Année, Mois, Jour)! Donc, si vous réglez une de ces trois là, alors laissez celui-ci sur %1$sGenesis par défaut%2$s."
 
-#: includes/gle-admin-options.php:175
+#: includes/gle-admin-options.php:176
 msgid "Date Archive - Year Page Layout"
 msgstr "Archive de date - Maquette de page pour l'année"
 
-#: includes/gle-admin-options.php:176
+#: includes/gle-admin-options.php:177
 msgid "Date Archive - Month Page Layout"
 msgstr "Archive de date - Maquette de page pour le mois"
 
-#: includes/gle-admin-options.php:177
+#: includes/gle-admin-options.php:178
 msgid "Date Archive - Day Page Layout"
 msgstr "Archive de date - Maquette de page pour le jour"
 
-#: includes/gle-admin-options-plugins.php:25
+#: includes/gle-admin-options-plugins.php:26
 #: includes/gle-admin-options-themedy.php:25
 msgid "Special Custom Post Type Sections"
 msgstr "Section spéciale pour les contenu personnalisé (custom post type)"
 
-#: includes/gle-admin-help-plugins.php:79
-#: includes/gle-admin-options-plugins.php:118
+#: includes/gle-admin-help-plugins.php:91
+#: includes/gle-admin-options-plugins.php:137
 msgid "bbPress 2.x Forum Layout (all areas)"
 msgstr "bbPress 2x. Maquette de forum (toute section)"
 
-#: includes/gle-admin-options.php:138
+#: includes/gle-admin-options.php:139
 msgid "This setting works for homepage templates (file %1$shome.php%2$s is there - %1$sis_home()%2$s) <u>and</u> also for static pages as front page (%1$sis_front_page()%2$s)."
 msgstr "Ce réglage fonctionne pour le modèle de la page d'accueil (file %1$shome.php%2$s est ici - %1$sis_home()%2$s) <u>et</u> aussi pour les pages statiques sélectionnées en page d'accueil (%1$sis_front_page()%2$s)."
 
 #: includes/gle-admin-help.php:70
-#: includes/gle-admin-help.php:130
+#: includes/gle-admin-help.php:131
 msgid "Author - License"
 msgstr "Auteur - Licence"
 
 #: includes/gle-admin-help.php:62
-#: includes/gle-admin-help.php:125
+#: includes/gle-admin-help.php:126
 msgid "Support - Donations - Rating &amp; Tips"
 msgstr "Support - Donations - Noter &amp; Trucs"
 
-#: includes/gle-admin-help.php:136
+#: includes/gle-admin-help.php:137
 msgid "Feedback and more about the Author"
-msgstr ""
+msgstr "Retour d'expérience et plus à propos de l'auteur "
 
 #: includes/gle-admin-help.php:71
-#: includes/gle-admin-help.php:137
+#: includes/gle-admin-help.php:138
 msgid "http://genesisthemes.de/en/"
 msgstr "http://genesisthemes.de/en/"
 
-#: includes/gle-admin-help.php:137
+#: includes/gle-admin-help.php:138
 msgid "Website"
 msgstr "Site Web"
 
-#: includes/gle-admin-help.php:137
+#: includes/gle-admin-help.php:138
 msgid "Forum"
 msgstr "Forum"
 
-#: includes/gle-admin-help.php:138
+#: includes/gle-admin-help.php:139
 msgid "Social:"
 msgstr "Social:"
 
-#: includes/gle-admin-help.php:138
+#: includes/gle-admin-help.php:139
 msgid "Twitter"
 msgstr "Twitter"
 
-#: includes/gle-admin-help.php:138
+#: includes/gle-admin-help.php:139
 msgid "Facebook"
 msgstr "Facebook"
 
-#: includes/gle-admin-help.php:138
+#: includes/gle-admin-help.php:139
 msgid "Google+"
 msgstr "Google+"
-
-#: includes/gle-admin-help.php:139
-msgid "at WordPress.org"
-msgstr "à WordPress.org"
 
 #: includes/gle-admin-options.php:91
 msgid "WordPress Defaults"
 msgstr "Par défaut WordPress"
 
-#: includes/gle-admin-help-plugins.php:25
-#: includes/gle-admin-options.php:101
+#: includes/gle-admin-help-plugins.php:26
+#: includes/gle-admin-options.php:102
 msgid "Custom Post Types by Plugins"
-msgstr ""
+msgstr "Conternu personnalisé de Plugins"
 
-#: includes/gle-admin-options.php:129
+#: includes/gle-admin-options.php:130
 msgid "Here you can set up a <strong>default</strong> layout option for various extra archive pages and other special pages."
-msgstr ""
+msgstr "Ici vous pouvez régler une options de maquette par <strong>défaut</strong> pour les diverses pages d'archives ou autre page spéciales."
 
-#: includes/gle-admin-options-plugins.php:27
+#: includes/gle-admin-options-plugins.php:28
 #: includes/gle-admin-options-themedy.php:27
-#: includes/gle-admin-options.php:129
+#: includes/gle-admin-options.php:130
 msgid "%1$sGenesis Default%2$s in the drop-down menus below always means the chosen default layout option in the regular <a href=\"%3$s\">Genesis layout settings</a>."
-msgstr ""
+msgstr "%1$sGenesis par défaut%2$s dans le menu déroulant ci-dessous veux toujours dire le menu choisi par défaut dans le <a href=\"%3$s\">Réglages du thème de Genesis</a>."
 
-#: includes/gle-admin-options.php:142
+#: includes/gle-admin-options.php:143
 msgid "For regular search results display &ndash; if there are any results."
-msgstr ""
+msgstr "Pour les recherches normales, affichez &ndash; s'il n'y a pas de résultats."
 
-#: includes/gle-admin-options.php:144
+#: includes/gle-admin-options.php:145
 msgid "Search Not Found Page Layout"
-msgstr ""
+msgstr "Aucun réglage de maquette n'a été trouvé."
 
-#: includes/gle-admin-options.php:146
+#: includes/gle-admin-options.php:147
 msgid "If there are NO search results (empty)."
-msgstr ""
+msgstr "S'il n'y a PAS de résultat (vide)."
 
-#: includes/gle-admin-options.php:150
+#: includes/gle-admin-options.php:151
 msgid "If a page/URL is not found. Regarding the %1$s404.php%2$s error page template from Genesis core or from current child theme."
-msgstr ""
+msgstr "Si une URL de page n'est pas trouvé. En fonction de page d'erreur %1$s404.php%2$s du thème Genesis ou du thème enfant activé."
 
-#: includes/gle-admin-options-plugins.php:27
+#: includes/gle-admin-options-plugins.php:28
 msgid "Here you can set up a <strong>default</strong> layout option for various extra archive pages generated by Custom Post Types which were set by plugins. There are only post types listed for which proper template/ layout integration for Genesis exist."
-msgstr ""
+msgstr "Ici vous pouvez créer un réglage de maquette par <strong>défaut</strong> pour plusieurs pages d'archives créées par les contenus personnalisés générés par des plugins. Il y a seulement les contenus qui ont les réglages appropriés pour Genesis."
 
-#: includes/gle-admin-options-plugins.php:35
+#: includes/gle-admin-options-plugins.php:36
 msgid "Plugin: AgentPress Listings"
 msgstr "Plugin: AgentPress Listings"
 
-#: includes/gle-admin-help-plugins.php:32
-#: includes/gle-admin-options-plugins.php:37
+#: includes/gle-admin-help-plugins.php:33
+#: includes/gle-admin-options-plugins.php:38
 msgid "Listing Post Type Layout (archive)"
 msgstr "Contenu personnalisés de liste (archive)"
 
-#: includes/gle-admin-options-plugins.php:75
+#: includes/gle-admin-options-plugins.php:76
 msgid "Plugins: WooCommerce OR Jigoshop"
 msgstr "Plugins: WooCommerce OU Jigoshop"
 
-#: includes/gle-admin-options-plugins.php:81
+#: includes/gle-admin-options-plugins.php:82
 msgid "Plugin: WooCommerce"
 msgstr "Plugin: WooCommerce"
 
-#: includes/gle-admin-options-plugins.php:81
+#: includes/gle-admin-options-plugins.php:82
 msgid "WooCommerce"
 msgstr "WooCommerce"
 
-#: includes/gle-admin-options-plugins.php:81
+#: includes/gle-admin-options-plugins.php:82
 msgid "Plugin: Jigoshop"
 msgstr "Plugin: Jigoshop"
 
-#: includes/gle-admin-options-plugins.php:81
+#: includes/gle-admin-options-plugins.php:82
 msgid "Jigoshop"
 msgstr "Jigoshop"
 
-#: includes/gle-admin-options-plugins.php:82
 #: includes/gle-admin-options-plugins.php:83
-#: includes/gle-admin-options-plugins.php:104
-#: includes/gle-admin-options-plugins.php:121
+#: includes/gle-admin-options-plugins.php:84
+#: includes/gle-admin-options-plugins.php:105
+#: includes/gle-admin-options-plugins.php:140
 msgid "Integration plugin"
 msgstr "Plugin d'intégration"
 
-#: includes/gle-admin-options-plugins.php:82
+#: includes/gle-admin-options-plugins.php:83
 msgid "Genesis Connect for WooCommerce"
 msgstr "Genesis Connect pour WooCommerce"
 
-#: includes/gle-admin-options-plugins.php:83
+#: includes/gle-admin-options-plugins.php:84
 msgid "Genesis Connect for Jigoshop"
 msgstr "Genesis Connect pour Jigoshop"
 
-#: includes/gle-admin-options-plugins.php:95
-#: includes/gle-admin-options-plugins.php:103
+#: includes/gle-admin-options-plugins.php:96
+#: includes/gle-admin-options-plugins.php:104
 msgid "Plugin: Easy Digital Downloads"
 msgstr "Plugin: Easy Digital Downloads"
 
-#: includes/gle-admin-help-plugins.php:67
-#: includes/gle-admin-options-plugins.php:97
+#: includes/gle-admin-help-plugins.php:68
+#: includes/gle-admin-options-plugins.php:98
 msgid "Download Post Type Layout (archive)"
-msgstr ""
+msgstr "Mise en page des Contenus personnalisés téléchargement (archive)"
 
-#: includes/gle-admin-options-plugins.php:120
+#: includes/gle-admin-options-plugins.php:139
 msgid "For this setting to take any effect the plugin %1$s needs to be installed first."
 msgstr "Pour ce réglage prennent effet plugin %1$s doit être d'abord installé."
 
-#: includes/gle-admin-help-plugins.php:65
-#: includes/gle-admin-options-plugins.php:103
+#: includes/gle-admin-help-plugins.php:66
+#: includes/gle-admin-options-plugins.php:104
 msgid "Easy Digital Downloads"
 msgstr "Easy Digital Downloads"
 
-#: includes/gle-admin-options-plugins.php:104
+#: includes/gle-admin-options-plugins.php:105
 msgid "Genesis Connect for Easy Digital Downloads"
 msgstr "Genesis Connect pour Easy Digital Downloads"
 
-#: includes/gle-admin-options-plugins.php:120
+#: includes/gle-admin-options-plugins.php:139
 msgid "Plugin: bbPress 2.x Forum"
 msgstr "Plugin: bbPress 2.x Forum"
 
-#: includes/gle-admin-help-plugins.php:77
-#: includes/gle-admin-options-plugins.php:120
+#: includes/gle-admin-help-plugins.php:89
+#: includes/gle-admin-options-plugins.php:139
 msgid "bbPress 2.x"
 msgstr "bbPress 2.x"
 
-#: includes/gle-admin-options-plugins.php:121
+#: includes/gle-admin-options-plugins.php:140
 msgid "bbPress Genesis Extend"
 msgstr "bbPress Genesis Extend"
 
-#: includes/gle-admin-options-plugins.php:43
-#: includes/gle-admin-options-plugins.php:65
-#: includes/gle-admin-options-plugins.php:85
-#: includes/gle-admin-options-plugins.php:106
-#: includes/gle-admin-options-plugins.php:123
+#: includes/gle-admin-options-plugins.php:44
+#: includes/gle-admin-options-plugins.php:66
+#: includes/gle-admin-options-plugins.php:86
+#: includes/gle-admin-options-plugins.php:107
+#: includes/gle-admin-options-plugins.php:125
+#: includes/gle-admin-options-plugins.php:142
 #: includes/gle-admin-options-themedy.php:40
 #: includes/gle-admin-options-themedy.php:53
-#: includes/gle-admin-options.php:152
-#: includes/gle-admin-options.php:163
-#: includes/gle-admin-options.php:182
+#: includes/gle-admin-options.php:153
+#: includes/gle-admin-options.php:164
+#: includes/gle-admin-options.php:183
 msgid "Save"
 msgstr "Sauvegardez"
 
-#: includes/gle-admin-help-plugins.php:33
-#: includes/gle-admin-options-plugins.php:39
+#: includes/gle-admin-help-plugins.php:34
+#: includes/gle-admin-options-plugins.php:40
 msgid "Listings Features Taxonomy Layout"
-msgstr ""
+msgstr "Mise en page de la liste des taxonomies mises à la une"
 
-#: includes/gle-admin-options-plugins.php:41
+#: includes/gle-admin-options-plugins.php:42
 msgid "For these settings to take any effect the %1$splugin <em>AgentPress Listings</em>%2$s needs to be installed first. &mdash; Of course, the plugin (and so the setting here) could be used with the %3$sAgentPress child theme%4$s and also with any other Genesis child theme, so this setting might come in really handy ;-)."
-msgstr ""
+msgstr "Pour que ces réglages fonctionnent le plugin %1$splugin <em>AgentPress Listings</em>%2$s doit être installé en premier. &mdash; Bien sûr, le plugin (et les présents réglages) peuvent être utilisés avec le thème enfant %3$sAgentPress child theme%4$s et aussi avec un autre thème enfant Genesis, ainsi ces réglages devienne très pratiques ;-)."
 
-#: includes/gle-admin-options-plugins.php:53
-#: includes/gle-admin-options-plugins.php:63
+#: includes/gle-admin-options-plugins.php:54
+#: includes/gle-admin-options-plugins.php:64
 msgid "Plugin: Genesis Media Project"
 msgstr "Plugin: Genesis Media Project"
 
-#: includes/gle-admin-help-plugins.php:43
-#: includes/gle-admin-options-plugins.php:55
-msgid "Video Post Type Layout (archive)"
-msgstr ""
-
 #: includes/gle-admin-help-plugins.php:44
-#: includes/gle-admin-options-plugins.php:57
-msgid "Video SlideShows Taxonomy Layout"
-msgstr ""
+#: includes/gle-admin-options-plugins.php:56
+msgid "Video Post Type Layout (archive)"
+msgstr "Mise en page des Contenus personnalisés Vidéos (archive)"
 
 #: includes/gle-admin-help-plugins.php:45
-#: includes/gle-admin-options-plugins.php:59
-msgid "Video Categories Taxonomy Layout"
-msgstr ""
+#: includes/gle-admin-options-plugins.php:58
+msgid "Video SlideShows Taxonomy Layout"
+msgstr "Mise en page de la taxonomie Video Slideshows"
 
 #: includes/gle-admin-help-plugins.php:46
-#: includes/gle-admin-options-plugins.php:61
+#: includes/gle-admin-options-plugins.php:60
+msgid "Video Categories Taxonomy Layout"
+msgstr "Option de maquette pour les catégories Video"
+
+#: includes/gle-admin-help-plugins.php:47
+#: includes/gle-admin-options-plugins.php:62
 msgid "Video Tags Taxonomy Layout"
-msgstr ""
+msgstr "Option de maquette pour les étiquettes Video"
 
-#: includes/gle-admin-options-plugins.php:63
-#: includes/gle-admin-options-plugins.php:103
+#: includes/gle-admin-options-plugins.php:64
+#: includes/gle-admin-options-plugins.php:104
+#: includes/gle-admin-options-plugins.php:123
 msgid "For these settings to take any effect the plugin %1$s needs to be installed first."
-msgstr ""
+msgstr "Pour que ces réglages fonctionne le plugin %1$s doit être installé en premier."
 
-#: includes/gle-admin-help-plugins.php:41
-#: includes/gle-admin-options-plugins.php:63
+#: includes/gle-admin-help-plugins.php:42
+#: includes/gle-admin-options-plugins.php:64
 msgid "Genesis Media Project"
 msgstr "Genesis Media Project"
 
-#: includes/gle-admin-help-plugins.php:56
-#: includes/gle-admin-options-plugins.php:77
-msgid "Product Post Type Layout - Product Categories (all)"
-msgstr ""
-
 #: includes/gle-admin-help-plugins.php:57
-#: includes/gle-admin-options-plugins.php:79
-msgid "Product Post Type Layout - Product Tags (all)"
-msgstr ""
+#: includes/gle-admin-options-plugins.php:78
+msgid "Product Post Type Layout - Product Categories (all)"
+msgstr "Option de maquette pour les Contenu Produit - Catégorie Produit (toutes)"
 
-#: includes/gle-admin-options-plugins.php:81
+#: includes/gle-admin-help-plugins.php:58
+#: includes/gle-admin-options-plugins.php:80
+msgid "Product Post Type Layout - Product Tags (all)"
+msgstr "Option de maquette pour les Contenu Produit - Etiquette Produit (toutes)"
+
+#: includes/gle-admin-options-plugins.php:82
 msgid "For these settings to take any effect the plugin %1$s OR %2$s needs to be installed first."
 msgstr "Pour ce réglage prennent effet plugin %1$s OU plugin %2$s doit être d'abord installé."
 
-#: includes/gle-admin-help-plugins.php:68
-#: includes/gle-admin-options-plugins.php:99
-msgid "Download Categories Taxonomy Layout"
-msgstr ""
-
 #: includes/gle-admin-help-plugins.php:69
-#: includes/gle-admin-options-plugins.php:101
+#: includes/gle-admin-options-plugins.php:100
+msgid "Download Categories Taxonomy Layout"
+msgstr "Télécharger les options de maquette pour les Catégories"
+
+#: includes/gle-admin-help-plugins.php:70
+#: includes/gle-admin-options-plugins.php:102
 msgid "Download Tags Taxonomy Layout"
-msgstr ""
+msgstr "Télécharger les options de maquette pour les Etiquettes"
 
 #: includes/gle-admin-options-themedy.php:27
 msgid "Here you can set up a <strong>default</strong> layout option for various extra archive pages generated by Custom Post Types which were set by child themes."
-msgstr ""
+msgstr "Ici vous pouvez créer un réglage de maquette par <strong>défaut</strong> pour plusieurs pages d'archives créées par les contenus personnalisés (réglées par le thème enfant)."
 
 #: includes/gle-admin-help-themedy.php:30
 #: includes/gle-admin-options-themedy.php:34
 msgid "Child Theme: Clip Cart by Themedy Themes"
-msgstr ""
+msgstr "Thème Enfant: Clip Cart par Themedy Themes"
 
 #: includes/gle-admin-help-themedy.php:32
 #: includes/gle-admin-options-themedy.php:36
 msgid "Products Post Type Layout (archive)"
-msgstr ""
+msgstr "Option de maquette pour contenus Produit (archives)"
 
 #: includes/gle-admin-help-themedy.php:33
 #: includes/gle-admin-options-themedy.php:38
 msgid "Product Categories Taxonomy Layout"
-msgstr ""
+msgstr "Option de maquette pour catégories Produit"
 
 #: includes/gle-admin-help-themedy.php:41
 #: includes/gle-admin-options-themedy.php:49
 msgid "Child Theme: Stage by Themedy Themes"
-msgstr ""
+msgstr "Thème enfant: Stage par Themedy Themes"
 
 #: includes/gle-admin-help-themedy.php:43
 #: includes/gle-admin-options-themedy.php:51
 msgid "Photo Galleries Taxonomy Layout"
-msgstr ""
+msgstr "Option de maquette les taxonomies de Galeries Photo"
 
 #: includes/gle-admin-help.php:46
 #: includes/gle-admin-help.php:47
@@ -508,7 +526,7 @@ msgstr "Noter &amp; Trucs"
 msgid "If you like the plugin please %1$srate at WordPress.org%2$s with 5 stars. <em>Thank you!</em> &mdash; %3$sMore plugins for Genesis Framework and WordPress in general by DECKERWEB%4$s"
 msgstr "Si vous aimez ce plugin merci de le %1$snoter sur WordPress.org%2$s avec 5 stars. <em>Merci!</em> &mdash; %3$sPlus de plugins pour Genesis Framework et WordPress par DECKERWEB%4$s"
 
-#: includes/gle-admin-help-plugins.php:54
+#: includes/gle-admin-help-plugins.php:55
 msgid "WooCommerce OR Jigoshop"
 msgstr "WooCommerce OU Jigoshop"
 
@@ -516,11 +534,11 @@ msgstr "WooCommerce OU Jigoshop"
 msgid "by Themedy Themes Brand"
 msgstr "Thèmes par Marque Themedy"
 
-#: includes/gle-admin-help.php:91
+#: includes/gle-admin-help.php:92
 msgid "Plugin Support"
 msgstr "Plugin Support"
 
-#: includes/gle-admin-help.php:104
+#: includes/gle-admin-help.php:105
 msgid "Child Theme Support"
 msgstr "Thème Enfant Support"
 
@@ -546,7 +564,7 @@ msgstr "David Decker - DECKERWEB"
 msgid "http://deckerweb.de/"
 msgstr "http://deckerweb.de/"
 
-#: genesis-layout-extras.php:81
+#: genesis-layout-extras.php:82
 msgid "Sorry, you can&rsquo;t activate unless you have installed the %1$sGenesis Framework%2$s"
 msgstr "Désollé mais vous ne pouvez activer ce plugin avant d'avoir installé le %1$sGenesis Framework%2$s"
 
@@ -554,7 +572,7 @@ msgstr "Désollé mais vous ne pouvez activer ce plugin avant d'avoir installé 
 msgid "Settings"
 msgstr "Réglages"
 
-#: includes/gle-admin-help-plugins.php:23
+#: includes/gle-admin-help-plugins.php:24
 #: includes/gle-admin-help-themedy.php:23
 #: includes/gle-admin-help.php:38
 #: includes/gle-admin-help.php:44
@@ -568,76 +586,76 @@ msgstr "Plugin: Genesis Maquettes en Extra"
 msgid "Layout Extras"
 msgstr "Maquettes en Extra"
 
-#: includes/gle-admin-options.php:134
+#: includes/gle-admin-options.php:135
 msgid "Special Sections"
 msgstr "Sections spéciales"
 
-#: includes/gle-admin-options.php:136
+#: includes/gle-admin-options.php:137
 msgid "Hompage Layout"
 msgstr "Maquette pour l'Accueil"
 
-#: includes/gle-admin-options.php:140
+#: includes/gle-admin-options.php:141
 msgid "Search Page Layout"
 msgstr "Maquette Page de Recherche"
 
-#: includes/gle-admin-options.php:148
+#: includes/gle-admin-options.php:149
 msgid "404 Page Layout"
 msgstr "Maquette pour la page 404"
 
-#: includes/gle-admin-options.php:157
+#: includes/gle-admin-options.php:158
 msgid "Singular Pages"
 msgstr "Article"
 
-#: includes/gle-admin-options.php:159
+#: includes/gle-admin-options.php:160
 msgid "Post Page Layout"
 msgstr "Maquette de Page d'articles"
 
-#: includes/gle-admin-options.php:160
+#: includes/gle-admin-options.php:161
 msgid "Page Page Layout"
 msgstr "Maquette de Page"
 
-#: includes/gle-admin-options.php:161
+#: includes/gle-admin-options.php:162
 msgid "Attachment Page Layout"
 msgstr "Maquette pour les pages de Fichier"
 
-#: includes/gle-admin-options.php:168
+#: includes/gle-admin-options.php:169
 msgid "Archive Sections"
 msgstr "Archives"
 
-#: includes/gle-admin-options.php:170
+#: includes/gle-admin-options.php:171
 msgid "Author Page Layout"
 msgstr "Maquette Page d'auteur"
 
-#: includes/gle-admin-options.php:171
+#: includes/gle-admin-options.php:172
 msgid "Date Archive Page Layout"
 msgstr "Maquette pour les archives de date"
 
-#: includes/gle-admin-options.php:178
+#: includes/gle-admin-options.php:179
 msgid "Category Page Layout"
 msgstr "Maquette pour les pages de Catégorie"
 
-#: includes/gle-admin-options.php:179
+#: includes/gle-admin-options.php:180
 msgid "Tag Page Layout"
 msgstr "Maquette pour les pages de Mots clefs"
 
-#: includes/gle-admin-options.php:180
+#: includes/gle-admin-options.php:181
 msgid "Taxonomy Page Layout"
 msgstr "Maquette pour les pages de Taxonomies"
 
-#: includes/gle-admin-options-plugins.php:116
+#: includes/gle-admin-options-plugins.php:135
 msgid "Plugin: bbPress 2.x Forum Section"
 msgstr "Plugin: Section Forum pour bbPress 2.x"
 
-#: includes/gle-admin-options.php:208
+#: includes/gle-admin-options.php:209
 msgid "Full Width Content"
 msgstr "Contenu en pleine page"
 
-#: includes/gle-admin-options.php:273
+#: includes/gle-admin-options.php:274
 msgid "Genesis - Layout Extras"
 msgstr "Genesis - Maquettes en extra"
 
-#: includes/gle-admin-options.php:277
-#: includes/gle-admin-options.php:288
+#: includes/gle-admin-options.php:278
+#: includes/gle-admin-options.php:289
 msgid "Save Settings"
 msgstr "Sauvegarder les réglages"
 

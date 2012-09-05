@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Genesis Layout Extras package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2012-06-16 00:21+0100\n"
+"PO-Revision-Date: 2012-09-05 17:21+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,18 +14,38 @@ msgstr ""
 "Language-Team: \n"
 
 #: includes/gle-admin-help-themedy.php:25
-#: includes/gle-admin-options.php:110
+#: includes/gle-admin-options.php:111
 msgid "Custom Post Types by Child Themes"
 msgstr "बाल थीम्स द्वारा कस्टम डाक प्रकार"
 
 #: genesis-layout-extras.php:0
-msgid "1.4"
-msgstr "1.4"
+msgid "1.5"
+msgstr "1.5"
+
+#: includes/gle-admin-help-plugins.php:78
+#: includes/gle-admin-options-plugins.php:123
+msgid "Sugar Events Calendar"
+msgstr ""
+
+#: includes/gle-admin-options-plugins.php:117
+#: includes/gle-admin-options-plugins.php:123
+msgid "Plugin: Sugar Events Calendar"
+msgstr ""
+
+#: includes/gle-admin-help-plugins.php:80
+#: includes/gle-admin-options-plugins.php:119
+msgid "Event Post Type Layout (archive)"
+msgstr ""
+
+#: includes/gle-admin-help-plugins.php:81
+#: includes/gle-admin-options-plugins.php:121
+msgid "Event Categories Taxonomy Layout"
+msgstr ""
 
 #: includes/gle-admin-extras.php:76
 #: includes/gle-admin-help.php:55
 #: includes/gle-admin-help.php:56
-#: includes/gle-admin-help.php:120
+#: includes/gle-admin-help.php:121
 msgid "Translations"
 msgstr "अनुवाद"
 
@@ -37,8 +57,8 @@ msgstr "हमारे मुक्त अनुवाद %sGlotPress%s द्�
 msgid "Thank You!"
 msgstr "शुक्रिया!"
 
-#: includes/gle-admin-options.php:278
-#: includes/gle-admin-options.php:289
+#: includes/gle-admin-options.php:279
+#: includes/gle-admin-options.php:290
 msgid "Reset Settings"
 msgstr "सेटिंग्स रीसेट"
 
@@ -52,7 +72,7 @@ msgid "This plugin for the Genesis Theme Framework allows modifying of default l
 msgstr "होमपेज, विलक्षण, संग्रह, लगाव, खोज, और उत्पत्ति मेनू के तहत एक विकल्प पृष्ठ के माध्यम से 404 पृष्ठों के लिए डिफ़ॉल्ट लेआउट के उत्पत्ति थीम फ्रेमवर्क के लिए इस प्लगइन को संशोधित करने की अनुमति देता है. इसके अलावा आप भी bbpress 2.x मंच प्लगइन और AgentPress के लिस्टिंग प्लगइन द्वारा उत्पन्न पृष्ठों के लिए डिफ़ॉल्ट लेआउट विकल्प को संशोधित कर सकते हैं."
 
 #: includes/gle-admin-help.php:45
-#: includes/gle-admin-help.php:115
+#: includes/gle-admin-help.php:116
 msgid "FAQ - Frequently Asked Questions"
 msgstr "अकसर किये गए सवाल - अक्सर पूछे जाने वाले प्रश्न"
 
@@ -64,32 +84,32 @@ msgstr "सभी अतिरिक्त लेआउट उनकी उत�
 msgid "The extra layout settings have been saved successfully."
 msgstr "अतिरिक्त लेआउट सेटिंग्स सफलतापूर्वक सहेज लिया गया है."
 
-#: includes/gle-admin-options.php:202
+#: includes/gle-admin-options.php:203
 msgid "Genesis Default"
 msgstr "उत्पत्ति डिफ़ॉल्ट"
 
-#: includes/gle-admin-options.php:203
+#: includes/gle-admin-options.php:204
 msgid "Content-Sidebar"
 msgstr "सामग्री - साइडबार"
 
-#: includes/gle-admin-options.php:204
+#: includes/gle-admin-options.php:205
 msgid "Sidebar-Content"
 msgstr "साइडबार - सामग्री"
 
-#: includes/gle-admin-options.php:205
+#: includes/gle-admin-options.php:206
 msgid "Content-Sidebar-Sidebar"
 msgstr "सामग्री साइडबार - साइडबार"
 
-#: includes/gle-admin-options.php:206
+#: includes/gle-admin-options.php:207
 msgid "Sidebar-Sidebar-Content"
 msgstr "सामग्री साइडबार - साइडबार"
 
-#: includes/gle-admin-options.php:207
+#: includes/gle-admin-options.php:208
 msgid "Sidebar-Content-Sidebar"
 msgstr "साइडबार - सामग्री - साइडबार"
 
-#: includes/gle-admin-options.php:278
-#: includes/gle-admin-options.php:289
+#: includes/gle-admin-options.php:279
+#: includes/gle-admin-options.php:290
 msgid "Are you sure you want to reset? - When resetting, ALL extra layout settings will be set to their Genesis default option!"
 msgstr "क्या आप सुनिश्चित करें कि आप रीसेट करना चाहते हैं? रीसेट सभी अतिरिक्त लेआउट सेटिंग्स उनकी उत्पत्ति डिफ़ॉल्ट विकल्प सेट हो जाएगा!"
 
@@ -110,280 +130,278 @@ msgstr "समर्थन"
 msgid "Donate"
 msgstr "दान"
 
-#: includes/gle-admin-options.php:173
+#: includes/gle-admin-options.php:174
 msgid "This is the general setting for date archives and overwrites the following three settings (Year, Month, Day)! So, if you setup any of the following three settings then let this one here on %1$sGenesis Default%2$s."
 msgstr "इस तारीख के अभिलेखागार के लिए सामान्य सेटिंग है और निम्नलिखित तीन (वर्ष, महीना, दिन) सेटिंग्स अधिलेखित कर देता है! तो, अगर आप निम्नलिखित तीन सेटिंग्स में से किसी भी सेटअप तो यह एक %1$s पर sGenesis डिफ़ॉल्ट%2$sहै."
 
-#: includes/gle-admin-options.php:175
+#: includes/gle-admin-options.php:176
 msgid "Date Archive - Year Page Layout"
 msgstr "तिथि पुरालेख वर्ष पेज लेआउट"
 
-#: includes/gle-admin-options.php:176
+#: includes/gle-admin-options.php:177
 msgid "Date Archive - Month Page Layout"
 msgstr "तिथि पुरालेख महीने पेज लेआउट"
 
-#: includes/gle-admin-options.php:177
+#: includes/gle-admin-options.php:178
 msgid "Date Archive - Day Page Layout"
 msgstr "पुरालेख तिथि - दिवस पेज लेआउट"
 
-#: includes/gle-admin-options-plugins.php:25
+#: includes/gle-admin-options-plugins.php:26
 #: includes/gle-admin-options-themedy.php:25
 msgid "Special Custom Post Type Sections"
 msgstr "विशेष कस्टम डाक प्रकार अनुभाग"
 
-#: includes/gle-admin-help-plugins.php:79
-#: includes/gle-admin-options-plugins.php:118
+#: includes/gle-admin-help-plugins.php:91
+#: includes/gle-admin-options-plugins.php:137
 msgid "bbPress 2.x Forum Layout (all areas)"
 msgstr "bbpress 2.x फोरम लेआउट (सभी क्षेत्रों)"
 
-#: includes/gle-admin-options.php:138
+#: includes/gle-admin-options.php:139
 msgid "This setting works for homepage templates (file %1$shome.php%2$s is there - %1$sis_home()%2$s) <u>and</u> also for static pages as front page (%1$sis_front_page()%2$s)."
 msgstr "यह सेटिंग होमपेज टेम्पलेट्स के लिए काम करता है ( फ़ाइल %1$s home.php%2$s है वहाँ है%1$sis_home ()%2$s) <u> और </u> भी सामने पृष्ठ के रूप में स्थिर पृष्ठों के लिए  ( (%1$sis_front_page)%2$s)."
 
 #: includes/gle-admin-help.php:70
-#: includes/gle-admin-help.php:130
+#: includes/gle-admin-help.php:131
 msgid "Author - License"
 msgstr "लेखक - लायसेंस"
 
 #: includes/gle-admin-help.php:62
-#: includes/gle-admin-help.php:125
+#: includes/gle-admin-help.php:126
 msgid "Support - Donations - Rating &amp; Tips"
 msgstr "समर्थन - दान - रेटिंग &amp; Tipps"
 
-#: includes/gle-admin-help.php:136
+#: includes/gle-admin-help.php:137
 msgid "Feedback and more about the Author"
 msgstr "लेखक के बारे में अधिक प्रतिक्रिया"
 
 #: includes/gle-admin-help.php:71
-#: includes/gle-admin-help.php:137
+#: includes/gle-admin-help.php:138
 msgid "http://genesisthemes.de/en/"
 msgstr "http://genesisthemes.de/en/"
 
-#: includes/gle-admin-help.php:137
+#: includes/gle-admin-help.php:138
 msgid "Website"
 msgstr "वेबसाइट"
 
-#: includes/gle-admin-help.php:137
+#: includes/gle-admin-help.php:138
 msgid "Forum"
 msgstr "फोरम"
 
-#: includes/gle-admin-help.php:138
+#: includes/gle-admin-help.php:139
 msgid "Social:"
 msgstr "सामाजिक"
 
-#: includes/gle-admin-help.php:138
+#: includes/gle-admin-help.php:139
 msgid "Twitter"
 msgstr "Twitter"
 
-#: includes/gle-admin-help.php:138
+#: includes/gle-admin-help.php:139
 msgid "Facebook"
 msgstr "फेसबुक"
 
-#: includes/gle-admin-help.php:138
+#: includes/gle-admin-help.php:139
 msgid "Google+"
 msgstr "गूगल +"
-
-#: includes/gle-admin-help.php:139
-msgid "at WordPress.org"
-msgstr "WordPress.org में"
 
 #: includes/gle-admin-options.php:91
 msgid "WordPress Defaults"
 msgstr "WordPress के डिफ़ॉल्ट"
 
-#: includes/gle-admin-help-plugins.php:25
-#: includes/gle-admin-options.php:101
+#: includes/gle-admin-help-plugins.php:26
+#: includes/gle-admin-options.php:102
 msgid "Custom Post Types by Plugins"
 msgstr "प्लगइन्स द्वारा कस्टम पोस्ट प्रकार"
 
-#: includes/gle-admin-options.php:129
+#: includes/gle-admin-options.php:130
 msgid "Here you can set up a <strong>default</strong> layout option for various extra archive pages and other special pages."
 msgstr "यहाँ आप एक <strong> डिफ़ॉल्ट </strong> विभिन्न अतिरिक्त संग्रह पृष्ठों और अन्य विशेष पृष्ठों के लिए लेआउट विकल्प सेट कर सकते हैं."
 
-#: includes/gle-admin-options-plugins.php:27
+#: includes/gle-admin-options-plugins.php:28
 #: includes/gle-admin-options-themedy.php:27
-#: includes/gle-admin-options.php:129
+#: includes/gle-admin-options.php:130
 msgid "%1$sGenesis Default%2$s in the drop-down menus below always means the chosen default layout option in the regular <a href=\"%3$s\">Genesis layout settings</a>."
 msgstr "%1$sड्रॉप नीचे दी गई सूची में डॉलर sGenesis डिफ़ॉल्ट%2$sहमेशा से नियमित <a href=\"%3$s\"> उत्पत्ति लेआउट सेटिंग्स में चुना डिफ़ॉल्ट लेआउट विकल्प का मतलब </a>."
 
-#: includes/gle-admin-options.php:142
+#: includes/gle-admin-options.php:143
 msgid "For regular search results display &ndash; if there are any results."
 msgstr "नियमित रूप से खोज परिणामों के प्रदर्शन के लिए अगर वहाँ किसी भी परिणाम हैं."
 
-#: includes/gle-admin-options.php:144
+#: includes/gle-admin-options.php:145
 msgid "Search Not Found Page Layout"
 msgstr "सर्च पृष्ठ लेआउट नहीं मिला"
 
-#: includes/gle-admin-options.php:146
+#: includes/gle-admin-options.php:147
 msgid "If there are NO search results (empty)."
 msgstr "अगर वहाँ कोई खोज परिणाम (खाली) हैं."
 
-#: includes/gle-admin-options.php:150
+#: includes/gle-admin-options.php:151
 msgid "If a page/URL is not found. Regarding the %1$s404.php%2$s error page template from Genesis core or from current child theme."
 msgstr "अगर एक पृष्ठ / URL नहीं मिला है.%1$s404.php%2$s  उत्पत्ति मूल से या वर्तमान बच्चे के विषय से त्रुटि पृष्ठ टेम्पलेट के बारे में."
 
-#: includes/gle-admin-options-plugins.php:27
+#: includes/gle-admin-options-plugins.php:28
 msgid "Here you can set up a <strong>default</strong> layout option for various extra archive pages generated by Custom Post Types which were set by plugins. There are only post types listed for which proper template/ layout integration for Genesis exist."
 msgstr "यहाँ आप एक <strong> डिफ़ॉल्ट </ strong> विभिन्न अतिरिक्त संग्रह जो प्लगिन द्वारा सेट किए गए कस्टम डाक प्रकार के द्वारा उत्पन्न पृष्ठों के लिए लेआउट विकल्प सेट कर सकते हैं. वहाँ केवल पोस्ट के लिए जो उत्पत्ति के लिए उचित एकीकरण / टेम्पलेट लेआउट मौजूद सूचीबद्ध प्रकार के होते हैं."
 
-#: includes/gle-admin-options-plugins.php:35
+#: includes/gle-admin-options-plugins.php:36
 msgid "Plugin: AgentPress Listings"
 msgstr "प्लगइन: AgentPress लिस्टिंग"
 
-#: includes/gle-admin-help-plugins.php:32
-#: includes/gle-admin-options-plugins.php:37
+#: includes/gle-admin-help-plugins.php:33
+#: includes/gle-admin-options-plugins.php:38
 msgid "Listing Post Type Layout (archive)"
 msgstr "लिस्टिंग पोस्ट प्रकार लेआउट (संग्रह)"
 
-#: includes/gle-admin-options-plugins.php:75
+#: includes/gle-admin-options-plugins.php:76
 msgid "Plugins: WooCommerce OR Jigoshop"
 msgstr "प्लगइन्स: WooCommerce या Jigoshop"
 
-#: includes/gle-admin-options-plugins.php:81
+#: includes/gle-admin-options-plugins.php:82
 msgid "Plugin: WooCommerce"
 msgstr "प्लगइन: WooCommerce"
 
-#: includes/gle-admin-options-plugins.php:81
+#: includes/gle-admin-options-plugins.php:82
 msgid "WooCommerce"
 msgstr "WooCommerce"
 
-#: includes/gle-admin-options-plugins.php:81
+#: includes/gle-admin-options-plugins.php:82
 msgid "Plugin: Jigoshop"
 msgstr "प्लगइन: Jigoshop"
 
-#: includes/gle-admin-options-plugins.php:81
+#: includes/gle-admin-options-plugins.php:82
 msgid "Jigoshop"
 msgstr "Jigoshop"
 
-#: includes/gle-admin-options-plugins.php:82
 #: includes/gle-admin-options-plugins.php:83
-#: includes/gle-admin-options-plugins.php:104
-#: includes/gle-admin-options-plugins.php:121
+#: includes/gle-admin-options-plugins.php:84
+#: includes/gle-admin-options-plugins.php:105
+#: includes/gle-admin-options-plugins.php:140
 msgid "Integration plugin"
 msgstr "एकीकरण प्लगइन"
 
-#: includes/gle-admin-options-plugins.php:82
+#: includes/gle-admin-options-plugins.php:83
 msgid "Genesis Connect for WooCommerce"
 msgstr "उत्पत्ति WooCommerce के लिए कनेक्ट"
 
-#: includes/gle-admin-options-plugins.php:83
+#: includes/gle-admin-options-plugins.php:84
 msgid "Genesis Connect for Jigoshop"
 msgstr "उत्पत्ति Jigoshop के लिए कनेक्ट"
 
-#: includes/gle-admin-options-plugins.php:95
-#: includes/gle-admin-options-plugins.php:103
+#: includes/gle-admin-options-plugins.php:96
+#: includes/gle-admin-options-plugins.php:104
 msgid "Plugin: Easy Digital Downloads"
 msgstr "प्लगइन: डिजिटल डाउनलोड"
 
-#: includes/gle-admin-help-plugins.php:67
-#: includes/gle-admin-options-plugins.php:97
+#: includes/gle-admin-help-plugins.php:68
+#: includes/gle-admin-options-plugins.php:98
 msgid "Download Post Type Layout (archive)"
 msgstr "डाउनलोड डाक प्रकार लेआउट (संग्रह)"
 
-#: includes/gle-admin-options-plugins.php:120
+#: includes/gle-admin-options-plugins.php:139
 msgid "For this setting to take any effect the plugin %1$s needs to be installed first."
 msgstr "इस सेटिंग को किसी भी प्रभाव लेने के लिए प्लगइन%1$s के लिए पहली बार स्थापित करने की जरूरत है."
 
-#: includes/gle-admin-help-plugins.php:65
-#: includes/gle-admin-options-plugins.php:103
+#: includes/gle-admin-help-plugins.php:66
+#: includes/gle-admin-options-plugins.php:104
 msgid "Easy Digital Downloads"
 msgstr "आसान डिजिटल डाउनलोड"
 
-#: includes/gle-admin-options-plugins.php:104
+#: includes/gle-admin-options-plugins.php:105
 msgid "Genesis Connect for Easy Digital Downloads"
 msgstr "आराम से डिजिटल डाउनलोड के लिए उत्पत्ति कनेक्ट"
 
-#: includes/gle-admin-options-plugins.php:120
+#: includes/gle-admin-options-plugins.php:139
 msgid "Plugin: bbPress 2.x Forum"
 msgstr "प्लगइन: bbpress 2.x फोरम"
 
-#: includes/gle-admin-help-plugins.php:77
-#: includes/gle-admin-options-plugins.php:120
+#: includes/gle-admin-help-plugins.php:89
+#: includes/gle-admin-options-plugins.php:139
 msgid "bbPress 2.x"
 msgstr "bbPress 2.x"
 
-#: includes/gle-admin-options-plugins.php:121
+#: includes/gle-admin-options-plugins.php:140
 msgid "bbPress Genesis Extend"
 msgstr "bbpress उत्पत्ति बढ़ाएँ"
 
-#: includes/gle-admin-options-plugins.php:43
-#: includes/gle-admin-options-plugins.php:65
-#: includes/gle-admin-options-plugins.php:85
-#: includes/gle-admin-options-plugins.php:106
-#: includes/gle-admin-options-plugins.php:123
+#: includes/gle-admin-options-plugins.php:44
+#: includes/gle-admin-options-plugins.php:66
+#: includes/gle-admin-options-plugins.php:86
+#: includes/gle-admin-options-plugins.php:107
+#: includes/gle-admin-options-plugins.php:125
+#: includes/gle-admin-options-plugins.php:142
 #: includes/gle-admin-options-themedy.php:40
 #: includes/gle-admin-options-themedy.php:53
-#: includes/gle-admin-options.php:152
-#: includes/gle-admin-options.php:163
-#: includes/gle-admin-options.php:182
+#: includes/gle-admin-options.php:153
+#: includes/gle-admin-options.php:164
+#: includes/gle-admin-options.php:183
 msgid "Save"
 msgstr "बचाना"
 
-#: includes/gle-admin-help-plugins.php:33
-#: includes/gle-admin-options-plugins.php:39
+#: includes/gle-admin-help-plugins.php:34
+#: includes/gle-admin-options-plugins.php:40
 msgid "Listings Features Taxonomy Layout"
 msgstr "लिस्टिंग वर्गीकरण लेआउट सुविधाएँ"
 
-#: includes/gle-admin-options-plugins.php:41
+#: includes/gle-admin-options-plugins.php:42
 msgid "For these settings to take any effect the %1$splugin <em>AgentPress Listings</em>%2$s needs to be installed first. &mdash; Of course, the plugin (and so the setting here) could be used with the %3$sAgentPress child theme%4$s and also with any other Genesis child theme, so this setting might come in really handy ;-)."
 msgstr "इन सेटिंग्स को कोई असर लेने के लिएthe %1$splugin <em> AgentPress लिस्टिंग </em>%2$s की जरूरत है स्थापित करने के लिए. बेशक, प्लगइन (और तो यहाँ सेटिंग) sAgentPress बच्चे विषय%3$s है और किसी भी अन्य उत्पत्ति बच्चे के विषय के साथ%4$s के साथ इस्तेमाल किया जा सकता है, तो इस सेटिंग को सच में काम;-) में आ सकता है"
 
-#: includes/gle-admin-options-plugins.php:53
-#: includes/gle-admin-options-plugins.php:63
+#: includes/gle-admin-options-plugins.php:54
+#: includes/gle-admin-options-plugins.php:64
 msgid "Plugin: Genesis Media Project"
 msgstr "प्लगइन: उत्पत्ति मीडिया परियोजना"
 
-#: includes/gle-admin-help-plugins.php:43
-#: includes/gle-admin-options-plugins.php:55
+#: includes/gle-admin-help-plugins.php:44
+#: includes/gle-admin-options-plugins.php:56
 msgid "Video Post Type Layout (archive)"
 msgstr "वीडियो पोस्ट प्रकार लेआउट (संग्रह)"
 
-#: includes/gle-admin-help-plugins.php:44
-#: includes/gle-admin-options-plugins.php:57
+#: includes/gle-admin-help-plugins.php:45
+#: includes/gle-admin-options-plugins.php:58
 msgid "Video SlideShows Taxonomy Layout"
 msgstr "वीडियो वर्गीकरण लेआउट स्लाइडशो"
 
-#: includes/gle-admin-help-plugins.php:45
-#: includes/gle-admin-options-plugins.php:59
+#: includes/gle-admin-help-plugins.php:46
+#: includes/gle-admin-options-plugins.php:60
 msgid "Video Categories Taxonomy Layout"
 msgstr "वीडियो श्रेणियाँ वर्गीकरण लेआउट"
 
-#: includes/gle-admin-help-plugins.php:46
-#: includes/gle-admin-options-plugins.php:61
+#: includes/gle-admin-help-plugins.php:47
+#: includes/gle-admin-options-plugins.php:62
 msgid "Video Tags Taxonomy Layout"
 msgstr "वीडियो टैग वर्गीकरण लेआउट"
 
-#: includes/gle-admin-options-plugins.php:63
-#: includes/gle-admin-options-plugins.php:103
+#: includes/gle-admin-options-plugins.php:64
+#: includes/gle-admin-options-plugins.php:104
+#: includes/gle-admin-options-plugins.php:123
 msgid "For these settings to take any effect the plugin %1$s needs to be installed first."
 msgstr "इन सेटिंग्स को कोई असर लेने के लिए प्लगइन%1$s के लिए पहली बार स्थापित करने की जरूरत है."
 
-#: includes/gle-admin-help-plugins.php:41
-#: includes/gle-admin-options-plugins.php:63
+#: includes/gle-admin-help-plugins.php:42
+#: includes/gle-admin-options-plugins.php:64
 msgid "Genesis Media Project"
 msgstr "उत्पत्ति मीडिया परियोजना"
 
-#: includes/gle-admin-help-plugins.php:56
-#: includes/gle-admin-options-plugins.php:77
+#: includes/gle-admin-help-plugins.php:57
+#: includes/gle-admin-options-plugins.php:78
 msgid "Product Post Type Layout - Product Categories (all)"
 msgstr "उत्पाद पी प्रकार लेआउट उत्पाद श्रेणियों (सभी)"
 
-#: includes/gle-admin-help-plugins.php:57
-#: includes/gle-admin-options-plugins.php:79
+#: includes/gle-admin-help-plugins.php:58
+#: includes/gle-admin-options-plugins.php:80
 msgid "Product Post Type Layout - Product Tags (all)"
 msgstr "उत्पाद डाक प्रकार लेआउट उत्पाद टैग (सभी)"
 
-#: includes/gle-admin-options-plugins.php:81
+#: includes/gle-admin-options-plugins.php:82
 msgid "For these settings to take any effect the plugin %1$s OR %2$s needs to be installed first."
 msgstr "इन सेटिंग्स को किसी भी प्रभाव प्लगइन%1$s या%2$s जरूरतों को लेने के लिए पहली बार स्थापित किया."
 
-#: includes/gle-admin-help-plugins.php:68
-#: includes/gle-admin-options-plugins.php:99
+#: includes/gle-admin-help-plugins.php:69
+#: includes/gle-admin-options-plugins.php:100
 msgid "Download Categories Taxonomy Layout"
 msgstr "डाउनलोड श्रेणियाँ वर्गीकरण लेआउट"
 
-#: includes/gle-admin-help-plugins.php:69
-#: includes/gle-admin-options-plugins.php:101
+#: includes/gle-admin-help-plugins.php:70
+#: includes/gle-admin-options-plugins.php:102
 msgid "Download Tags Taxonomy Layout"
 msgstr "टैग वर्गीकरण के लेआउट को डाउनलोड करें"
 
@@ -508,7 +526,7 @@ msgstr "रेटिंग &amp;युक्तियाँ"
 msgid "If you like the plugin please %1$srate at WordPress.org%2$s with 5 stars. <em>Thank you!</em> &mdash; %3$sMore plugins for Genesis Framework and WordPress in general by DECKERWEB%4$s"
 msgstr "यदि आप चाहें प्लगइन %1$s कृपया WordPress.org पर srate 5 सितारों के साथ %2$s . <em> धन्यवाद </em> - 3 DECKERWEB से %3$s उत्पत्ति फ्रेमवर्क और सामान्य रूप में करने के लिए sMore प्लगिन%4$s है"
 
-#: includes/gle-admin-help-plugins.php:54
+#: includes/gle-admin-help-plugins.php:55
 msgid "WooCommerce OR Jigoshop"
 msgstr "WooCommerce या Jigoshop"
 
@@ -516,11 +534,11 @@ msgstr "WooCommerce या Jigoshop"
 msgid "by Themedy Themes Brand"
 msgstr "Themedy थीम्स ब्रांड"
 
-#: includes/gle-admin-help.php:91
+#: includes/gle-admin-help.php:92
 msgid "Plugin Support"
 msgstr "प्लगइन समर्थन"
 
-#: includes/gle-admin-help.php:104
+#: includes/gle-admin-help.php:105
 msgid "Child Theme Support"
 msgstr "बाल थीम समर्थन"
 
@@ -546,7 +564,7 @@ msgstr "डेविड डेकर - DECKERWEB है"
 msgid "http://deckerweb.de/"
 msgstr "http://deckerweb.de/"
 
-#: genesis-layout-extras.php:81
+#: genesis-layout-extras.php:82
 msgid "Sorry, you can&rsquo;t activate unless you have installed the %1$sGenesis Framework%2$s"
 msgstr "क्षमा करें, जब तक आप%1$sGenesis फ्रेमवर्क%2$s स्थापित नहीं सक्रिय कर सकते हैं"
 
@@ -554,7 +572,7 @@ msgstr "क्षमा करें, जब तक आप%1$sGenesis फ्र�
 msgid "Settings"
 msgstr "सेटिंग्स"
 
-#: includes/gle-admin-help-plugins.php:23
+#: includes/gle-admin-help-plugins.php:24
 #: includes/gle-admin-help-themedy.php:23
 #: includes/gle-admin-help.php:38
 #: includes/gle-admin-help.php:44
@@ -568,76 +586,76 @@ msgstr "प्लगइन: उत्पत्ति लेआउट अति�
 msgid "Layout Extras"
 msgstr "लेआउट अतिरिक्त"
 
-#: includes/gle-admin-options.php:134
+#: includes/gle-admin-options.php:135
 msgid "Special Sections"
 msgstr "विशेष धारा"
 
-#: includes/gle-admin-options.php:136
+#: includes/gle-admin-options.php:137
 msgid "Hompage Layout"
 msgstr "hompage लेआउट"
 
-#: includes/gle-admin-options.php:140
+#: includes/gle-admin-options.php:141
 msgid "Search Page Layout"
 msgstr "खोज पृष्ठ लेआउट"
 
-#: includes/gle-admin-options.php:148
+#: includes/gle-admin-options.php:149
 msgid "404 Page Layout"
 msgstr "L404 पृष्ठ लेआउट"
 
-#: includes/gle-admin-options.php:157
+#: includes/gle-admin-options.php:158
 msgid "Singular Pages"
 msgstr "एकवचन पेज"
 
-#: includes/gle-admin-options.php:159
+#: includes/gle-admin-options.php:160
 msgid "Post Page Layout"
 msgstr "पृष्ठ लेआउट"
 
-#: includes/gle-admin-options.php:160
+#: includes/gle-admin-options.php:161
 msgid "Page Page Layout"
 msgstr "Page Page Layout"
 
-#: includes/gle-admin-options.php:161
+#: includes/gle-admin-options.php:162
 msgid "Attachment Page Layout"
 msgstr "अटैचमेंट पेज लेआउट"
 
-#: includes/gle-admin-options.php:168
+#: includes/gle-admin-options.php:169
 msgid "Archive Sections"
 msgstr "संग्रह अनुभाग"
 
-#: includes/gle-admin-options.php:170
+#: includes/gle-admin-options.php:171
 msgid "Author Page Layout"
 msgstr "लेखक पेज लेआउट"
 
-#: includes/gle-admin-options.php:171
+#: includes/gle-admin-options.php:172
 msgid "Date Archive Page Layout"
 msgstr "तिथि पुरालेख पेज लेआउट"
 
-#: includes/gle-admin-options.php:178
+#: includes/gle-admin-options.php:179
 msgid "Category Page Layout"
 msgstr "श्रेणी पेज लेआउट"
 
-#: includes/gle-admin-options.php:179
+#: includes/gle-admin-options.php:180
 msgid "Tag Page Layout"
 msgstr "टैग पेज लेआउट"
 
-#: includes/gle-admin-options.php:180
+#: includes/gle-admin-options.php:181
 msgid "Taxonomy Page Layout"
 msgstr "वर्गीकरण पेज लेआउट"
 
-#: includes/gle-admin-options-plugins.php:116
+#: includes/gle-admin-options-plugins.php:135
 msgid "Plugin: bbPress 2.x Forum Section"
 msgstr "प्लगइन: bbpress 2.x फोरम धारा"
 
-#: includes/gle-admin-options.php:208
+#: includes/gle-admin-options.php:209
 msgid "Full Width Content"
 msgstr "पूर्ण चौड़ाई सामग्री"
 
-#: includes/gle-admin-options.php:273
+#: includes/gle-admin-options.php:274
 msgid "Genesis - Layout Extras"
 msgstr "उत्पत्ति - लेआउट अतिरिक्त"
 
-#: includes/gle-admin-options.php:277
-#: includes/gle-admin-options.php:288
+#: includes/gle-admin-options.php:278
+#: includes/gle-admin-options.php:289
 msgid "Save Settings"
 msgstr "सेटिंग्स सहेजें"
 

@@ -8,7 +8,7 @@
  * @copyright  Copyright 2011-2012, David Decker - DECKERWEB
  * @license    http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
  * @link       http://genesisthemes.de/en/wp-plugins/genesis-layout-extras/
- * @link       http://twitter.com/#!/deckerweb
+ * @link       http://twitter.com/deckerweb
  *
  * @since 1.3
  */
@@ -17,6 +17,7 @@
  * Add optional help tab content for supported plugins.
  *
  * @since 1.3
+ * @version 1.1
  */
 function ddw_gle_admin_help_plugins() {
 
@@ -70,6 +71,17 @@ function ddw_gle_admin_help_plugins() {
 				'</ul></p>';
 
 		}  // end-if EDD check
+
+		/** Plugin: Sugar Events Calendar */
+		if ( post_type_exists( 'sc_event' ) ) {
+
+			echo '<p>' . __( 'Sugar Events Calendar', 'genesis-layout-extras' ) .
+				'<ul>' .
+					'<li>' . __( 'Event Post Type Layout (archive)', 'genesis-layout-extras' ) . '</li>' .
+					'<li>' . __( 'Event Categories Taxonomy Layout', 'genesis-layout-extras' ) . '</li>' .
+				'</ul></p>';
+
+		}  // end-if Sugar Events check
 
 		/** Plugin: bbPress 2.x Forum */
 		if ( class_exists( 'bbPress' ) ) {

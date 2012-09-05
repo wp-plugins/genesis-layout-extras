@@ -8,7 +8,7 @@
  * @copyright  Copyright 2011-2012, David Decker - DECKERWEB
  * @license    http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
  * @link       http://genesisthemes.de/en/wp-plugins/genesis-layout-extras/
- * @link       http://twitter.com/#!/deckerweb
+ * @link       http://twitter.com/deckerweb
  *
  * @since 1.3
  */
@@ -18,6 +18,7 @@
  * For supported plugins with CPTs.
  *
  * @since 1.3
+ * @version 1.1
  */
 function ddw_genesis_layout_extras_box_cpts() {
 
@@ -106,6 +107,24 @@ function ddw_genesis_layout_extras_box_cpts() {
 			echo '<div class="bottom-buttons"><input type="submit" class="button button-highlighted" value="' . __('Save', 'genesis-layout-extras' ) . '" /></div>';
 
 	}  // end-if EDD check
+
+
+	/** Plugin: Sugar Events Calendar */
+	if ( post_type_exists( 'sc_event' ) ) {
+
+		echo '<hr class="div" />';
+
+		echo '<h4>' . __( 'Plugin: Sugar Events Calendar', 'genesis-layout-extras' ) . '</h4>';
+
+			ddw_genesis_layout_extras_option( __( 'Event Post Type Layout (archive)', 'genesis-layout-extras' ) . ': ', 'ddw_genesis_layout_cpt_sc_event' );
+
+			ddw_genesis_layout_extras_option( __( 'Event Categories Taxonomy Layout', 'genesis-layout-extras' ) . ': ', 'ddw_genesis_layout_cpt_sc_event_category' );
+
+			echo '<p><span class="description">' . sprintf( __( 'For these settings to take any effect the plugin %1$s needs to be installed first.', 'genesis-layout-extras' ), '<a href="http://ddwb.me/sugarevents" target="_new" title="' . __( 'Plugin: Sugar Events Calendar', 'genesis-layout-extras' ) . ' ..."><em>' . __( 'Sugar Events Calendar', 'genesis-layout-extras' ) . '</em></a>' );
+
+			echo '<div class="bottom-buttons"><input type="submit" class="button button-highlighted" value="' . __('Save', 'genesis-layout-extras' ) . '" /></div>';
+
+	}  // end-if Sugar Events check
 
 
 	/** Plugin: bbPress 2.x Forum section */

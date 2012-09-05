@@ -6,7 +6,7 @@
  *
  * @package   Genesis Layout Extras
  * @author    David Decker
- * @link      http://twitter.com/#!/deckerweb
+ * @link      http://twitter.com/deckerweb
  * @copyright Copyright 2011-2012, David Decker - DECKERWEB
  *
  * @origin    Based on the work of @WPChildThemes for original plugin called "Genesis Layout Manager" (C) 2010
@@ -14,10 +14,11 @@
  * Plugin Name: Genesis Layout Extras
  * Plugin URI: http://genesisthemes.de/en/wp-plugins/genesis-layout-extras/
  * Description: This plugin for Genesis Theme Framework allows modifying of default layouts for homepage, singular, archive, attachment, search, 404 and even bbPress 2.x pages via Genesis theme settings.
- * Version: 1.4
+ * Version: 1.5
  * Author: David Decker - DECKERWEB
  * Author URI: http://deckerweb.de/
  * License: GPLv2 or later
+ * License URI: http://www.opensource.org/licenses/gpl-license.php
  * Text Domain: genesis-layout-extras
  * Domain Path: /languages/
  *

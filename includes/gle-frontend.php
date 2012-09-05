@@ -8,7 +8,7 @@
  * @copyright  Copyright 2011-2012, David Decker - DECKERWEB
  * @license    http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
  * @link       http://genesisthemes.de/en/wp-plugins/genesis-layout-extras/
- * @link       http://twitter.com/#!/deckerweb
+ * @link       http://twitter.com/deckerweb
  *
  * @since 1.0
  * @version 1.1
@@ -137,6 +137,14 @@ function ddw_genesis_layout_extras_filter( $opt ) {
 	/** CPT: "Download" - Tax: "Download Tag" (by Easy Digital Downloads plugin) */
 	elseif ( is_tax( 'download_tag' ) && genesis_get_option( 'ddw_genesis_layout_cpt_edd_download_tag', GLE_SETTINGS_FIELD ) )
 		$opt = genesis_get_option( 'ddw_genesis_layout_cpt_edd_download_tag', GLE_SETTINGS_FIELD );
+
+	/** CPT: "SC_Event" (by Sugar Events Calendar plugin) */
+	elseif ( is_post_type_archive( 'sc_event' ) && genesis_get_option( 'ddw_genesis_layout_cpt_sc_event', GLE_SETTINGS_FIELD ) )
+		$opt = genesis_get_option( 'ddw_genesis_layout_cpt_sc_event', GLE_SETTINGS_FIELD );
+
+	/** CPT: "SC_Event" - Tax: "Event Category" (by Sugar Events Calendar plugin) */
+	elseif ( is_tax( 'sc_event_category' ) && genesis_get_option( 'ddw_genesis_layout_cpt_sc_event_category', GLE_SETTINGS_FIELD ) )
+		$opt = genesis_get_option( 'ddw_genesis_layout_cpt_sc_event_category', GLE_SETTINGS_FIELD );
 
 	/** CPT: "Products" (by Themedy Child Themes) */
 	elseif ( is_post_type_archive( 'products' ) && genesis_get_option( 'ddw_genesis_layout_cpt_themedy_products', GLE_SETTINGS_FIELD ) )

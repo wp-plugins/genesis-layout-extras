@@ -8,7 +8,7 @@
  * @copyright  Copyright 2011-2012, David Decker - DECKERWEB
  * @license    http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
  * @link       http://genesisthemes.de/en/wp-plugins/genesis-layout-extras/
- * @link       http://twitter.com/#!/deckerweb
+ * @link       http://twitter.com/deckerweb
  *
  * @since 1.0
  * @version 1.1
@@ -95,7 +95,8 @@ function ddw_genesis_layout_extras_theme_settings_boxes() {
 		class_exists( 'bbPress' ) ||
 		post_type_exists( 'product' ) ||
 		post_type_exists( 'video' ) ||
-		post_type_exists( 'download' )
+		post_type_exists( 'download' ) ||
+		post_type_exists( 'sc_event' )
 	) {
 
 		add_meta_box( 'genesis-layout-extras-box-cpts', $gle_meta_box_title . __( 'Custom Post Types by Plugins', 'genesis-layout-extras' ), 'ddw_genesis_layout_extras_box_cpts', $_gle_settings_pagehook, 'column1' );

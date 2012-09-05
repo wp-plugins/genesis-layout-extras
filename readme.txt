@@ -4,7 +4,7 @@ Donate link: http://genesisthemes.de/en/donate/
 Tags: genesis, genesiswp, genesis framework, layout, layouts, layout manager, post, page, singular, attachment, search, taxonomoy, 404 error, 404 page, bbPress, CPT, AgentPress Listings, agentpress, deckerweb
 Requires at least: 3.2
 Tested up to: 3.4.1
-Stable tag: 1.4
+Stable tag: 1.5
 License: GPLv2 or later
 License URI: http://www.opensource.org/licenses/gpl-license.php
 
@@ -37,6 +37,7 @@ As a smart bonus the plugin also includes the layout setting for the new bbPress
 * Plugin: **WooCommerce**: for all taxonomy pages for "Product Categories" and "Product Tags" - Integration plugin recommended: [Genesis Connect for WooCommerce](http://wordpress.org/extend/plugins/genesis-connect-woocommerce/)
 * Plugin: **Jigoshop**: for all taxonomy pages for "Product Categories" and "Product Tags" - Integration plugin recommended: [Genesis Connect for Jigoshop](http://jigoshop.com/extend/genesis-connect-for-jigoshop/)
 * Plugin: **Easy Digital Downloads**: Archive Page for Custom Type "Downloads" - plus taxonomies "Download Categories" and "Download Tags" - Integration plugin recommended: [Genesis Connect for Easy Digital Downloads](http://wordpress.org/extend/plugins/genesis-connect-edd/)
+* Plugin: **Sugar Events Calendar**: Archive Page for Custom Type "Events" - plus taxonomy "Event Categories"
 
 = Supported Custom Post Types set by Child Themes =
 * Child Theme: **Clip Cart** by Themedy Themes: Archive Page for Custom Post Type "Products" - plus taxonomy "Product Categories"
@@ -45,17 +46,17 @@ As a smart bonus the plugin also includes the layout setting for the new bbPress
 = Localization =
 * English (default) - always included
 * German (de_DE) - always included
-* French (fr_FR) - user-submitted, thanks to [Grégoire Noyelle](http://www.gregoirenoyelle.com/) - currently 80% complete for v1.4
-* Italian (it_IT) - user-submitted, thanks to [Marco Rosselli](http://www.prenotazionetraghetti.com/) - currently 80% complete for v1.4
-* Hindi (hi_IN - for India) - user-submitted, thanks to Love Chandel
+* French (fr_FR) - user-submitted, thanks to [Grégoire Noyelle](http://www.gregoirenoyelle.com/) - currently 100% complete for v1.5 :)
+* Italian (it_IT) - user-submitted, thanks to [Marco Rosselli](http://www.prenotazionetraghetti.com/) - currently 77% complete for v1.5
+* Hindi (hi_IN - for India) - user-submitted, thanks to Love Chandel - currently 97% complete for v1.5
 * .pot file (`genesis-layout-extras.pot`) for translators is also always included :)
 * Easy plugin translation platform with GlotPress tool: [Translate "Genesis Layout Extras"...](http://translate.wpautobahn.com/projects/genesis-plugins-deckerweb/genesis-layout-extras)
 * *Your translation? - [Just send it in](http://genesisthemes.de/en/contact/)*
 
 **Please note: The plugin requires the Genesis Theme Framework**
-The plugin has been tested with WordPress 3.2, 3.3+ and 3.4-beta3 without any issues. It also works within Multisite installs - single activated and also network activated. Running with latest versions of Genesis and WordPress is always recommended.
+The plugin has been tested with WordPress branches 3.4+ and before with 3.2+, 3.3+ without any issues. It also works within Multisite installs - single activated and also network activated. Running with latest versions of Genesis and WordPress is always recommended.
 
-Credit where credit is due: This plugin here is based on the work of WPChildThemes for the great "Genesis Layout Manager" Plugin.
+Credit where credit is due: This plugin here is based on the work of WPChildThemes for the great "Genesis Layout Manager" plugin.
 
 [A plugin from deckerweb.de and GenesisThemes](http://genesisthemes.de/en/)
 
@@ -81,9 +82,9 @@ Credit where credit is due: This plugin here is based on the work of WPChildThem
 
 == Installation ==
 
-1. Upload the entire `genesis-layout-extras` folder to the `/wp-content/plugins/` directory
+1. Upload the entire `genesis-layout-extras` folder to the `/wp-content/plugins/` directory -- or just upload the ZIP package via 'Plugins > Add New > Upload' in your WP Admin
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. In your "Genesis Theme Settings" menu go to "Layout Extras", setup your default layouts and you're good to go :).
+3. In your left-hand "Genesis Theme Settings" menu go to "Layout Extras", setup your default layouts and you're good to go :).
 4. General usage: Set layout options DIFFERENT from the Genesis default *for special sections*.
 
 = Choose from one of the following layouts =
@@ -95,9 +96,9 @@ Credit where credit is due: This plugin here is based on the work of WPChildThem
 * Sidebar-Content-Sidebar
 * Full Width Content
 
-**Note:** This plugin has been tested with WordPress 3.2, 3.3+, 3.4-beta without any issues. It also works within Multisite installs - single activated and network activated, too. Remember, running with latest versions of Genesis and WordPress is always recommended.
+**Note:** This plugin has been tested with WordPress branches 3.4+ and also before with 3.2+, 3.3+ without any issues. It also works within Multisite installs - single activated and network activated, too. Remember, running with latest versions of Genesis and WordPress is *always* recommended.
 
-**Also Note:** Installed/active Genesis Framework, version 1.7 or higher (1.8+ recommended!), is required for this plugin in order to work!
+**Also Note:** Installed/active Genesis Framework, version 1.7 or higher (1.8+ recommended!), is *required* for this plugin in order to work!
 
 **Own translation/wording:** For custom and update-secure language files please upload them to `/wp-content/languages/genesis-layout-extras/` (just create this folder) - This enables you to use fully custom translations that won't be overridden on plugin updates. Also, complete custom English wording is possible with that, just use a language file like `genesis-layout-extras-en_US.mo/.po` to achieve that (for creating one see the tools on "Other Notes").
 
@@ -135,6 +136,12 @@ Yes, you could. -- Still, a per site use is recommended.
 6. Genesis Layout Extras - help tabs.
 
 == Changelog ==
+
+= 1.5 (2012-09-05) =
+* *Maintenance release*
+* NEW: Added plugin support for "Sugar Events Calendar" (premium, by Pippin Williamson).
+* CODE: Minor code/documentation updates & improvements.
+* UPDATE: Updated all existing translations plus the .pot file for all translators!
 
 = 1.4 (2012-06-16) =
 * *Maintenance release*
@@ -199,10 +206,10 @@ Yes, you could. -- Still, a per site use is recommended.
 * Improved and documented plugin code
 * Tested & proved compatibility with WordPress 3.3-aortic-dissection :-)
 
-= 0.1 (2010) =
-* First release (former author "WPChildThemes")
-
 == Upgrade Notice ==
+
+= 1.5 =
+Maintenance release: Added plugin support for "Sugar Events Calendar" (premium). Minor code updates & improvements. Updated all existing translations plus .pot file for translators.
 
 = 1.4 =
 Maintenance release: Minor code updates & improvements. Added new Hindi translation, updated all existing translations plus .pot file for translators.
@@ -218,9 +225,6 @@ Several changes - Enhanced homepage and date archive settings, improved info, he
 
 = 1.0 =
 All changed - Actually a whole new plugin, updated all over the place. Also the plugin name and authorship changed.
-
-= 0.1 =
-First (and to date only) release under former plugin name and by former plugin author.
 
 == Plugin Links ==
 * [Translations (GlotPress)](http://translate.wpautobahn.com/projects/genesis-plugins-deckerweb/genesis-layout-extras)

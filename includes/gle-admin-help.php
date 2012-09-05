@@ -8,7 +8,7 @@
  * @copyright  Copyright 2011-2012, David Decker - DECKERWEB
  * @license    http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
  * @link       http://genesisthemes.de/en/wp-plugins/genesis-layout-extras/
- * @link       http://twitter.com/#!/deckerweb
+ * @link       http://twitter.com/deckerweb
  *
  * @since 1.1
  * @version 1.1
@@ -53,16 +53,16 @@ function ddw_genesis_layout_extras_help_tabs() {
 	$gle_help_translations =
 		'<h3>' . __( 'Plugin: Genesis Layout Extras', 'genesis-layout-extras' ) . '</h3>' .
 			'<h4>' . __( 'Translations', 'genesis-layout-extras' ) . '</h4>' .
-			'<p>' . sprintf( __( 'Please contribute to existing or new translations on %sour free translations platform%s powered by GlotPress.', 'genesis-layout-extras' ), '<a href="' . GLE_URL_TRANSLATE . '" target="_new" title="' . __( 'Translations', 'genesis-layout-extras' ) . '"><strong>', '</strong></a>' ) . '</p>' .
+			'<p>' . sprintf( __( 'Please contribute to existing or new translations on %sour free translations platform%s powered by GlotPress.', 'genesis-layout-extras' ), '<a href="' . esc_url_raw( GLE_URL_TRANSLATE ) . '" target="_new" title="' . __( 'Translations', 'genesis-layout-extras' ) . '"><strong>', '</strong></a>' ) . '</p>' .
 		'<p><strong><em>&mdash; ' . __( 'Thank You!', 'genesis-layout-extras' ) . '</em></strong></p>';
 
 	/** Help content: support, donation, rating, tips */
 	$gle_help_support_donation_rating_tips =
 		'<h3>' . __( 'Plugin: Genesis Layout Extras', 'genesis-layout-extras' ) . '</h3>' .
 			'<h4>' . __( 'Support - Donations - Rating &amp; Tips', 'genesis-layout-extras' ) . '</h4>' .
-			'<p>&bull; <strong>' . __( 'Donations', 'genesis-layout-extras' ) . ':</strong> ' . sprintf( __( 'Please %1$sdonate to support the further maintenance and development%2$s of the plugin. <em>Thank you in advance!</em>', 'genesis-layout-extras' ), '<a href="' . GLE_URL_DONATE . '" target="_new">', '</a>' ) . '</p>' .
-			'<p>&bull; <strong>' . __( 'Support', 'genesis-layout-extras' ). ':</strong> ' . sprintf( __( 'Done via %1$sWordPress.org plugin page support forum%2$s. - Maybe I will setup my own support forum in the future, though.', 'genesis-layout-extras' ), '<a href="' . GLE_URL_WPORG_FORUM . '" target="_new" title="WordPress.org Plugin Support Forum ...">', '</a>' ) . '</p>' .
-			'<p>&bull; <strong>' . __( 'Rating &amp; Tips', 'genesis-layout-extras' ) . ':</strong> ' . sprintf( __( 'If you like the plugin please %1$srate at WordPress.org%2$s with 5 stars. <em>Thank you!</em> &mdash; %3$sMore plugins for Genesis Framework and WordPress in general by DECKERWEB%4$s', 'genesis-layout-extras' ), '<a href="' . GLE_URL_WPORG_PLUGIN . '" target="_new">', '</a>', '<a href="' . GLE_URL_WPORG_DDW . '" target="_new" title="DECKERWEB Genesis and WordPress Plugins ...">', '</a>' ) . '</p>';
+			'<p>&bull; <strong>' . __( 'Donations', 'genesis-layout-extras' ) . ':</strong> ' . sprintf( __( 'Please %1$sdonate to support the further maintenance and development%2$s of the plugin. <em>Thank you in advance!</em>', 'genesis-layout-extras' ), '<a href="' . esc_url_raw( GLE_URL_DONATE ) . '" target="_new">', '</a>' ) . '</p>' .
+			'<p>&bull; <strong>' . __( 'Support', 'genesis-layout-extras' ). ':</strong> ' . sprintf( __( 'Done via %1$sWordPress.org plugin page support forum%2$s. - Maybe I will setup my own support forum in the future, though.', 'genesis-layout-extras' ), '<a href="' . esc_url_raw( GLE_URL_WPORG_FORUM ) . '" target="_new" title="WordPress.org Plugin Support Forum ...">', '</a>' ) . '</p>' .
+			'<p>&bull; <strong>' . __( 'Rating &amp; Tips', 'genesis-layout-extras' ) . ':</strong> ' . sprintf( __( 'If you like the plugin please %1$srate at WordPress.org%2$s with 5 stars. <em>Thank you!</em> &mdash; %3$sMore plugins for Genesis Framework and WordPress in general by DECKERWEB%4$s', 'genesis-layout-extras' ), '<a href="' . esc_url_raw( GLE_URL_WPORG_PLUGIN ) . '" target="_new">', '</a>', '<a href="' . esc_url_raw( GLE_URL_WPORG_DDW ) . '" target="_new" title="DECKERWEB Genesis and WordPress Plugins ...">', '</a>' ) . '</p>';
 
 	/** Help content: author, license */
 	$gle_help_author_license =
@@ -83,7 +83,8 @@ function ddw_genesis_layout_extras_help_tabs() {
 		class_exists( 'bbPress' ) ||
 		post_type_exists( 'product' ) ||
 		post_type_exists( 'video' ) ||
-		post_type_exists( 'download' )
+		post_type_exists( 'download' ) ||
+		post_type_exists( 'sc_event' )
 	) {
 
 		$screen->add_help_tab(array(
@@ -107,7 +108,7 @@ function ddw_genesis_layout_extras_help_tabs() {
 
 		require_once( GLE_PLUGIN_DIR . '/includes/gle-admin-help-themedy.php' );
 
-	}  // end-if child theme temedy check
+	}  // end-if child theme themedy check
 
 	/** ...general help tabs cont. */
 	$screen->add_help_tab(array(
@@ -134,9 +135,9 @@ function ddw_genesis_layout_extras_help_tabs() {
 	/** Add help sidebar */
 	$screen->set_help_sidebar(
 		'<p><strong>' . __( 'Feedback and more about the Author', 'genesis-layout-extras' ) . '</strong></p>' .
-		'<p><a href="' . __( 'http://genesisthemes.de/en/', 'genesis-layout-extras' ) . '" target="_blank" title="' . __( 'Website', 'genesis-layout-extras' ) . '">' . __( 'Website', 'genesis-layout-extras' ) . '</a> | <a href="' . GLE_URL_WPORG_FORUM . '" target="_blank" title="' . __( 'Forum', 'genesis-layout-extras' ) . '">' . __( 'Forum', 'genesis-layout-extras' ) . '</a></p>' .
-		'<p>' . __( 'Social:', 'genesis-layout-extras' ) . '<br /><a href="http://twitter.com/#!/deckerweb" target="_blank">' . __( 'Twitter', 'genesis-layout-extras' ) . '</a> | <a href="http://www.facebook.com/deckerweb.service" target="_blank">' . __( 'Facebook', 'genesis-layout-extras' ) . '</a> | <a href="http://deckerweb.de/gplus" target="_blank">' . __( 'Google+', 'genesis-layout-extras' ) . '</a></p>' .
-		'<p><a href="' . GLE_URL_WPORG_PROFILE . '" target="_blank">' . __( 'at WordPress.org', 'genesis-layout-extras' ) . '</a></p>'
+		'<p><a href="' . __( 'http://genesisthemes.de/en/', 'genesis-layout-extras' ) . '" target="_blank" title="' . __( 'Website', 'genesis-layout-extras' ) . '">' . __( 'Website', 'genesis-layout-extras' ) . '</a> | <a href="' . esc_url_raw( GLE_URL_WPORG_FORUM ) . '" target="_blank" title="' . __( 'Forum', 'genesis-layout-extras' ) . '">' . __( 'Forum', 'genesis-layout-extras' ) . '</a></p>' .
+		'<p>' . __( 'Social:', 'genesis-layout-extras' ) . '<br /><a href="http://twitter.com/deckerweb" target="_blank" title="@ Twitter">' . __( 'Twitter', 'genesis-layout-extras' ) . '</a> | <a href="http://www.facebook.com/deckerweb.service" target="_blank" title="@ Facebook">' . __( 'Facebook', 'genesis-layout-extras' ) . '</a> | <a href="http://deckerweb.de/gplus" target="_blank" title="@ Google+">' . __( 'Google+', 'genesis-layout-extras' ) . '</a></p>' .
+		'<p><a href="' . esc_url_raw( GLE_URL_WPORG_PROFILE ) . '" target="_blank" title="@ WordPress.org">@ WordPress.org</a></p>'
 	);
 
 }  // ddw_genesis_layout_extras_help_tabs
