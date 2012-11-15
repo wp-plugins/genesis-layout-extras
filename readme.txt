@@ -12,11 +12,13 @@ This plugin for Genesis Framework allows modifying of default layouts for homepa
 
 == Description ==
 
-With this **lightweight plugin** for the popular Genesis Framework you can very **easily modify** the **default layouts** for homepage, singular pages (for posts and pages), various archive sections, author pages, attachment pages, search results pages, the 404 page - all done via a new theme options page. Just look for it at the submenu: Genesis > "Layout Extras".
+**Among the Top 7 most downloaded Genesis plugins ever :) Thank you!**
 
-As a smart bonus the plugin also includes the layout setting for the new bbPress 2.x forum plugin which itself is compatible to Genesis. Also added is the layout setting for other plugins from the Genesis ecosystem or other third-party authors: for example "AgentPress Listings" which includes the custom post type "listings" and the taxonomy "features". See below listings for full explanation:
+With this **lightweight plugin** for the popular Genesis Framework you can very **easily modify** the **default layouts** for homepage, singular pages (for posts and pages), various archive sections, author pages, attachment pages, search results pages, the 404 page - all done via a new theme options page. Just look for it at the submenu: 'Genesis > Layout Extras'.
 
-= Included regular WordPress Sections for a Default Layout Setting =
+As a smart bonus the plugin also includes the layout setting for the *bbPress 2.x* forum plugin which itself is compatible to Genesis. Also added is the layout setting for other plugins from the Genesis ecosystem or other third-party authors: for example *AgentPress Listings* which includes the custom post type 'listings' and the taxonomy 'features'. See below listings for full explanation:
+
+= Regular WordPress Sections for a Default Layout Setting =
 * Home Page (works with home.php or static page as front page)
 * Search Results Page (if there are results)
 * Search not found Page (if there are NO results) [new since v1.3.0]
@@ -30,7 +32,7 @@ As a smart bonus the plugin also includes the layout setting for the new bbPress
 * Tag Page
 * Taxonomy Page
 
-= Supported Custom Post Types set by Plugins =
+= Plugins: Supported Custom Post Types set by Plugins =
 * Plugin: **AgentPress Listings**: Archive Page for Custom Post Type "Listings" - plus taxonomy "Features"
 * Plugin: **Genesis Media Project**: Archive Page for Custom Type "Video" - plus taxonomies "SlideShows", "Video Categories", "Video Tags"
 * Plugin: **bbPress 2.x Forum** (all areas) - Integration plugin recommended: [bbPress Genesis Extend](http://wordpress.org/extend/plugins/bbpress-genesis-extend/)
@@ -39,10 +41,10 @@ As a smart bonus the plugin also includes the layout setting for the new bbPress
 * Plugin: **Easy Digital Downloads**: Archive Page for Custom Type "Downloads" - plus taxonomies "Download Categories" and "Download Tags" - Integration plugin recommended: [Genesis Connect for Easy Digital Downloads](http://wordpress.org/extend/plugins/genesis-connect-edd/)
 * Plugin: **Sugar Events Calendar**: Archive Page for Custom Type "Events" - plus taxonomy "Event Categories"
 
-= Supported Custom Post Types set by Child Themes =
+= Child Themes: Supported Custom Post Types set by Child Themes =
 * Child Theme: **Minimum 2.0** by StudioPress: Archive Page for Custom Post Type "Portfolio"
 * Child Theme: **Executive 2.0** by StudioPress: Archive Page for Custom Post Type "Portfolio"
-* Child Theme: **Megalite** by ZigZagPress: Archive Page for Custom Post Type "Portfolio" - plus taxonomy "Portfolio Category"
+* Child Theme: **Megalithe** by ZigZagPress: Archive Page for Custom Post Type "Portfolio" - plus taxonomy "Portfolio Category"
 * Child Theme: **Engrave** by ZigZagPress: Archive Page for Custom Post Type "Portfolio" - plus taxonomy "Portfolio Category"
 * Child Theme: **Vanilla** by ZigZagPress: Archive Page for Custom Post Type "Portfolio" - plus taxonomy "Portfolio Category"
 * Child Theme: **Clip Cart** by Themedy Themes: Archive Page for Custom Post Type "Products" - plus taxonomy "Product Categories"
@@ -146,8 +148,9 @@ Yes, you could. -- Still, a per site use is recommended.
 = 1.6.0 (2012-11-15) =
 * *Maintenance release*
 * NEW: Added support for "Portfolio" Custom Post Type in "Minimum 2.0" and "Executive 2.0" child themes by StudioPress.
-* NEW: Added support for "Portfolio" Custom Post Type in child themes by ZigZagPress brand, "Megalite", "Engrave" and "Vanilla".
+* NEW: Added support for "Portfolio" Custom Post Type in child themes by ZigZagPress brand, "Megalithe", "Engrave" and "Vanilla".
 * CODE: Minor code/documentation updates & improvements.
+* UPDATE: Updated readme.txt file here.
 * UPDATE: Updated all existing translations plus the .pot file for all translators!
 * UPDATE: Initiated new three digits versioning, starting with this version.
 
@@ -277,3 +280,7 @@ Enjoy using *Genesis Layout Extras*? Please consider [making a small donation](h
 **Security:** The plugin uses the Genesis Sanitization class for checking and filtering all custom inputs. Further, the plugin uses WordPress and Genesis Framework APIs and coding standards to the highest possible extend. Just to make sure you get a quality, future-proof product.
 
 **Idea Behind / Philosophy:** I had liked the general approach of the former plugin (I forked from) - which provided a simple and great way to set a few needed options. Since it seemed no longer to be developed and updated I just decided to make a fork of it and add some additional functionality like setting the layout setting for the (awesome!) bbPress 2.x forum plugin in Genesis. And, I wanted this all on an extra options page, divided from the general Genesis settings because that is much more user friendly IMHO. In addition I added full inline documentation including the contextual help function provided by WordPress itself to create a more seamless user experience.
+
+== Credits ==
+
+**Among the Top 7 most downloaded Genesis plugins ever :) Thank you all users and translators!**
