@@ -3,8 +3,8 @@ Contributors: daveshine, deckerweb
 Donate link: http://genesisthemes.de/en/donate/
 Tags: genesis, genesiswp, genesis framework, layout, layouts, layout manager, post, page, singular, attachment, search, taxonomoy, 404 error, 404 page, bbPress, CPT, AgentPress Listings, agentpress, deckerweb
 Requires at least: 3.2
-Tested up to: 3.4.1
-Stable tag: 1.5
+Tested up to: 3.4.2
+Stable tag: 1.6.0
 License: GPLv2 or later
 License URI: http://www.opensource.org/licenses/gpl-license.php
 
@@ -19,7 +19,7 @@ As a smart bonus the plugin also includes the layout setting for the new bbPress
 = Included regular WordPress Sections for a Default Layout Setting =
 * Home Page (works with home.php or static page as front page)
 * Search Results Page (if there are results)
-* Search not found Page (if there are NO results) [new since v1.3]
+* Search not found Page (if there are NO results) [new since v1.3.0]
 * 404 Error Page
 * "Post" Page (singular post views)
 * "Page" Page (singular page views)
@@ -40,15 +40,21 @@ As a smart bonus the plugin also includes the layout setting for the new bbPress
 * Plugin: **Sugar Events Calendar**: Archive Page for Custom Type "Events" - plus taxonomy "Event Categories"
 
 = Supported Custom Post Types set by Child Themes =
+* Child Theme: **Minimum 2.0** by StudioPress: Archive Page for Custom Post Type "Portfolio"
+* Child Theme: **Executive 2.0** by StudioPress: Archive Page for Custom Post Type "Portfolio"
+* Child Theme: **Megalite** by ZigZagPress: Archive Page for Custom Post Type "Portfolio" - plus taxonomy "Portfolio Category"
+* Child Theme: **Engrave** by ZigZagPress: Archive Page for Custom Post Type "Portfolio" - plus taxonomy "Portfolio Category"
+* Child Theme: **Vanilla** by ZigZagPress: Archive Page for Custom Post Type "Portfolio" - plus taxonomy "Portfolio Category"
 * Child Theme: **Clip Cart** by Themedy Themes: Archive Page for Custom Post Type "Products" - plus taxonomy "Product Categories"
 * Child Theme: **Stage** by Themedy Themes: Taxonomy "Photo Galleries"
 
 = Localization =
 * English (default) - always included
 * German (de_DE) - always included
-* French (fr_FR) - user-submitted, thanks to [Grégoire Noyelle](http://www.gregoirenoyelle.com/) - currently 100% complete for v1.5 :)
-* Italian (it_IT) - user-submitted, thanks to [Marco Rosselli](http://www.prenotazionetraghetti.com/) - currently 77% complete for v1.5
-* Hindi (hi_IN - for India) - user-submitted, thanks to Love Chandel - currently 97% complete for v1.5
+* French (fr_FR) - user-submitted, thanks to [Grégoire Noyelle](http://www.gregoirenoyelle.com/) - 100% complete for v1.6.0 :)
+* Italian (it_IT) - user-submitted, thanks to [Marco Rosselli](http://www.prenotazionetraghetti.com/) - currently 75% complete for v1.6.0
+* Hindi (hi_IN - for India) - user-submitted, thanks to Love Chandel - currently 93% complete for v1.6.0
+* Spanish (es_ES) - user-submitted - currently 17% complete for v1.6.0
 * .pot file (`genesis-layout-extras.pot`) for translators is also always included :)
 * Easy plugin translation platform with GlotPress tool: [Translate "Genesis Layout Extras"...](http://translate.wpautobahn.com/projects/genesis-plugins-deckerweb/genesis-layout-extras)
 * *Your translation? - [Just send it in](http://genesisthemes.de/en/contact/)*
@@ -137,20 +143,28 @@ Yes, you could. -- Still, a per site use is recommended.
 
 == Changelog ==
 
-= 1.5 (2012-09-05) =
+= 1.6.0 (2012-11-15) =
+* *Maintenance release*
+* NEW: Added support for "Portfolio" Custom Post Type in "Minimum 2.0" and "Executive 2.0" child themes by StudioPress.
+* NEW: Added support for "Portfolio" Custom Post Type in child themes by ZigZagPress brand, "Megalite", "Engrave" and "Vanilla".
+* CODE: Minor code/documentation updates & improvements.
+* UPDATE: Updated all existing translations plus the .pot file for all translators!
+* UPDATE: Initiated new three digits versioning, starting with this version.
+
+= 1.5.0 (2012-09-05) =
 * *Maintenance release*
 * NEW: Added plugin support for "Sugar Events Calendar" (premium, by Pippin Williamson).
 * CODE: Minor code/documentation updates & improvements.
 * UPDATE: Updated all existing translations plus the .pot file for all translators!
 
-= 1.4 (2012-06-16) =
+= 1.4.0 (2012-06-16) =
 * *Maintenance release*
 * BUGFIX: Syntax errors - fixed option for general taxonomies layout option.
 * CODE: Minor code/documentation updates & improvements.
 * NEW: Added new Hindi translation by Love Chandel.
 * UPDATE: Updated all existing translations plus the .pot file for all translators!
 
-= 1.3 (2012-05-01) =
+= 1.3.0 (2012-05-01) =
 * *New plugin features:*
  * NEW: Performance optimization - restructuring and splitting of code into several files, loading only where and if needed. Plugin support stuff only appears now if one of the supported plugins is active!
  * NEW: Added new option for 'Search not found' page - when there are NO search results (for example very handy to set a full-width layout for this case...).
@@ -175,7 +189,7 @@ Yes, you could. -- Still, a per site use is recommended.
 * UPDATE: Extended GPL License info in readme.txt as well as main plugin file.
 * NEW: Easy plugin translation platform with GlotPress tool: [Translate "Genesis Layout Extras"...](http://translate.wpautobahn.com/projects/genesis-plugins-deckerweb/genesis-layout-extras)
 
-= 1.2 (2011-12-22) =
+= 1.2.0 (2011-12-22) =
 * Added new help tab system for WordPress 3.3 -- this time the plugin is also still compatible with old contextual help prior WP 3.3 but PLEASE NOT that I will remove this soon and then the plugin will require WordPress 3.3+ so please update now your WordPress installation!
 * Bugfix: Wrapped conditional around `genesis_get_option` function to allow error-free theme changing (from Genesis to a non-Genesis theme) -- Please note: this also fixes the Multisite errors when plugin is network activated! -- Props to WP.org user "greghile" for reporting the Multisite issue!
 * Minor code and code documentation improvements
@@ -185,7 +199,7 @@ Yes, you could. -- Still, a per site use is recommended.
 * Updated included .pot file (`genesis-layout-extras.pot`) for translators
 * Added banner image on WordPress.org for better plugin branding :)
 
-= 1.1 (2011-10-06) =
+= 1.1.0 (2011-10-06) =
 * Improved homepage layout setting with adding the conditional statement `is_front_page()` so also static pages set as homepage (in WordPress: Settings > Reading) are now supported!
 * Added new specific date layout options for Year, Month, Day - please note, that the general date setting will overwrite the other three settings (these have lower priority) - so, when in doubt, only use the general setting or leave on default
 * Updated help texts where needed
@@ -194,7 +208,7 @@ Yes, you could. -- Still, a per site use is recommended.
 * Updated included .pot file (`genesis-layout-extras.pot`) for translators
 * Some more minor code tweaks and cosmetic changes :)
 
-= 1.0 (2011-10-01) =
+= 1.0.0 (2011-10-01) =
 * New and forked version of the plugin under new name and authorship by David Decker of deckerweb.de and GenesisThemes
 * Updated, improved and documented code
 * Added separate options page under the Genesis menu - no longer hooking in to regular Genesis settings - this is more user friendly and less confusing (See Genesis > Layout Extras)
@@ -208,22 +222,25 @@ Yes, you could. -- Still, a per site use is recommended.
 
 == Upgrade Notice ==
 
-= 1.5 =
+= 1.6.0 =
+Maintenance release: Extended child theme support for 'Portfolio' post type. Minor code updates & improvements. Updated all existing translations plus .pot file for translators.
+
+= 1.5.0 =
 Maintenance release: Added plugin support for "Sugar Events Calendar" (premium). Minor code updates & improvements. Updated all existing translations plus .pot file for translators.
 
-= 1.4 =
+= 1.4.0 =
 Maintenance release: Minor code updates & improvements. Added new Hindi translation, updated all existing translations plus .pot file for translators.
 
-= 1.3 =
+= 1.3.0 =
 Major additions & improvements: Added a new layout option; extended plugin & child theme support. Performance & code optimization. Updated all translations plus .pot file for translators.
 
-= 1.2 =
+= 1.2.0 =
 Several changes - Bugfix regarding theme changes and Multisite installs. Updated help system to fit better into WordPress 3.3. Added Italian translation. Other minor tweaks and improvements. Also updated German translations and .pot file for all translators.
 
-= 1.1 =
+= 1.1.0 =
 Several changes - Enhanced homepage and date archive settings, improved info, help and documentation texts (contextual help and plugin's readme.txt).
 
-= 1.0 =
+= 1.0.0 =
 All changed - Actually a whole new plugin, updated all over the place. Also the plugin name and authorship changed.
 
 == Plugin Links ==
@@ -239,6 +256,7 @@ Enjoy using *Genesis Layout Extras*? Please consider [making a small donation](h
 * French (fr_FR): Français - user-submitted by [Grégoire Noyelle](http://www.gregoirenoyelle.com/)
 * Italian (it_IT): Italiano - user-submitted by [Marco Rosselli](http://www.prenotazionetraghetti.com/)
 * Hindi (hi_IN - for India): user-submitted by Love Chandel
+* Spanish (es_ES): Español - user-submitted, only a few strings yet...
 * For custom and update-secure language files please upload them to `/wp-content/languages/genesis-layout-extras/` (just create this folder) - This enables you to use fully custom translations that won't be overridden on plugin updates. Also, complete custom English wording is possible with that as well, just use a language file like `genesis-layout-extras-en_US.mo/.po` to achieve that.
 
 **Easy plugin translation platform with GlotPress tool:** [**Translate "Genesis Layout Extras"...**](http://translate.wpautobahn.com/projects/genesis-plugins-deckerweb/genesis-layout-extras)

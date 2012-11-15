@@ -10,7 +10,7 @@
  * @link       http://genesisthemes.de/en/wp-plugins/genesis-layout-extras/
  * @link       http://twitter.com/deckerweb
  *
- * @since 1.0
+ * @since 1.0.0
  * @version 1.1
  */
 
@@ -20,7 +20,7 @@ add_filter( 'genesis_pre_get_option_site_layout', 'ddw_genesis_layout_extras_fil
  *
  * @uses filter: genesis_pre_get_option_site_layout
  *
- * @since 0.1
+ * @since 1.0.0
  * @version 1.3
  *
  * @global mixed $wp_query
@@ -146,6 +146,14 @@ function ddw_genesis_layout_extras_filter( $opt ) {
 	elseif ( is_tax( 'sc_event_category' ) && genesis_get_option( 'ddw_genesis_layout_cpt_sc_event_category', GLE_SETTINGS_FIELD ) )
 		$opt = genesis_get_option( 'ddw_genesis_layout_cpt_sc_event_category', GLE_SETTINGS_FIELD );
 
+	/** CPT: "Portfolio" (by various child themes) */
+	elseif ( is_post_type_archive( 'portfolio' ) && genesis_get_option( 'ddw_genesis_layout_cpt_child_portfolio', GLE_SETTINGS_FIELD ) )
+		$opt = genesis_get_option( 'ddw_genesis_layout_cpt_child_portfolio', GLE_SETTINGS_FIELD );
+
+	/** CPT: "Portfolio" - Tax: "Portfolio Category" (by various child themes) */
+	elseif ( is_tax( 'portfolio_category' ) && genesis_get_option( 'ddw_genesis_layout_cpt_child_portfolio_category', GLE_SETTINGS_FIELD ) )
+		$opt = genesis_get_option( 'ddw_genesis_layout_cpt_child_portfolio_category', GLE_SETTINGS_FIELD );
+
 	/** CPT: "Products" (by Themedy Child Themes) */
 	elseif ( is_post_type_archive( 'products' ) && genesis_get_option( 'ddw_genesis_layout_cpt_themedy_products', GLE_SETTINGS_FIELD ) )
 		$opt = genesis_get_option( 'ddw_genesis_layout_cpt_themedy_products', GLE_SETTINGS_FIELD );
@@ -171,7 +179,7 @@ add_filter( 'bbp_genesis_layout', 'ddw_genesis_layout_extras_bbpress_filter' );
  * @uses filter: bbp_genesis_force_full_content_width
  * @uses filter: bbp_genesis_layout
  *
- * @since 1.0
+ * @since 1.0.0
  * @version 1.1
  *
  * @return string Genesis layout option

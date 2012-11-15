@@ -7,10 +7,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Genesis Layout Extras v1.5\n"
+"Project-Id-Version: Genesis Layout Extras v1.6.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/genesis-layout-extras\n"
 "POT-Creation-Date: 2012-04-30 20:39+0100\n"
-"PO-Revision-Date: 2012-09-05 17:20+0100\n"
+"PO-Revision-Date: 2012-11-15 12:13+0100\n"
 "Last-Translator: David Decker <deckerweb.mobil@googlemail.com>\n"
 "Language-Team: DECKERWEB <deckerweb.mobil@googlemail.com>\n"
 "MIME-Version: 1.0\n"
@@ -69,7 +69,9 @@ msgstr "Einstellungen"
 
 #@ genesis-layout-extras
 #: includes/gle-admin-help-plugins.php:24
+#: includes/gle-admin-help-studiopress.php:23
 #: includes/gle-admin-help-themedy.php:23
+#: includes/gle-admin-help-zigzagpress.php:23
 #: includes/gle-admin-help.php:38
 #: includes/gle-admin-help.php:44
 #: includes/gle-admin-help.php:54
@@ -84,72 +86,72 @@ msgid "Layout Extras"
 msgstr "Layout-Extras"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:135
+#: includes/gle-admin-options.php:169
 msgid "Special Sections"
 msgstr "Besondere Bereiche"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:137
+#: includes/gle-admin-options.php:171
 msgid "Hompage Layout"
 msgstr "Layout der Homepage"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:141
+#: includes/gle-admin-options.php:175
 msgid "Search Page Layout"
 msgstr "Layout der Suchergebnis-Seiten"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:149
+#: includes/gle-admin-options.php:183
 msgid "404 Page Layout"
 msgstr "Layout der 404-Fehlerseite"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:158
+#: includes/gle-admin-options.php:192
 msgid "Singular Pages"
 msgstr "Layout für Einzelansichten"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:160
+#: includes/gle-admin-options.php:194
 msgid "Post Page Layout"
 msgstr "Layout einer Artikel-/ Beitragsseite"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:161
+#: includes/gle-admin-options.php:195
 msgid "Page Page Layout"
 msgstr "Layout einer Seite (Page)"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:162
+#: includes/gle-admin-options.php:196
 msgid "Attachment Page Layout"
 msgstr "Layout einer Anhangs-Seite"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:169
+#: includes/gle-admin-options.php:203
 msgid "Archive Sections"
 msgstr "Inhaltsarchive"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:171
+#: includes/gle-admin-options.php:205
 msgid "Author Page Layout"
 msgstr "Layout von Autoren-Seiten"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:172
+#: includes/gle-admin-options.php:206
 msgid "Date Archive Page Layout"
 msgstr "Layout von Datumsarchiven"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:179
+#: includes/gle-admin-options.php:213
 msgid "Category Page Layout"
 msgstr "Layout von Kategorieseiten"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:180
+#: includes/gle-admin-options.php:214
 msgid "Tag Page Layout"
 msgstr "Layout von Schlagwortseiten (Tags)"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:181
+#: includes/gle-admin-options.php:215
 msgid "Taxonomy Page Layout"
 msgstr "Layout von Taxonomie-Seiten"
 
@@ -159,24 +161,24 @@ msgid "Plugin: bbPress 2.x Forum Section"
 msgstr "Plugin: bbPress 2.x Forumsbereich"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:209
+#: includes/gle-admin-options.php:243
 msgid "Full Width Content"
 msgstr "Inhalt in voller Breite"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:274
+#: includes/gle-admin-options.php:308
 msgid "Genesis - Layout Extras"
 msgstr "Genesis - Layout-Extras"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:278
-#: includes/gle-admin-options.php:289
+#: includes/gle-admin-options.php:312
+#: includes/gle-admin-options.php:323
 msgid "Save Settings"
 msgstr "Einstellungen speichern"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:279
-#: includes/gle-admin-options.php:290
+#: includes/gle-admin-options.php:313
+#: includes/gle-admin-options.php:324
 msgid "Reset Settings"
 msgstr "Einstellungen zurücksetzen"
 
@@ -193,7 +195,7 @@ msgstr "Dieses Plugin für das Genesis Theme Framework erlaubt es, Standardlayou
 
 #@ genesis-layout-extras
 #: includes/gle-admin-help.php:45
-#: includes/gle-admin-help.php:116
+#: includes/gle-admin-help.php:145
 msgid "FAQ - Frequently Asked Questions"
 msgstr "FAQ - Häufig gestellte Fragen"
 
@@ -208,38 +210,38 @@ msgid "The extra layout settings have been saved successfully."
 msgstr "Die Extra-Layouteinstellungen wurden erfolgreich gespeichert."
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:203
+#: includes/gle-admin-options.php:237
 msgid "Genesis Default"
 msgstr "Genesis-Standard"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:204
+#: includes/gle-admin-options.php:238
 msgid "Content-Sidebar"
 msgstr "Inhalt-Sidebar"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:205
+#: includes/gle-admin-options.php:239
 msgid "Sidebar-Content"
 msgstr "Sidebar-Inhalt"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:206
+#: includes/gle-admin-options.php:240
 msgid "Content-Sidebar-Sidebar"
 msgstr "Inhalt-Sidebar-Sidebar"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:207
+#: includes/gle-admin-options.php:241
 msgid "Sidebar-Sidebar-Content"
 msgstr "Sidebar-Sidebar-Inhalt"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:208
+#: includes/gle-admin-options.php:242
 msgid "Sidebar-Content-Sidebar"
 msgstr "Sidebar-Inhalt-Sidebar"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:279
-#: includes/gle-admin-options.php:290
+#: includes/gle-admin-options.php:313
+#: includes/gle-admin-options.php:324
 msgid "Are you sure you want to reset? - When resetting, ALL extra layout settings will be set to their Genesis default option!"
 msgstr "Sind Sie sicher, dass Sie die Einstellungen zurücksetzen wollen? - Beim Zurücksetzen werden ALLE Extra-Layouteinstellungen auf ihre entsprechende Genesis-Standardeinstellung zurückgesetzt!"
 
@@ -249,45 +251,47 @@ msgid "Go to the settings page"
 msgstr "Zur Einstellungsseite des Plugins"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-extras.php:74
+#: includes/gle-admin-extras.php:75
 msgid "FAQ"
 msgstr "FAQ - Häufige Fragen"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-extras.php:75
+#: includes/gle-admin-extras.php:76
 #: includes/gle-admin-help.php:64
 msgid "Support"
 msgstr "Hilfe und Unterstützung (Support)"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-extras.php:77
+#: includes/gle-admin-extras.php:78
 msgid "Donate"
 msgstr "Spenden"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:174
+#: includes/gle-admin-options.php:208
 #, php-format
 msgid "This is the general setting for date archives and overwrites the following three settings (Year, Month, Day)! So, if you setup any of the following three settings then let this one here on %1$sGenesis Default%2$s."
 msgstr "Dies ist die allgemeinde Einstellung für Datumsarchive und überschreibt die folgenden drei Einstellungen (Jahr, Monat, Tag)! Ist also eine der folgenden Einstellungen aktiv, sollte hier der Wert auf %1$sGenesis-Standard%2$s belassen werden."
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:176
+#: includes/gle-admin-options.php:210
 msgid "Date Archive - Year Page Layout"
 msgstr "Datumsarchiv - Jahresarchiv-Layout"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:177
+#: includes/gle-admin-options.php:211
 msgid "Date Archive - Month Page Layout"
 msgstr "Datumsarchiv - Monatsarchiv-Layout"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:178
+#: includes/gle-admin-options.php:212
 msgid "Date Archive - Day Page Layout"
 msgstr "Datumsarchiv - Tagesarchiv-Layout"
 
 #@ genesis-layout-extras
 #: includes/gle-admin-options-plugins.php:26
+#: includes/gle-admin-options-studiopress.php:25
 #: includes/gle-admin-options-themedy.php:25
+#: includes/gle-admin-options-zigzagpress.php:25
 msgid "Special Custom Post Type Sections"
 msgstr "Sektionen von benutzerdefinierten Inhaltstypen (Custom Post Types)"
 
@@ -298,61 +302,61 @@ msgid "bbPress 2.x Forum Layout (all areas)"
 msgstr "Layout des bbPress 2.x Forum (alle Bereiche)"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:139
+#: includes/gle-admin-options.php:173
 #, php-format
 msgid "This setting works for homepage templates (file %1$shome.php%2$s is there - %1$sis_home()%2$s) <u>and</u> also for static pages as front page (%1$sis_front_page()%2$s)."
 msgstr "Diese Einstellung funktioniert für Homepage-Templates (wenn Datei %1$shome.php%2$s vorhanden - %1$sis_home()%2$s) <u>und</u> auch für statische Seiten, die als Homepage deklariert werden (%1$sis_front_page()%2$s)."
 
 #@ genesis-layout-extras
 #: includes/gle-admin-help.php:70
-#: includes/gle-admin-help.php:131
+#: includes/gle-admin-help.php:160
 msgid "Author - License"
 msgstr "Autor - Lizenz"
 
 #@ genesis-layout-extras
 #: includes/gle-admin-help.php:62
-#: includes/gle-admin-help.php:126
+#: includes/gle-admin-help.php:155
 msgid "Support - Donations - Rating &amp; Tips"
 msgstr "Support - Spenden - Bewertung &amp; Tipps"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-help.php:137
+#: includes/gle-admin-help.php:166
 msgid "Feedback and more about the Author"
 msgstr "Feedback und mehr über den Autor"
 
 #@ genesis-layout-extras
 #: includes/gle-admin-help.php:71
-#: includes/gle-admin-help.php:138
+#: includes/gle-admin-help.php:167
 msgid "http://genesisthemes.de/en/"
 msgstr "http://genesisthemes.de/"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-help.php:138
+#: includes/gle-admin-help.php:167
 msgid "Website"
 msgstr "Webseite"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-help.php:138
+#: includes/gle-admin-help.php:167
 msgid "Forum"
 msgstr "Forum"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-help.php:139
+#: includes/gle-admin-help.php:168
 msgid "Social:"
 msgstr "Vernetzen:"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-help.php:139
+#: includes/gle-admin-help.php:168
 msgid "Twitter"
 msgstr "Twitter"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-help.php:139
+#: includes/gle-admin-help.php:168
 msgid "Facebook"
 msgstr "Facebook"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-help.php:139
+#: includes/gle-admin-help.php:168
 msgid "Google+"
 msgstr "Google+"
 
@@ -368,35 +372,37 @@ msgid "Custom Post Types by Plugins"
 msgstr "Inhaltstypen von Plugins"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:130
+#: includes/gle-admin-options.php:164
 msgid "Here you can set up a <strong>default</strong> layout option for various extra archive pages and other special pages."
 msgstr "Hier können <strong>Standard</strong>-Layoutoptionen für verschiedene Bereiche und andere besondere Seiten festgelegt werden."
 
 #@ genesis-layout-extras
 #: includes/gle-admin-options-plugins.php:28
+#: includes/gle-admin-options-studiopress.php:27
 #: includes/gle-admin-options-themedy.php:27
-#: includes/gle-admin-options.php:130
+#: includes/gle-admin-options-zigzagpress.php:27
+#: includes/gle-admin-options.php:164
 #, php-format
 msgid "%1$sGenesis Default%2$s in the drop-down menus below always means the chosen default layout option in the regular <a href=\"%3$s\">Genesis layout settings</a>."
 msgstr "%1$sGenesis-Standard%2$s in den Aufklappmenüs unten meint immer die entsprechend gewählte Standard-Layoutoption in den regulären <a href=\"%3$s\">Genesis Theme-Einstellungen</a>."
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:143
+#: includes/gle-admin-options.php:177
 msgid "For regular search results display &ndash; if there are any results."
 msgstr "Für die reguläre Suchergebnisanzeige &ndash; wenn Treffer vorhanden sind."
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:145
+#: includes/gle-admin-options.php:179
 msgid "Search Not Found Page Layout"
 msgstr "Layout für Suche nichts gefunden"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:147
+#: includes/gle-admin-options.php:181
 msgid "If there are NO search results (empty)."
 msgstr "Wenn es KEINE Suchergebnisse gibt (leer, keine Treffer)."
 
 #@ genesis-layout-extras
-#: includes/gle-admin-options.php:151
+#: includes/gle-admin-options.php:185
 #, php-format
 msgid "If a page/URL is not found. Regarding the %1$s404.php%2$s error page template from Genesis core or from current child theme."
 msgstr "Wenn eine Seite/ URL nicht gefunden wurde. Betrifft die %1$s404.php%2$s Fehlerseite-Seitenvorlage (Template) vom Genesis Framework, oder falls vorhanden, vom aktiven Child Theme."
@@ -506,8 +512,10 @@ msgid "bbPress Genesis Extend"
 msgstr "bbPress Genesis Extend"
 
 #@ genesis-layout-extras
+#: includes/gle-admin-help-studiopress.php:25
 #: includes/gle-admin-help-themedy.php:25
-#: includes/gle-admin-options.php:111
+#: includes/gle-admin-help-zigzagpress.php:25
+#: includes/gle-admin-options.php:147
 msgid "Custom Post Types by Child Themes"
 msgstr "Inhaltstypen von Child Themes"
 
@@ -518,11 +526,13 @@ msgstr "Inhaltstypen von Child Themes"
 #: includes/gle-admin-options-plugins.php:107
 #: includes/gle-admin-options-plugins.php:125
 #: includes/gle-admin-options-plugins.php:142
+#: includes/gle-admin-options-studiopress.php:44
 #: includes/gle-admin-options-themedy.php:40
 #: includes/gle-admin-options-themedy.php:53
-#: includes/gle-admin-options.php:153
-#: includes/gle-admin-options.php:164
-#: includes/gle-admin-options.php:183
+#: includes/gle-admin-options-zigzagpress.php:48
+#: includes/gle-admin-options.php:187
+#: includes/gle-admin-options.php:198
+#: includes/gle-admin-options.php:217
 msgid "Save"
 msgstr "Speichern"
 
@@ -613,7 +623,9 @@ msgid "Download Tags Taxonomy Layout"
 msgstr "Download-Schlagwörter Taxonomie Layout"
 
 #@ genesis-layout-extras
+#: includes/gle-admin-options-studiopress.php:27
 #: includes/gle-admin-options-themedy.php:27
+#: includes/gle-admin-options-zigzagpress.php:27
 msgid "Here you can set up a <strong>default</strong> layout option for various extra archive pages generated by Custom Post Types which were set by child themes."
 msgstr "Hier können <strong>Standard</strong>-Layoutoptionen für verschiedene Archive-Seiten, generiert durch Inhaltstypen (Custom Post Types) von Child Themes, festgelegt werden."
 
@@ -782,15 +794,17 @@ msgid "Plugin Support"
 msgstr "Plugin-Unterstützung"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-help.php:105
+#: includes/gle-admin-help.php:108
+#: includes/gle-admin-help.php:121
+#: includes/gle-admin-help.php:134
 msgid "Child Theme Support"
 msgstr "Child Theme Unterstützung"
 
 #@ genesis-layout-extras
-#: includes/gle-admin-extras.php:76
+#: includes/gle-admin-extras.php:77
 #: includes/gle-admin-help.php:55
 #: includes/gle-admin-help.php:56
-#: includes/gle-admin-help.php:121
+#: includes/gle-admin-help.php:150
 msgid "Translations"
 msgstr "Übersetzungen"
 
@@ -804,12 +818,6 @@ msgstr "Bitte machen Sie mit und tragen Sie neue oder verbesserte Übersetzungen
 #: includes/gle-admin-help.php:57
 msgid "Thank You!"
 msgstr "Danke für jede Mithilfe!"
-
-#@ genesis-layout-extras
-#. translators: plugin header field 'Version'
-#: genesis-layout-extras.php:0
-msgid "1.5"
-msgstr "1.5"
 
 #@ genesis-layout-extras
 #: includes/gle-admin-help-plugins.php:78
@@ -834,4 +842,44 @@ msgstr "Events (Veranstaltungen) - Layout des Inhaltstyps (Archiv)"
 #: includes/gle-admin-options-plugins.php:121
 msgid "Event Categories Taxonomy Layout"
 msgstr "Event-Kategorien Taxonomie Layout"
+
+#@ genesis-layout-extras
+#. translators: plugin header field 'Version'
+#: genesis-layout-extras.php:0
+msgid "1.6.0"
+msgstr "1.6.0"
+
+#@ genesis-layout-extras
+#: includes/gle-admin-help-studiopress.php:25
+#: includes/gle-admin-help-zigzagpress.php:25
+msgid "by StudioPress"
+msgstr "von StudioPress"
+
+#@ genesis-layout-extras
+#: includes/gle-admin-help-studiopress.php:36
+#: includes/gle-admin-options-studiopress.php:40
+#, php-format
+msgid "Child Theme: %s by StudioPress"
+msgstr "Child Theme: %s von StudioPress"
+
+#@ genesis-layout-extras
+#: includes/gle-admin-help-studiopress.php:38
+#: includes/gle-admin-help-zigzagpress.php:40
+#: includes/gle-admin-options-studiopress.php:42
+#: includes/gle-admin-options-zigzagpress.php:44
+msgid "Portfolio Post Type Layout (archive)"
+msgstr "Portfolio - Layout des Inhaltstyps (Archiv)"
+
+#@ genesis-layout-extras
+#: includes/gle-admin-help-zigzagpress.php:38
+#: includes/gle-admin-options-zigzagpress.php:42
+#, php-format
+msgid "Child Theme: %s by ZigZagPress"
+msgstr "Child Theme: %s von ZigZagPress"
+
+#@ genesis-layout-extras
+#: includes/gle-admin-help-zigzagpress.php:41
+#: includes/gle-admin-options-zigzagpress.php:46
+msgid "Portfolio Categories Taxonomy Layout"
+msgstr "Portfolio-Kategorien Taxonomie Layout"
 

@@ -21,7 +21,7 @@
  */
 function ddw_gle_admin_help_plugins() {
 
-	echo '<h3>' . __( 'Plugin: Genesis Layout Extras', 'genesis-layout-extras' ) . '</h3>';
+	echo '<h3>' . __( 'Plugin: Genesis Layout Extras', 'genesis-layout-extras' ) . ' <small>v' . esc_attr( ddw_gle_plugin_get_data( 'Version' ) ) . '</small></h3>';
 
 		echo '<h4>' . __( 'Custom Post Types by Plugins', 'genesis-layout-extras' ) . '</h4>';
 

@@ -10,14 +10,14 @@
  * @link       http://genesisthemes.de/en/wp-plugins/genesis-layout-extras/
  * @link       http://twitter.com/deckerweb
  *
- * @since 1.3
+ * @since 1.3.0
  */
 
 /**
  * Second meta box - optional: setting up the setting fields & labels.
  * For supported plugins with CPTs.
  *
- * @since 1.3
+ * @since 1.3.0
  * @version 1.1
  */
 function ddw_genesis_layout_extras_box_cpts() {

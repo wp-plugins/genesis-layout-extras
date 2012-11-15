@@ -10,7 +10,7 @@
  * @link       http://genesisthemes.de/en/wp-plugins/genesis-layout-extras/
  * @link       http://twitter.com/deckerweb
  *
- * @since 1.0
+ * @since 1.0.0
  * @version 1.1
  */
 
@@ -18,7 +18,7 @@ add_action( 'admin_notices', 'ddw_genesis_layout_extras_notices' );
 /**
  * Admin notices when successfully saving or resetting settings
  *
- * @since 1.0
+ * @since 1.0.0
  */
 function ddw_genesis_layout_extras_notices() {
 
@@ -41,7 +41,7 @@ add_action( 'admin_menu', 'ddw_genesis_layout_extras_theme_settings_init', 15 );
  * This is a necessary go-between to get our scripts and boxes loaded
  * on the theme settings page only, and not the rest of the admin
  *
- * @since 1.0
+ * @since 1.0.0
  */
 function ddw_genesis_layout_extras_theme_settings_init() {
 
@@ -64,7 +64,7 @@ function ddw_genesis_layout_extras_theme_settings_init() {
 /**
  * Loads scripts used in options page
  *
- * @since 1.0
+ * @since 1.0.0
  */
 function ddw_genesis_layout_extras_theme_settings_scripts() {
 	wp_enqueue_script( 'common' );
@@ -77,7 +77,7 @@ function ddw_genesis_layout_extras_theme_settings_scripts() {
 /**
  * Add meta boxes to options page
  *
- * @since 0.1
+ * @since 1.0.0
  * @version 1.2
  */
 function ddw_genesis_layout_extras_theme_settings_boxes() {
@@ -91,12 +91,12 @@ function ddw_genesis_layout_extras_theme_settings_boxes() {
 	add_meta_box( 'genesis-layout-extras-box', $gle_meta_box_title . __( 'WordPress Defaults', 'genesis-layout-extras' ), 'ddw_genesis_layout_extras_box', $_gle_settings_pagehook, 'column1' );
 
 	/** Add optional second meta box and its title */
-	if ( post_type_exists( 'listing' ) ||
-		class_exists( 'bbPress' ) ||
-		post_type_exists( 'product' ) ||
-		post_type_exists( 'video' ) ||
-		post_type_exists( 'download' ) ||
-		post_type_exists( 'sc_event' )
+	if ( post_type_exists( 'listing' )
+		|| class_exists( 'bbPress' )
+		|| post_type_exists( 'product' )
+		|| post_type_exists( 'video' )
+		|| post_type_exists( 'download' )
+		|| post_type_exists( 'sc_event' )
 	) {
 
 		add_meta_box( 'genesis-layout-extras-box-cpts', $gle_meta_box_title . __( 'Custom Post Types by Plugins', 'genesis-layout-extras' ), 'ddw_genesis_layout_extras_box_cpts', $_gle_settings_pagehook, 'column1' );
@@ -105,14 +105,48 @@ function ddw_genesis_layout_extras_theme_settings_boxes() {
 
 	}  // end-if plugin CPT check
 
-	/** Add optional third meta box and its title */
-	if ( function_exists( 'themedy_load_styles' ) && ( post_type_exists( 'products' ) || post_type_exists( 'photo' ) ) ) {
+	/**
+	 * Add optional third meta box and its title
+	 */
 
-		add_meta_box( 'genesis-layout-extras-box-themedy', $gle_meta_box_title . __( 'Custom Post Types by Child Themes', 'genesis-layout-extras' ), 'ddw_genesis_layout_extras_box_themedy', $_gle_settings_pagehook, 'column1' );
+	$gle_theme_check = 'default';
 
-		require_once( GLE_PLUGIN_DIR . '/includes/gle-admin-options-themedy.php' );
+	if ( post_type_exists( 'portfolio' )
+		|| post_type_exists( 'products' )
+		|| post_type_exists( 'photo' )
+	) {
 
-	}  // end-if Themedy check
+			/** For StudioPress */
+		if ( function_exists( 'minimum_portfolio_post_type' ) || function_exists( 'executive_portfolio_post_type' ) ) {
+
+			require_once( GLE_PLUGIN_DIR . '/includes/gle-admin-options-studiopress.php' );
+
+			$gle_theme_check = 'ddw_genesis_layout_extras_box_studiopress';
+
+		}
+			/** For Themedy brand */
+		elseif ( function_exists( 'themedy_load_styles' ) ) {
+
+			require_once( GLE_PLUGIN_DIR . '/includes/gle-admin-options-themedy.php' );
+
+			$gle_theme_check = 'ddw_genesis_layout_extras_box_themedy';
+
+		}
+			/** For ZigZagPress brand zigzagpress_portfolio_layout */
+		elseif ( function_exists( 'zp_footer_menu' )
+				|| function_exists( 'project_showcase' )
+				|| function_exists( 'zp_socialicon_load_widget' )
+		) {
+
+			require_once( GLE_PLUGIN_DIR . '/includes/gle-admin-options-zigzagpress.php' );
+
+			$gle_theme_check = 'ddw_genesis_layout_extras_box_zigzagpress';
+
+		}  // end-if theme/brand check
+
+		add_meta_box( 'genesis-layout-extras-box-childthemes', $gle_meta_box_title . __( 'Custom Post Types by Child Themes', 'genesis-layout-extras' ), $gle_theme_check, $_gle_settings_pagehook, 'column1' );
+
+	}  // end-if child theme CPT check
 
 }  // end of function ddw_genesis_layout_extras_theme_settings_boxes
 
@@ -121,7 +155,7 @@ function ddw_genesis_layout_extras_theme_settings_boxes() {
  * First meta box: setting up the setting fields & labels.
  * For WordPress core template tags.
  *
- * @since 1.0
+ * @since 1.0.0
  * @version 1.2
  */
 function ddw_genesis_layout_extras_box() {
@@ -188,7 +222,7 @@ function ddw_genesis_layout_extras_box() {
 /**
  * Setting up the drop-down menus
  *
- * @since 1.0
+ * @since 1.0.0
  * @version 1.1
  *
  * @param $title
@@ -218,7 +252,7 @@ add_filter( 'screen_layout_columns', 'ddw_genesis_layout_extras_settings_layout_
 /**
  * Setting 1 column for meta boxes
  *
- * @since 1.0
+ * @since 1.0.0
  *
  * @global mixed $_gle_settings_pagehook
  * @param $columns
@@ -247,7 +281,7 @@ function ddw_genesis_layout_extras_settings_layout_columns( $columns, $screen ) 
  * This function is what actually gets output to the page. It handles the markup,
  * builds the form, outputs necessary JS stuff, and fires <code>do_meta_boxes()</code>
  *
- * @since 1.0
+ * @since 1.0.0
  *
  * @global mixed $_gle_settings_pagehook, $screen_layout_columns
  */

@@ -10,14 +10,14 @@
  * @link       http://genesisthemes.de/en/wp-plugins/genesis-layout-extras/
  * @link       http://twitter.com/deckerweb
  *
- * @since 1.0
+ * @since 1.0.0
  * @version 1.1
  */
 
 /**
  * Return the defaults array for all setting options.
  *
- * @since 1.0
+ * @since 1.0.0
  * @version 1.2
  */
 function ddw_genesis_layout_extras_defaults() {
@@ -52,6 +52,8 @@ function ddw_genesis_layout_extras_defaults() {
 		'ddw_genesis_layout_cpt_sc_event' => '',
 		'ddw_genesis_layout_cpt_sc_event_category' => '',
 		'ddw_genesis_layout_bbpress' => '',
+		'ddw_genesis_layout_cpt_child_portfolio' => '',
+		'ddw_genesis_layout_cpt_child_portfolio_category' => '',
 		'ddw_genesis_layout_cpt_themedy_products' => '',
 		'ddw_genesis_layout_cpt_themedy_product_category' => '',
 		'ddw_genesis_layout_cpt_themedy_photo_gallery' => ''
@@ -66,7 +68,7 @@ add_action( 'genesis_settings_sanitizer_init', 'ddw_genesis_layout_extras_saniti
 /**
  * Add all settings to Genesis sanitization - for security.
  *
- * @since 1.0
+ * @since 1.0.0
  * @version 1.2
  */
 function ddw_genesis_layout_extras_sanitization() {
@@ -102,6 +104,8 @@ function ddw_genesis_layout_extras_sanitization() {
 			'ddw_genesis_layout_cpt_sc_event',
 			'ddw_genesis_layout_cpt_sc_event_category',
 			'ddw_genesis_layout_bbpress',
+			'ddw_genesis_layout_cpt_child_portfolio',
+			'ddw_genesis_layout_cpt_child_portfolio_category',
 			'ddw_genesis_layout_cpt_themedy_products',
 			'ddw_genesis_layout_cpt_themedy_product_category',
 			'ddw_genesis_layout_cpt_themedy_photo_gallery'
@@ -114,7 +118,7 @@ add_action( 'admin_init', 'ddw_genesis_layout_extras_register_settings' );
 /**
  * Register the settings field for the plugin.
  *
- * @since 1.0
+ * @since 1.0.0
  * @version 1.1
  */
 function ddw_genesis_layout_extras_register_settings() {

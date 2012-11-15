@@ -14,7 +14,7 @@
  * Plugin Name: Genesis Layout Extras
  * Plugin URI: http://genesisthemes.de/en/wp-plugins/genesis-layout-extras/
  * Description: This plugin for Genesis Theme Framework allows modifying of default layouts for homepage, singular, archive, attachment, search, 404 and even bbPress 2.x pages via Genesis theme settings.
- * Version: 1.5
+ * Version: 1.6.0
  * Author: David Decker - DECKERWEB
  * Author URI: http://deckerweb.de/
  * License: GPLv2 or later
@@ -45,7 +45,7 @@
 /**
  * Setting constants
  *
- * @since 1.0
+ * @since 1.0.0
  */
 /** Plugin directory */
 define( 'GLE_PLUGIN_DIR', dirname( __FILE__ ) );
@@ -61,7 +61,7 @@ register_activation_hook( __FILE__, 'ddw_genesis_layout_extras_activation_check'
 /**
  * Checks for activated Genesis Framework before allowing plugin to activate
  *
- * @since 1.3
+ * @since 1.3.0
  */
 function ddw_genesis_layout_extras_activation_check() {
 
@@ -92,16 +92,24 @@ add_action( 'init', 'ddw_genesis_layout_extras_init' );
  * Load admin helper functions - only within 'wp-admin'.
  * Load logic/functions for the frontend display - and only when on frontend.
  * 
- * @since 1.0
- * @version 1.1
+ * @since 1.0.0
+ * @version 1.2
  */
 function ddw_genesis_layout_extras_init() {
 
+	/** Set filter for WordPress languages directory */
+	$gle_wp_lang_dir = GLE_PLUGIN_BASEDIR . '/../../languages/genesis-layout-extras/';
+	$gle_wp_lang_dir = apply_filters( 'gle_filter_wp_lang_dir', $gle_wp_lang_dir );
+
+	/** Set filter for plugin's languages directory */
+	$gle_lang_dir = GLE_PLUGIN_BASEDIR . '/languages/';
+	$gle_lang_dir = apply_filters( 'gle_filter_lang_dir', $gle_lang_dir );
+
 	/** First look in WordPress' "languages" folder = custom & update-secure! */
-	load_plugin_textdomain( 'genesis-layout-extras', false, GLE_PLUGIN_BASEDIR . '/../../languages/genesis-layout-extras/' );
+	load_plugin_textdomain( 'genesis-layout-extras', false, $gle_wp_lang_dir );
 
 	/** Then look in plugin's "languages" folder = default */
-	load_plugin_textdomain( 'genesis-layout-extras', false, GLE_PLUGIN_BASEDIR . '/languages' );
+	load_plugin_textdomain( 'genesis-layout-extras', false, $gle_lang_dir );
 
 	/** Load the admin and frontend functions only when needed */
 	if ( is_admin() ) {
@@ -119,3 +127,30 @@ function ddw_genesis_layout_extras_init() {
 	}
 
 }  // end of function ddw_genesis_layout_extras_init
+
+
+/**
+ * Returns current plugin's header data in a flexible way.
+ *
+ * @since 1.6.0
+ *
+ * @uses get_plugins()
+ *
+ * @param $gle_plugin_value
+ * @param $gle_plugin_folder
+ * @param $gle_plugin_file
+ *
+ * @return string Plugin version
+ */
+function ddw_gle_plugin_get_data( $gle_plugin_value ) {
+
+	if ( ! function_exists( 'get_plugins' ) ) {
+		require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+	}
+
+	$gle_plugin_folder = get_plugins( '/' . plugin_basename( dirname( __FILE__ ) ) );
+	$gle_plugin_file = basename( ( __FILE__ ) );
+
+	return $gle_plugin_folder[ $gle_plugin_file ][ $gle_plugin_value ];
+
+}  // end of function ddw_gle_plugin_get_data

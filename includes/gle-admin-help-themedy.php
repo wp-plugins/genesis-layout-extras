@@ -1,6 +1,6 @@
 <?php
 /**
- * Helper functions for the admin - help tabs for supported child themes - only if active.
+ * Helper functions for the admin - help tabs for supported Themedy child themes - only if active.
  *
  * @package    Genesis Layout Extras
  * @subpackage Admin Help
@@ -10,17 +10,17 @@
  * @link       http://genesisthemes.de/en/wp-plugins/genesis-layout-extras/
  * @link       http://twitter.com/deckerweb
  *
- * @since 1.3
+ * @since 1.3.0
  */
 
 /**
  * Add optional help tab content for supported child themes by Themedy.
  *
- * @since 1.3
+ * @since 1.3.0
  */
 function ddw_gle_admin_help_themedy() {
 
-	echo '<h3>' . __( 'Plugin: Genesis Layout Extras', 'genesis-layout-extras' ) . '</h3>';
+	echo '<h3>' . __( 'Plugin: Genesis Layout Extras', 'genesis-layout-extras' ) . ' <small>v' . esc_attr( ddw_gle_plugin_get_data( 'Version' ) ) . '</small></h3>';
 
 		echo '<h4>' . __( 'Custom Post Types by Child Themes', 'genesis-layout-extras' ) . ' &mdash; ' . __( 'by Themedy Themes Brand', 'genesis-layout-extras' ) . '</h4>';
 

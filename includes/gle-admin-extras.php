@@ -10,14 +10,14 @@
  * @link       http://genesisthemes.de/en/wp-plugins/genesis-layout-extras/
  * @link       http://twitter.com/deckerweb
  *
- * @since 1.0
+ * @since 1.0.0
  * @version 1.1
  */
 
 /**
  * Setting internal plugin helper links constants
  *
- * @since 1.4
+ * @since 1.4.0
  */
 define( 'GLE_URL_TRANSLATE',		'http://translate.wpautobahn.com/projects/genesis-plugins-deckerweb/genesis-layout-extras' );
 define( 'GLE_URL_WPORG_PLUGIN', 	'http://wordpress.org/extend/plugins/genesis-layout-extras/' );
@@ -37,7 +37,7 @@ if ( get_locale() == 'de_DE' || get_locale() == 'de_AT' || get_locale() == 'de_C
 /**
  * Add "Settings" link to plugin page
  *
- * @since 1.0
+ * @since 1.0.0
  *
  * @param  $gle_links
  * @param  $gle_settings_link
@@ -58,7 +58,7 @@ add_filter( 'plugin_row_meta', 'ddw_gle_plugin_links', 10, 2 );
 /**
  * Add various support links to plugin page
  *
- * @since 1.1
+ * @since 1.1.0
  * @version 1.1
  *
  * @param  $gle_links
@@ -67,8 +67,9 @@ add_filter( 'plugin_row_meta', 'ddw_gle_plugin_links', 10, 2 );
  */
 function ddw_gle_plugin_links( $gle_links, $gle_file ) {
 
-	if ( ! current_user_can( 'install_plugins' ) )
+	if ( ! current_user_can( 'install_plugins' ) ) {
 		return $gle_links;
+	}
 
 	if ( $gle_file == GLE_PLUGIN_BASEDIR . '/genesis-layout-extras.php' ) {
 		$gle_links[] = '<a href="' . esc_url_raw( GLE_URL_WPORG_FAQ ) . '" target="_new" title="' . __( 'FAQ', 'genesis-layout-extras' ) . '">' . __( 'FAQ', 'genesis-layout-extras' ) . '</a>';
