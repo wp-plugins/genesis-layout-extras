@@ -74,6 +74,7 @@ Credit where credit is due: This plugin here is based on the work of WPChildThem
 * [Genesis Dashboard News](http://wordpress.org/extend/plugins/genesis-dashboard-news/) - #GenesisWP news right there in your dashboard!
 * [Genesis Printstyle Plus](http://wordpress.org/extend/plugins/genesis-printstyle-plus/) - just print it out - only what's needed
 * [Genesis Single Post Navigation](http://wordpress.org/extend/plugins/genesis-single-post-navigation/) - browse your single posts
+* [Genesis Widgetized Archive](http://wordpress.org/extend/plugins/genesis-widgetized-archive/) - easily set up content for your Archive page (template)
 * [Genesis Widgetized Footer](http://wordpress.org/extend/plugins/genesis-widgetized-footer/) - easily set up your copyright/ credits/ back to top
 * [Genesis Widgetized Not Found & 404](http://wordpress.org/extend/plugins/genesis-widgetized-notfound/) - be prepared for the edge cases
 * [Genesis Connect for Easy Digital Downloads](http://wordpress.org/extend/plugins/genesis-connect-edd/) - plugin for easy & elegant integration
@@ -272,6 +273,7 @@ Enjoy using *Genesis Layout Extras*? Please consider [making a small donation](h
 * [Genesis Dashboard News](http://wordpress.org/extend/plugins/genesis-dashboard-news/) - #GenesisWP news right there in your dashboard!
 * [Genesis Printstyle Plus](http://wordpress.org/extend/plugins/genesis-printstyle-plus/) - just print it out - only what's needed
 * [Genesis Single Post Navigation](http://wordpress.org/extend/plugins/genesis-single-post-navigation/) - browse your single posts
+* [Genesis Widgetized Archive](http://wordpress.org/extend/plugins/genesis-widgetized-archive/) - easily set up content for your Archive page (template)
 * [Genesis Widgetized Footer](http://wordpress.org/extend/plugins/genesis-widgetized-footer/) - easily set up your copyright/ credits/ back to top
 * [Genesis Widgetized Not Found & 404](http://wordpress.org/extend/plugins/genesis-widgetized-notfound/) - be prepared for the edge cases
 * [Genesis Connect for Easy Digital Downloads](http://wordpress.org/extend/plugins/genesis-connect-edd/) - plugin for easy & elegant integration
