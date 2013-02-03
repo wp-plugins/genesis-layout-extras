@@ -3,9 +3,9 @@ Contributors: daveshine, deckerweb
 Donate link: http://genesisthemes.de/en/donate/
 Tags: genesis, genesiswp, genesis framework, layout, layouts, layout manager, post, page, singular, attachment, search, taxonomoy, 404 error, 404 page, bbPress, CPT, AgentPress Listings, agentpress, deckerweb
 Requires at least: 3.2
-Tested up to: 3.4.2
+Tested up to: 3.5.1
 Stable tag: 1.6.0
-License: GPLv2 or later
+License: GPL-2.0+
 License URI: http://www.opensource.org/licenses/gpl-license.php
 
 This plugin for Genesis Framework allows modifying of default layouts for homepage, various archive, attachment, search, 404 pages via theme options.
@@ -77,6 +77,7 @@ Credit where credit is due: This plugin here is based on the work of WPChildThem
 * [Genesis Widgetized Archive](http://wordpress.org/extend/plugins/genesis-widgetized-archive/) - easily set up content for your Archive page (template)
 * [Genesis Widgetized Footer](http://wordpress.org/extend/plugins/genesis-widgetized-footer/) - easily set up your copyright/ credits/ back to top
 * [Genesis Widgetized Not Found & 404](http://wordpress.org/extend/plugins/genesis-widgetized-notfound/) - be prepared for the edge cases
+* [Genesis Extra Settings Transporter](http://wordpress.org/extend/plugins/genesis-extra-settings-transporter/) - addionally export Genesis specific plugin & child theme settings
 * [Genesis Connect for Easy Digital Downloads](http://wordpress.org/extend/plugins/genesis-connect-edd/) - plugin for easy & elegant integration
 
 = Feedback =
@@ -88,6 +89,7 @@ Credit where credit is due: This plugin here is based on the work of WPChildThem
 = More =
 * [Also see my other plugins](http://genesisthemes.de/en/wp-plugins/) or see [my WordPress.org profile page](http://profiles.wordpress.org/daveshine/)
 * Tip: [*GenesisFinder* - Find then create. Your Genesis Framework Search Engine.](http://genesisfinder.com/)
+* Hey, come & join the [Genesis Community on Google+ :)](http://ddwb.me/genesiscommunity)
 
 == Installation ==
 
@@ -276,6 +278,7 @@ Enjoy using *Genesis Layout Extras*? Please consider [making a small donation](h
 * [Genesis Widgetized Archive](http://wordpress.org/extend/plugins/genesis-widgetized-archive/) - easily set up content for your Archive page (template)
 * [Genesis Widgetized Footer](http://wordpress.org/extend/plugins/genesis-widgetized-footer/) - easily set up your copyright/ credits/ back to top
 * [Genesis Widgetized Not Found & 404](http://wordpress.org/extend/plugins/genesis-widgetized-notfound/) - be prepared for the edge cases
+* [Genesis Extra Settings Transporter](http://wordpress.org/extend/plugins/genesis-extra-settings-transporter/) - addionally export Genesis specific plugin & child theme settings
 * [Genesis Connect for Easy Digital Downloads](http://wordpress.org/extend/plugins/genesis-connect-edd/) - plugin for easy & elegant integration
 
 == Additional Info ==
