@@ -5,14 +5,23 @@
  * @package    Genesis Layout Extras
  * @subpackage Admin
  * @author     David Decker - DECKERWEB
- * @copyright  Copyright 2011-2012, David Decker - DECKERWEB
- * @license    http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
+ * @copyright  Copyright (c) 2011-2013, David Decker - DECKERWEB
+ * @license    http://www.opensource.org/licenses/gpl-license.php GPL-2.0+
  * @link       http://genesisthemes.de/en/wp-plugins/genesis-layout-extras/
- * @link       http://twitter.com/deckerweb
+ * @link       http://deckerweb.de/twitter
  *
- * @since 1.0.0
- * @version 1.1
+ * @since      1.0.0
  */
+
+/**
+ * Prevent direct access to this file.
+ *
+ * @since 1.7.0
+ */
+if ( ! defined( 'ABSPATH' ) ) {
+	exit( 'Sorry, you are not allowed to access this file directly.' );
+}
+
 
 add_action( 'admin_notices', 'ddw_genesis_layout_extras_notices' );
 /**
@@ -78,7 +87,6 @@ function ddw_genesis_layout_extras_theme_settings_scripts() {
  * Add meta boxes to options page
  *
  * @since 1.0.0
- * @version 1.2
  */
 function ddw_genesis_layout_extras_theme_settings_boxes() {
 
@@ -136,6 +144,7 @@ function ddw_genesis_layout_extras_theme_settings_boxes() {
 		elseif ( function_exists( 'zp_footer_menu' )
 				|| function_exists( 'project_showcase' )
 				|| function_exists( 'zp_socialicon_load_widget' )
+				|| function_exists( 'zp_home_slider' )
 		) {
 
 			require_once( GLE_PLUGIN_DIR . '/includes/gle-admin-options-zigzagpress.php' );
@@ -156,7 +165,6 @@ function ddw_genesis_layout_extras_theme_settings_boxes() {
  * For WordPress core template tags.
  *
  * @since 1.0.0
- * @version 1.2
  */
 function ddw_genesis_layout_extras_box() {
 
@@ -223,7 +231,6 @@ function ddw_genesis_layout_extras_box() {
  * Setting up the drop-down menus
  *
  * @since 1.0.0
- * @version 1.1
  *
  * @param $title
  * @param $option

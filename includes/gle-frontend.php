@@ -5,26 +5,36 @@
  * @package    Genesis Layout Extras
  * @subpackage Frontend
  * @author     David Decker - DECKERWEB
- * @copyright  Copyright 2011-2012, David Decker - DECKERWEB
- * @license    http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
+ * @copyright  Copyright (c) 2011-2013, David Decker - DECKERWEB
+ * @license    http://www.opensource.org/licenses/gpl-license.php GPL-2.0+
  * @link       http://genesisthemes.de/en/wp-plugins/genesis-layout-extras/
- * @link       http://twitter.com/deckerweb
+ * @link       http://deckerweb.de/twitter
  *
- * @since 1.0.0
- * @version 1.1
+ * @since      1.0.0
  */
+
+/**
+ * Prevent direct access to this file.
+ *
+ * @since 1.7.0
+ */
+if ( ! defined( 'ABSPATH' ) ) {
+	exit( 'Sorry, you are not allowed to access this file directly.' );
+}
+
 
 add_filter( 'genesis_pre_get_option_site_layout', 'ddw_genesis_layout_extras_filter', 101 );
 /**
  * Manage Genesis layouts for extra sections
  *
- * @uses filter: genesis_pre_get_option_site_layout
+ * @since  1.0.0
  *
- * @since 1.0.0
- * @version 1.3
+ * @uses   filter: genesis_pre_get_option_site_layout
+ *
+ * @param  $opt
  *
  * @global mixed $wp_query
- * @param $opt
+ *
  * @return string Genesis layout option
  */
 function ddw_genesis_layout_extras_filter( $opt ) {
@@ -77,18 +87,18 @@ function ddw_genesis_layout_extras_filter( $opt ) {
 
 	/**
 	 * Taxonomy (all, general)
-	 * Exceptions, because setup extra:
+	 * Exceptions, because extra setup via extra settings:
 	 *    features, slideshow, video-category, video-tag, product_cat, product_tag, product-category, galleries
 	 */
 	elseif ( is_tax() && ! ( is_tax( array( 'features', 'product_cat', 'product_tag', 'slideshow', 'video-category', 'video-tag', 'product-category', 'galleries' ) ) ) && genesis_get_option( 'ddw_genesis_layout_taxonomy', GLE_SETTINGS_FIELD ) )
 		$opt = genesis_get_option( 'ddw_genesis_layout_taxonomy', GLE_SETTINGS_FIELD );
 
 	/** Posts (all!) */
-	elseif ( is_single() && genesis_get_option( 'ddw_genesis_layout_post', GLE_SETTINGS_FIELD ) )
+	elseif ( is_singular( 'post' ) && genesis_get_option( 'ddw_genesis_layout_post', GLE_SETTINGS_FIELD ) )
 		$opt = genesis_get_option( 'ddw_genesis_layout_post', GLE_SETTINGS_FIELD );
 
 	/** Pages (all!) */
-	elseif ( is_page() && genesis_get_option( 'ddw_genesis_layout_page', GLE_SETTINGS_FIELD ) )
+	elseif ( is_singular( 'page' ) && genesis_get_option( 'ddw_genesis_layout_page', GLE_SETTINGS_FIELD ) )
 		$opt = genesis_get_option( 'ddw_genesis_layout_page', GLE_SETTINGS_FIELD );
 
 	/** Attachment (all!) */
@@ -166,6 +176,7 @@ function ddw_genesis_layout_extras_filter( $opt ) {
 	elseif ( is_tax( 'galleries' ) && genesis_get_option( 'ddw_genesis_layout_cpt_themedy_photo_gallery', GLE_SETTINGS_FIELD ) )
 		$opt = genesis_get_option( 'ddw_genesis_layout_cpt_themedy_photo_gallery', GLE_SETTINGS_FIELD );
 
+	/** Finally, output the layout(s) */
 	return $opt;
 
 }  // end of function ddw_genesis_layout_extras_filter
@@ -174,22 +185,63 @@ function ddw_genesis_layout_extras_filter( $opt ) {
 add_filter( 'bbp_genesis_force_full_content_width', 'ddw_genesis_layout_extras_bbpress_filter', 101 );
 add_filter( 'bbp_genesis_layout', 'ddw_genesis_layout_extras_bbpress_filter' );
 /**
- * Manage Genesis layouts for bbPress 2.x Forum section (plugin)
+ * Manage Genesis layouts for bbPress 2.x Forum section.
  *
- * @uses filter: bbp_genesis_force_full_content_width
- * @uses filter: bbp_genesis_layout
+ * @since  1.0.0
  *
- * @since 1.0.0
- * @version 1.1
+ * @uses   filter: bbp_genesis_force_full_content_width
+ * @uses   filter: bbp_genesis_layout
+ * @uses   is_bbpress()
+ * @uses   genesis_get_option()
  *
- * @return string Genesis layout option
+ * @param  $opt
+ *
+ * @return string Genesis layout option.
  */
 function ddw_genesis_layout_extras_bbpress_filter( $opt ) {
 
 	/** CPT: all bbPress 2.x post types */
-	if ( is_bbpress() && genesis_get_option( 'ddw_genesis_layout_bbpress', GLE_SETTINGS_FIELD ) )
+	if ( is_bbpress() && genesis_get_option( 'ddw_genesis_layout_bbpress', GLE_SETTINGS_FIELD ) ) {
+
 		$opt = genesis_get_option( 'ddw_genesis_layout_bbpress', GLE_SETTINGS_FIELD );
 
+	}  // end-if bbPress & option check
+
+	/** Output bbPress Forums layout */
 	return $opt;
 
 }  // end of function ddw_genesis_layout_extras_bbpress_filter
+
+
+add_filter( 'bbp_genesis_force_full_content_width', 'ddw_genesis_layout_extras_bbpress_topics_filter', 101 );
+add_filter( 'bbp_genesis_layout', 'ddw_genesis_layout_extras_bbpress_topics_filter' );
+/**
+ * Manage Genesis layouts for bbPress 2.x forum Topics.
+ *
+ * @since  1.7.0
+ *
+ * @uses   filter: bbp_genesis_force_full_content_width
+ * @uses   filter: bbp_genesis_layout
+ * @uses   get_post_type()
+ * @uses   is_bbpress()
+ * @uses   genesis_get_option()
+ *
+ * @param  $opt
+ *
+ * @return string Genesis layout option.
+ */
+function ddw_genesis_layout_extras_bbpress_topics_filter() {
+
+	/** CPT: all bbPress 2.x post types */
+	if ( ( 'topic' == get_post_type() && is_bbpress() )
+		&& genesis_get_option( 'ddw_genesis_layout_bbpress_topics', GLE_SETTINGS_FIELD )
+	) {
+
+		$opt = genesis_get_option( 'ddw_genesis_layout_bbpress_topics', GLE_SETTINGS_FIELD );
+
+	}  // end-if bbPress & topics plus option check
+
+	/** Output bbPress topics layout */
+	return $opt;
+
+}  // end of function ddw_genesis_layout_extras_bbpress_topics_filter

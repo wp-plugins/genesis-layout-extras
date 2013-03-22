@@ -2,9 +2,9 @@
 Contributors: daveshine, deckerweb
 Donate link: http://genesisthemes.de/en/donate/
 Tags: genesis, genesiswp, genesis framework, layout, layouts, layout manager, post, page, singular, attachment, search, taxonomoy, 404 error, 404 page, bbPress, CPT, AgentPress Listings, agentpress, deckerweb
-Requires at least: 3.2
+Requires at least: 3.4 and Genesis 1.8+
 Tested up to: 3.5.1
-Stable tag: 1.6.0
+Stable tag: 1.7.0
 License: GPL-2.0+
 License URI: http://www.opensource.org/licenses/gpl-license.php
 
@@ -45,18 +45,23 @@ As a smart bonus the plugin also includes the layout setting for the *bbPress 2.
 * Child Theme: **Minimum 2.0** by StudioPress: Archive Page for Custom Post Type "Portfolio"
 * Child Theme: **Executive 2.0** by StudioPress: Archive Page for Custom Post Type "Portfolio"
 * Child Theme: **Megalithe** by ZigZagPress: Archive Page for Custom Post Type "Portfolio" - plus taxonomy "Portfolio Category"
+* Child Theme: **Solo** by ZigZagPress: Archive Page for Custom Post Type "Portfolio" - plus taxonomy "Portfolio Category"
 * Child Theme: **Engrave** by ZigZagPress: Archive Page for Custom Post Type "Portfolio" - plus taxonomy "Portfolio Category"
 * Child Theme: **Vanilla** by ZigZagPress: Archive Page for Custom Post Type "Portfolio" - plus taxonomy "Portfolio Category"
+* Child Theme: **Bijou** by ZigZagPress: Archive Page for Custom Post Type "Portfolio" - plus taxonomy "Portfolio Category"
+* Child Theme: **Eshop** by ZigZagPress: Archive Page for Custom Post Type "Portfolio" - plus taxonomy "Portfolio Category"
+* Child Theme: **Single** by ZigZagPress: Archive Page for Custom Post Type "Portfolio" - plus taxonomy "Portfolio Category"
+* Child Theme: **Tequila** by ZigZagPress: Archive Page for Custom Post Type "Portfolio" - plus taxonomy "Portfolio Category"
 * Child Theme: **Clip Cart** by Themedy Themes: Archive Page for Custom Post Type "Products" - plus taxonomy "Product Categories"
 * Child Theme: **Stage** by Themedy Themes: Taxonomy "Photo Galleries"
 
 = Localization =
 * English (default) - always included
 * German (de_DE) - always included
-* French (fr_FR) - user-submitted, thanks to [Grégoire Noyelle](http://www.gregoirenoyelle.com/) - 100% complete for v1.6.0 :)
-* Italian (it_IT) - user-submitted, thanks to [Marco Rosselli](http://www.prenotazionetraghetti.com/) - currently 75% complete for v1.6.0
-* Hindi (hi_IN - for India) - user-submitted, thanks to Love Chandel - currently 93% complete for v1.6.0
-* Spanish (es_ES) - user-submitted - currently 17% complete for v1.6.0
+* French (fr_FR) - user-submitted, thanks to [Grégoire Noyelle](http://www.gregoirenoyelle.com/) - 96% complete for v1.7.0 :)
+* Italian (it_IT) - user-submitted, thanks to [Marco Rosselli](http://www.prenotazionetraghetti.com/) - currently 72% complete for v1.7.0
+* Hindi (hi_IN - for India) - user-submitted, thanks to Love Chandel - currently 90% complete for v1.7.0
+* Spanish (es_ES) - user-submitted - currently 16% complete for v1.7.0
 * .pot file (`genesis-layout-extras.pot`) for translators is also always included :)
 * Easy plugin translation platform with GlotPress tool: [Translate "Genesis Layout Extras"...](http://translate.wpautobahn.com/projects/genesis-plugins-deckerweb/genesis-layout-extras)
 * *Your translation? - [Just send it in](http://genesisthemes.de/en/contact/)*
@@ -83,8 +88,7 @@ Credit where credit is due: This plugin here is based on the work of WPChildThem
 = Feedback =
 * I am open for your suggestions and feedback - Thank you for using or trying out one of my plugins!
 * Drop me a line [@deckerweb](http://twitter.com/deckerweb) on Twitter
-* Follow me on [my Facebook page](http://www.facebook.com/deckerweb.service)
-* Or follow me on [+David Decker](http://deckerweb.de/gplus) on Google Plus ;-)
+* Follow me on [+David Decker](http://deckerweb.de/gplus) on Google Plus ;-)
 
 = More =
 * [Also see my other plugins](http://genesisthemes.de/en/wp-plugins/) or see [my WordPress.org profile page](http://profiles.wordpress.org/daveshine/)
@@ -109,7 +113,7 @@ Credit where credit is due: This plugin here is based on the work of WPChildThem
 
 **Note:** This plugin has been tested with WordPress branches 3.4+ and also before with 3.2+, 3.3+ without any issues. It also works within Multisite installs - single activated and network activated, too. Remember, running with latest versions of Genesis and WordPress is *always* recommended.
 
-**Also Note:** Installed/active Genesis Framework, version 1.7 or higher (1.8+ recommended!), is *required* for this plugin in order to work!
+**Also Note:** Installed/active Genesis Framework, version 1.8 or higher (1.8.2+ recommended!), is *required* for this plugin in order to work!
 
 **Own translation/wording:** For custom and update-secure language files please upload them to `/wp-content/languages/genesis-layout-extras/` (just create this folder) - This enables you to use fully custom translations that won't be overridden on plugin updates. Also, complete custom English wording is possible with that, just use a language file like `genesis-layout-extras-en_US.mo/.po` to achieve that (for creating one see the tools on "Other Notes").
 
@@ -139,14 +143,24 @@ Yes, you could. -- Still, a per site use is recommended.
 
 == Screenshots ==
 
-1. Genesis Layout Extras - admin options page - WordPress default section.
-2. Genesis Layout Extras - admin options page - optional plugin support section (CPTs).
-3. Genesis Layout Extras - admin options page - optional child theme support section (CPTs).
-4. Genesis Layout Extras - admin options page - layout drop-down menu.
-5. Genesis Layout Extras - screen options.
-6. Genesis Layout Extras - help tabs.
+1. Genesis Layout Extras - admin options page - WordPress default section. ([Click here for larger version of screenshot](https://www.dropbox.com/s/i5glaotevn63rpn/screenshot-1.png))
+2. Genesis Layout Extras - admin options page - optional plugin support section (CPTs). ([Click here for larger version of screenshot](https://www.dropbox.com/s/7jhkm5wft6ym5q0/screenshot-2.png))
+3. Genesis Layout Extras - admin options page - optional child theme support section (CPTs). ([Click here for larger version of screenshot](https://www.dropbox.com/s/zp1o90k745i8fhm/screenshot-3.png))
+4. Genesis Layout Extras - admin options page - layout drop-down menu. ([Click here for larger version of screenshot](https://www.dropbox.com/s/7u0qikxnxkpkrqm/screenshot-4.png))
+5. Genesis Layout Extras - screen options. ([Click here for larger version of screenshot](https://www.dropbox.com/s/w8th73d802tzy14/screenshot-5.png))
+6. Genesis Layout Extras - help tabs. ([Click here for larger version of screenshot](https://www.dropbox.com/s/4rdhuv644fqx8lo/screenshot-6.png))
 
 == Changelog ==
+
+= 1.7.0 (2013-03-22) =
+* NEW: Added settings export (and therefore also import) to the Genesis Exporter/ Importer feature.
+* NEW: Added support for "Portfolio" Custom Post Type in these child themes by ZigZagPress brand: Bijou, Eshop, Single, Solo, Tequila.
+* NEW: Added new setting for all "Topics" for bbPress 2.x powered forums. Sometimes there are setups needed where a special layout for topics needs to be set. -- *Thanks to plugin user Romain for bringing this up! :)*
+* UPDATE: Improved Genesis check on plugin activation and also added a version check to make sure, users run the latest versions of Genesis Framework and WordPress. -- *This just prepares for next major update of Genesis Layout Extras which will be a refactoring and make use of the 'Genesis Admin' class. I'll just will make sure as many users as possible have updated their Genesis install :).*
+* UPDATE: Improved check for single posts and page to improve custom post type support at the same time. -- *Thanks to plugin user Romain for bringing my attention to this issue! :)*
+* CODE: Minor code/documentation updates & improvements.
+* UPDATE: Updated all existing translations plus the .pot file for all translators!
+* UPDATE: Moved screenshots to 'assets' folder in WP.org SVN to reduce plugin package size.
 
 = 1.6.0 (2012-11-15) =
 * *Maintenance release*
@@ -227,6 +241,9 @@ Yes, you could. -- Still, a per site use is recommended.
 * Tested & proved compatibility with WordPress 3.3-aortic-dissection :-)
 
 == Upgrade Notice ==
+
+= 1.7.0 =
+Several additions & improvements: ??? Updated existing translations plus .pot file for translators.
 
 = 1.6.0 =
 Maintenance release: Extended child theme support for 'Portfolio' post type. Minor code updates & improvements. Updated all existing translations plus .pot file for translators.

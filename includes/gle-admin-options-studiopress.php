@@ -5,19 +5,35 @@
  * @package    Genesis Layout Extras
  * @subpackage Admin Child Themes
  * @author     David Decker - DECKERWEB
- * @copyright  Copyright 2011-2012, David Decker - DECKERWEB
- * @license    http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
+ * @copyright  Copyright (c) 2011-2013, David Decker - DECKERWEB
+ * @license    http://www.opensource.org/licenses/gpl-license.php GPL-2.0+
  * @link       http://genesisthemes.de/en/wp-plugins/genesis-layout-extras/
- * @link       http://twitter.com/deckerweb
+ * @link       http://deckerweb.de/twitter
  *
- * @since 1.6.0
+ * @since      1.6.0
  */
+
+/**
+ * Prevent direct access to this file.
+ *
+ * @since 1.7.0
+ */
+if ( ! defined( 'ABSPATH' ) ) {
+	exit( 'Sorry, you are not allowed to access this file directly.' );
+}
+
 
 /**
  * Third meta box - optional: setting up the setting fields & labels.
  * For supported 'StudioPress' child themes with CPTs.
  *
  * @since 1.6.0
+ *
+ * @uses  post_type_exists()
+ * @uses  ddw_genesis_layout_extras_option()
+ *
+ * @param gle_sp_theme_check
+ * @param $gle_sp_theme
  */
 function ddw_genesis_layout_extras_box_studiopress() {
 
@@ -35,9 +51,11 @@ function ddw_genesis_layout_extras_box_studiopress() {
 			$gle_sp_theme_check = 'Executive 2.0';
 		}
 
+		$gle_sp_theme = sprintf( __( 'Child Theme: %s by StudioPress', 'genesis-layout-extras' ), $gle_sp_theme_check );
+
 		echo '<hr class="div" />';
 
-		echo '<h4>' . sprintf( __( 'Child Theme: %s by StudioPress', 'genesis-layout-extras' ), $gle_sp_theme_check ) . '</h4>';
+		echo '<h4>' . $gle_sp_theme . '</h4>';
 
 			ddw_genesis_layout_extras_option( __( 'Portfolio Post Type Layout (archive)', 'genesis-layout-extras' ) . ': ', 'ddw_genesis_layout_cpt_studiopress_portfolio' );
 

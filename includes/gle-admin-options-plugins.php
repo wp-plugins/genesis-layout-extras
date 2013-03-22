@@ -5,20 +5,29 @@
  * @package    Genesis Layout Extras
  * @subpackage Admin Plugins
  * @author     David Decker - DECKERWEB
- * @copyright  Copyright 2011-2012, David Decker - DECKERWEB
- * @license    http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
+ * @copyright  Copyright (c) 2011-2013, David Decker - DECKERWEB
+ * @license    http://www.opensource.org/licenses/gpl-license.php GPL-2.0+
  * @link       http://genesisthemes.de/en/wp-plugins/genesis-layout-extras/
- * @link       http://twitter.com/deckerweb
+ * @link       http://deckerweb.de/twitter
  *
- * @since 1.3.0
+ * @since      1.3.0
  */
+
+/**
+ * Prevent direct access to this file.
+ *
+ * @since 1.7.0
+ */
+if ( ! defined( 'ABSPATH' ) ) {
+	exit( 'Sorry, you are not allowed to access this file directly.' );
+}
+
 
 /**
  * Second meta box - optional: setting up the setting fields & labels.
  * For supported plugins with CPTs.
  *
  * @since 1.3.0
- * @version 1.1
  */
 function ddw_genesis_layout_extras_box_cpts() {
 
@@ -136,7 +145,10 @@ function ddw_genesis_layout_extras_box_cpts() {
 
 			ddw_genesis_layout_extras_option( __( 'bbPress 2.x Forum Layout (all areas)', 'genesis-layout-extras' ) . ': ', 'ddw_genesis_layout_bbpress' );
 
+			ddw_genesis_layout_extras_option( __( 'bbPress 2.x Topics Layout', 'genesis-layout-extras' ) . ': ', 'ddw_genesis_layout_bbpress_topics' );
+
 			echo '<p><span class="description">' . sprintf( __( 'For this setting to take any effect the plugin %1$s needs to be installed first.', 'genesis-layout-extras' ), '<a href="http://wordpress.org/extend/plugins/bbpress/" target="_new" title="' . __( 'Plugin: bbPress 2.x Forum', 'genesis-layout-extras' ) . ' ..."><em>' . __( 'bbPress 2.x', 'genesis-layout-extras' ) . '</em></a>' );
+
 			echo '<br />&raquo; ' . __( 'Integration plugin', 'genesis-layout-extras' ) . ': <a href="http://wordpress.org/extend/plugins/bbpress-genesis-extend/" target="_new" title="' . __( 'bbPress Genesis Extend', 'genesis-layout-extras' ) . '">' . __( 'bbPress Genesis Extend', 'genesis-layout-extras' ) . '</a></span></p>';
 
 			echo '<div class="bottom-buttons"><input type="submit" class="button button-highlighted" value="' . __('Save', 'genesis-layout-extras' ) . '" /></div>';
