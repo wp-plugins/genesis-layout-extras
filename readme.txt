@@ -3,7 +3,7 @@ Contributors: daveshine, deckerweb
 Donate link: http://genesisthemes.de/en/donate/
 Tags: genesis, genesiswp, genesis framework, layout, layouts, layout manager, post, page, singular, attachment, search, taxonomoy, 404 error, 404 page, bbPress, CPT, AgentPress Listings, agentpress, deckerweb
 Requires at least: 3.4 and Genesis 1.8+
-Tested up to: 3.5.1
+Tested up to: 3.6-alpha
 Stable tag: 1.7.0
 License: GPL-2.0+
 License URI: http://www.opensource.org/licenses/gpl-license.php
@@ -14,9 +14,9 @@ This plugin for Genesis Framework allows modifying of default layouts for homepa
 
 **Among the Top 7 most downloaded Genesis plugins ever :) Thank you!**
 
-With this **lightweight plugin** for the popular Genesis Framework you can very **easily modify** the **default layouts** for homepage, singular pages (for posts and pages), various archive sections, author pages, attachment pages, search results pages, the 404 page - all done via a new theme options page. Just look for it at the submenu: 'Genesis > Layout Extras'.
-
-As a smart bonus the plugin also includes the layout setting for the *bbPress 2.x* forum plugin which itself is compatible to Genesis. Also added is the layout setting for other plugins from the Genesis ecosystem or other third-party authors: for example *AgentPress Listings* which includes the custom post type 'listings' and the taxonomy 'features'. See below listings for full explanation:
+> With this **lightweight plugin** for the popular Genesis Framework you can very **easily modify** the **default layouts** for homepage, singular pages (for posts and pages), various archive sections, author pages, attachment pages, search results pages, the 404 page - all done via a new theme options page. Just look for it at the submenu: 'Genesis > Layout Extras'.
+>
+> As a smart bonus the plugin also includes the layout setting for the *bbPress 2.x* forum plugin which itself is compatible to Genesis. Also added is the layout setting for other plugins from the Genesis ecosystem or other third-party authors: for example *AgentPress Listings* which includes the custom post type 'listings' and the taxonomy 'features'. See below listings for full explanation:
 
 = Regular WordPress Sections for a Default Layout Setting =
 * Home Page (works with home.php or static page as front page)
@@ -35,7 +35,7 @@ As a smart bonus the plugin also includes the layout setting for the *bbPress 2.
 = Plugins: Supported Custom Post Types set by Plugins =
 * Plugin: **AgentPress Listings**: Archive Page for Custom Post Type "Listings" - plus taxonomy "Features"
 * Plugin: **Genesis Media Project**: Archive Page for Custom Type "Video" - plus taxonomies "SlideShows", "Video Categories", "Video Tags"
-* Plugin: **bbPress 2.x Forum** (all areas) - Integration plugin recommended: [bbPress Genesis Extend](http://wordpress.org/extend/plugins/bbpress-genesis-extend/)
+* Plugin: **bbPress 2.x Forum** (all areas) - plus "Topics" - Integration plugin recommended: [bbPress Genesis Extend](http://wordpress.org/extend/plugins/bbpress-genesis-extend/)
 * Plugin: **WooCommerce**: for all taxonomy pages for "Product Categories" and "Product Tags" - Integration plugin recommended: [Genesis Connect for WooCommerce](http://wordpress.org/extend/plugins/genesis-connect-woocommerce/)
 * Plugin: **Jigoshop**: for all taxonomy pages for "Product Categories" and "Product Tags" - Integration plugin recommended: [Genesis Connect for Jigoshop](http://jigoshop.com/extend/genesis-connect-for-jigoshop/)
 * Plugin: **Easy Digital Downloads**: Archive Page for Custom Type "Downloads" - plus taxonomies "Download Categories" and "Download Tags" - Integration plugin recommended: [Genesis Connect for Easy Digital Downloads](http://wordpress.org/extend/plugins/genesis-connect-edd/)
