@@ -243,7 +243,7 @@ Yes, you could. -- Still, a per site use is recommended.
 == Upgrade Notice ==
 
 = 1.7.0 =
-Several additions & improvements: ??? Updated existing translations plus .pot file for translators.
+Several additions & improvements: Added settings export. Extended child theme support. Improved bbPress support. Updated existing translations plus .pot file for translators.
 
 = 1.6.0 =
 Maintenance release: Extended child theme support for 'Portfolio' post type. Minor code updates & improvements. Updated all existing translations plus .pot file for translators.
@@ -306,3 +306,5 @@ Enjoy using *Genesis Layout Extras*? Please consider [making a small donation](h
 == Credits ==
 
 **Among the Top 7 most downloaded Genesis plugins ever :) Thank you all users and translators!**
+
+**Thanks for all user feedback that led to improvements in the plugin!**
