@@ -3,7 +3,7 @@ Contributors: daveshine, deckerweb
 Donate link: http://genesisthemes.de/en/donate/
 Tags: genesis, genesiswp, genesis framework, layout, layouts, layout manager, post, page, singular, attachment, search, taxonomoy, 404 error, 404 page, bbPress, CPT, AgentPress Listings, agentpress, deckerweb
 Requires at least: 3.4 and Genesis 1.8+
-Tested up to: 3.6-alpha
+Tested up to: 3.6
 Stable tag: 1.7.0
 License: GPL-2.0+
 License URI: http://www.opensource.org/licenses/gpl-license.php
@@ -35,10 +35,10 @@ This plugin for Genesis Framework allows modifying of default layouts for homepa
 = Plugins: Supported Custom Post Types set by Plugins =
 * Plugin: **AgentPress Listings**: Archive Page for Custom Post Type "Listings" - plus taxonomy "Features"
 * Plugin: **Genesis Media Project**: Archive Page for Custom Type "Video" - plus taxonomies "SlideShows", "Video Categories", "Video Tags"
-* Plugin: **bbPress 2.x Forum** (all areas) - plus "Topics" - Integration plugin recommended: [bbPress Genesis Extend](http://wordpress.org/extend/plugins/bbpress-genesis-extend/)
-* Plugin: **WooCommerce**: for all taxonomy pages for "Product Categories" and "Product Tags" - Integration plugin recommended: [Genesis Connect for WooCommerce](http://wordpress.org/extend/plugins/genesis-connect-woocommerce/)
+* Plugin: **bbPress 2.x Forum** (all areas) - plus "Topics" - Integration plugin recommended: [bbPress Genesis Extend](http://wordpress.org/plugins/bbpress-genesis-extend/)
+* Plugin: **WooCommerce**: for all taxonomy pages for "Product Categories" and "Product Tags" - Integration plugin recommended: [Genesis Connect for WooCommerce](http://wordpress.org/plugins/genesis-connect-woocommerce/)
 * Plugin: **Jigoshop**: for all taxonomy pages for "Product Categories" and "Product Tags" - Integration plugin recommended: [Genesis Connect for Jigoshop](http://jigoshop.com/extend/genesis-connect-for-jigoshop/)
-* Plugin: **Easy Digital Downloads**: Archive Page for Custom Type "Downloads" - plus taxonomies "Download Categories" and "Download Tags" - Integration plugin recommended: [Genesis Connect for Easy Digital Downloads](http://wordpress.org/extend/plugins/genesis-connect-edd/)
+* Plugin: **Easy Digital Downloads**: Archive Page for Custom Type "Downloads" - plus taxonomies "Download Categories" and "Download Tags" - Integration plugin recommended: [Genesis Connect for Easy Digital Downloads](http://wordpress.org/plugins/genesis-connect-edd/)
 * Plugin: **Sugar Events Calendar**: Archive Page for Custom Type "Events" - plus taxonomy "Event Categories"
 
 = Child Themes: Supported Custom Post Types set by Child Themes =
@@ -74,16 +74,17 @@ Credit where credit is due: This plugin here is based on the work of WPChildThem
 [A plugin from deckerweb.de and GenesisThemes](http://genesisthemes.de/en/)
 
 = Check out my other Genesis Plugins =
-* [Genesis Social Profiles Menu](http://wordpress.org/extend/plugins/genesis-social-profiles-menu/) - get social
-* [Genesis Toolbar Extras](http://wordpress.org/extend/plugins/genesis-toolbar-extras/) - one plugin to rule them all :)
-* [Genesis Dashboard News](http://wordpress.org/extend/plugins/genesis-dashboard-news/) - #GenesisWP news right there in your dashboard!
-* [Genesis Printstyle Plus](http://wordpress.org/extend/plugins/genesis-printstyle-plus/) - just print it out - only what's needed
-* [Genesis Single Post Navigation](http://wordpress.org/extend/plugins/genesis-single-post-navigation/) - browse your single posts
-* [Genesis Widgetized Archive](http://wordpress.org/extend/plugins/genesis-widgetized-archive/) - easily set up content for your Archive page (template)
-* [Genesis Widgetized Footer](http://wordpress.org/extend/plugins/genesis-widgetized-footer/) - easily set up your copyright/ credits/ back to top
-* [Genesis Widgetized Not Found & 404](http://wordpress.org/extend/plugins/genesis-widgetized-notfound/) - be prepared for the edge cases
-* [Genesis Extra Settings Transporter](http://wordpress.org/extend/plugins/genesis-extra-settings-transporter/) - addionally export Genesis specific plugin & child theme settings
-* [Genesis Connect for Easy Digital Downloads](http://wordpress.org/extend/plugins/genesis-connect-edd/) - plugin for easy & elegant integration
+* [Genesis Prose Extras](http://wordpress.org/plugins/genesis-prose-extras/) - add-on for Prose child theme
+* [Genesis Social Profiles Menu](http://wordpress.org/plugins/genesis-social-profiles-menu/) - get social
+* [Genesis Toolbar Extras](http://wordpress.org/plugins/genesis-toolbar-extras/) - one plugin to rule them all :)
+* [Genesis Dashboard News](http://wordpress.org/plugins/genesis-dashboard-news/) - #GenesisWP news right there in your dashboard!
+* [Genesis Printstyle Plus](http://wordpress.org/plugins/genesis-printstyle-plus/) - just print it out - only what's needed
+* [Genesis Single Post Navigation](http://wordpress.org/plugins/genesis-single-post-navigation/) - browse your single posts
+* [Genesis Widgetized Archive](http://wordpress.org/plugins/genesis-widgetized-archive/) - easily set up content for your Archive page (template)
+* [Genesis Widgetized Footer](http://wordpress.org/plugins/genesis-widgetized-footer/) - easily set up your copyright/ credits/ back to top
+* [Genesis Widgetized Not Found & 404](http://wordpress.org/plugins/genesis-widgetized-notfound/) - be prepared for the edge cases
+* [Genesis Extra Settings Transporter](http://wordpress.org/plugins/genesis-extra-settings-transporter/) - addionally export Genesis specific plugin & child theme settings
+* [Genesis Connect for Easy Digital Downloads](http://wordpress.org/plugins/genesis-connect-edd/) - plugin for easy & elegant integration
 
 = Feedback =
 * I am open for your suggestions and feedback - Thank you for using or trying out one of my plugins!
@@ -284,19 +285,20 @@ Enjoy using *Genesis Layout Extras*? Please consider [making a small donation](h
 
 **Easy plugin translation platform with GlotPress tool:** [**Translate "Genesis Layout Extras"...**](http://translate.wpautobahn.com/projects/genesis-plugins-deckerweb/genesis-layout-extras)
 
-*Note:* All my plugins are internationalized/ translateable by default. This is very important for all users worldwide. So please contribute your language to the plugin to make it even more useful. For translating I recommend the awesome ["Codestyling Localization" plugin](http://wordpress.org/extend/plugins/codestyling-localization/) and for validating the ["Poedit Editor"](http://www.poedit.net/), which works fine on Windows, Mac and Linux.
+*Note:* All my plugins are internationalized/ translateable by default. This is very important for all users worldwide. So please contribute your language to the plugin to make it even more useful. For translating I recommend the awesome ["Codestyling Localization" plugin](http://wordpress.org/plugins/codestyling-localization/) and for validating the ["Poedit Editor"](http://www.poedit.net/), which works fine on Windows, Mac and Linux.
 
 == Check out my other Genesis Plugins ==
-* [Genesis Social Profiles Menu](http://wordpress.org/extend/plugins/genesis-social-profiles-menu/) - get social
-* [Genesis Toolbar Extras](http://wordpress.org/extend/plugins/genesis-toolbar-extras/) - one plugin to rule them all :)
-* [Genesis Dashboard News](http://wordpress.org/extend/plugins/genesis-dashboard-news/) - #GenesisWP news right there in your dashboard!
-* [Genesis Printstyle Plus](http://wordpress.org/extend/plugins/genesis-printstyle-plus/) - just print it out - only what's needed
-* [Genesis Single Post Navigation](http://wordpress.org/extend/plugins/genesis-single-post-navigation/) - browse your single posts
-* [Genesis Widgetized Archive](http://wordpress.org/extend/plugins/genesis-widgetized-archive/) - easily set up content for your Archive page (template)
-* [Genesis Widgetized Footer](http://wordpress.org/extend/plugins/genesis-widgetized-footer/) - easily set up your copyright/ credits/ back to top
-* [Genesis Widgetized Not Found & 404](http://wordpress.org/extend/plugins/genesis-widgetized-notfound/) - be prepared for the edge cases
-* [Genesis Extra Settings Transporter](http://wordpress.org/extend/plugins/genesis-extra-settings-transporter/) - addionally export Genesis specific plugin & child theme settings
-* [Genesis Connect for Easy Digital Downloads](http://wordpress.org/extend/plugins/genesis-connect-edd/) - plugin for easy & elegant integration
+* [Genesis Prose Extras](http://wordpress.org/plugins/genesis-prose-extras/) - add-on for Prose child theme
+* [Genesis Social Profiles Menu](http://wordpress.org/plugins/genesis-social-profiles-menu/) - get social
+* [Genesis Toolbar Extras](http://wordpress.org/plugins/genesis-toolbar-extras/) - one plugin to rule them all :)
+* [Genesis Dashboard News](http://wordpress.org/plugins/genesis-dashboard-news/) - #GenesisWP news right there in your dashboard!
+* [Genesis Printstyle Plus](http://wordpress.org/plugins/genesis-printstyle-plus/) - just print it out - only what's needed
+* [Genesis Single Post Navigation](http://wordpress.org/plugins/genesis-single-post-navigation/) - browse your single posts
+* [Genesis Widgetized Archive](http://wordpress.org/plugins/genesis-widgetized-archive/) - easily set up content for your Archive page (template)
+* [Genesis Widgetized Footer](http://wordpress.org/plugins/genesis-widgetized-footer/) - easily set up your copyright/ credits/ back to top
+* [Genesis Widgetized Not Found & 404](http://wordpress.org/plugins/genesis-widgetized-notfound/) - be prepared for the edge cases
+* [Genesis Extra Settings Transporter](http://wordpress.org/plugins/genesis-extra-settings-transporter/) - addionally export Genesis specific plugin & child theme settings
+* [Genesis Connect for Easy Digital Downloads](http://wordpress.org/plugins/genesis-connect-edd/) - plugin for easy & elegant integration
 
 == Additional Info ==
 **Security:** The plugin uses the Genesis Sanitization class for checking and filtering all custom inputs. Further, the plugin uses WordPress and Genesis Framework APIs and coding standards to the highest possible extend. Just to make sure you get a quality, future-proof product.
