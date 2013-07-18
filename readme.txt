@@ -85,6 +85,7 @@ Credit where credit is due: This plugin here is based on the work of WPChildThem
 * [Genesis Widgetized Not Found & 404](http://wordpress.org/plugins/genesis-widgetized-notfound/) - be prepared for the edge cases
 * [Genesis Extra Settings Transporter](http://wordpress.org/plugins/genesis-extra-settings-transporter/) - addionally export Genesis specific plugin & child theme settings
 * [Genesis Connect for Easy Digital Downloads](http://wordpress.org/plugins/genesis-connect-edd/) - plugin for easy & elegant integration
+* [Genesis What's New Info](http://wordpress.org/plugins/genesis-whats-new-info/) - show the what's new overview page via left-hand admin menu
 
 = Feedback =
 * I am open for your suggestions and feedback - Thank you for using or trying out one of my plugins!
@@ -299,6 +300,7 @@ Enjoy using *Genesis Layout Extras*? Please consider [making a small donation](h
 * [Genesis Widgetized Not Found & 404](http://wordpress.org/plugins/genesis-widgetized-notfound/) - be prepared for the edge cases
 * [Genesis Extra Settings Transporter](http://wordpress.org/plugins/genesis-extra-settings-transporter/) - addionally export Genesis specific plugin & child theme settings
 * [Genesis Connect for Easy Digital Downloads](http://wordpress.org/plugins/genesis-connect-edd/) - plugin for easy & elegant integration
+* [Genesis What's New Info](http://wordpress.org/plugins/genesis-whats-new-info/) - show the what's new overview page via left-hand admin menu
 
 == Additional Info ==
 **Security:** The plugin uses the Genesis Sanitization class for checking and filtering all custom inputs. Further, the plugin uses WordPress and Genesis Framework APIs and coding standards to the highest possible extend. Just to make sure you get a quality, future-proof product.
