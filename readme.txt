@@ -4,24 +4,29 @@ Donate link: http://genesisthemes.de/en/donate/
 Tags: genesis, genesiswp, genesis framework, layout, layouts, layout manager, post, page, singular, attachment, search, taxonomoy, 404 error, 404 page, bbPress, CPT, AgentPress Listings, agentpress, deckerweb
 Requires at least: 3.4 and Genesis 1.8+
 Tested up to: 3.6
-Stable tag: 1.7.0
+Stable tag: 2.0.0
 License: GPL-2.0+
 License URI: http://www.opensource.org/licenses/gpl-license.php
 
-This plugin for Genesis Framework allows modifying of default layouts for homepage, various archive, attachment, search, 404 pages via theme options.
+For Genesis Framework: Allows modifying of default layouts for homepage, various archive, attachment, search, 404 pages. Plus: up to 9 new layouts!
 
 == Description ==
 
 **Among the Top 7 most downloaded Genesis plugins ever :) Thank you!**
 
-> With this **lightweight plugin** for the popular Genesis Framework you can very **easily modify** the **default layouts** for homepage, singular pages (for posts and pages), various archive sections, author pages, attachment pages, search results pages, the 404 page - all done via a new theme options page. Just look for it at the submenu: 'Genesis > Layout Extras'.
+> With this **lightweight plugin** for the popular Genesis Framework you can very **easily modify** the (registered) **default layouts** for homepage, singular pages (for posts and pages), various archive sections, author pages, attachment pages, search results pages, the 404 page - all done via a new theme options page. Just look for it at the submenu: *Genesis > Layout Extras*.
 >
-> As a smart bonus the plugin also includes the layout setting for the *bbPress 2.x* forum plugin which itself is compatible to Genesis. Also added is the layout setting for other plugins from the Genesis ecosystem or other third-party authors: for example *AgentPress Listings* which includes the custom post type 'listings' and the taxonomy 'features'. See below listings for full explanation:
+> Version 2.0.0 is a complete rewrite regarding code optimizations and also new features:
+> The plugin now optionally adds up to nine (9!) additional layouts. Also, you can optionally add Layouts meta box support for post types inpost screens which don't have it yet. Plus, Genesis Archive Settings for post types could be enabled as well. 
+>
+> As a smart bonus the plugin also includes the layout setting for the *bbPress 2.x* forum plugin which itself is compatible to Genesis. Also added is the layout setting for other plugins from the Genesis ecosystem or other third-party authors: for example *AgentPress Listings* which includes the custom post type 'listings' and the taxonomy 'features'. Just have a look on the below listings for full explanation.
+
+**Please note:** The plugin requires the *Genesis Theme Framework* (GPL-2.0+), a paid premium product released by StudioPress/ Copyblogger Media LLC (via studiopress.com).
 
 = Regular WordPress Sections for a Default Layout Setting =
-* Home Page (works with home.php or static page as front page)
+* Home Page (works with `home.php` or static page as front page)
 * Search Results Page (if there are results)
-* Search not found Page (if there are NO results) [new since v1.3.0]
+* Search not found Page (if there are NO results)
 * 404 Error Page
 * "Post" Page (singular post views)
 * "Page" Page (singular page views)
@@ -44,32 +49,24 @@ This plugin for Genesis Framework allows modifying of default layouts for homepa
 = Child Themes: Supported Custom Post Types set by Child Themes =
 * Child Theme: **Minimum 2.0** by StudioPress: Archive Page for Custom Post Type "Portfolio"
 * Child Theme: **Executive 2.0** by StudioPress: Archive Page for Custom Post Type "Portfolio"
-* Child Theme: **Megalithe** by ZigZagPress: Archive Page for Custom Post Type "Portfolio" - plus taxonomy "Portfolio Category"
-* Child Theme: **Solo** by ZigZagPress: Archive Page for Custom Post Type "Portfolio" - plus taxonomy "Portfolio Category"
-* Child Theme: **Engrave** by ZigZagPress: Archive Page for Custom Post Type "Portfolio" - plus taxonomy "Portfolio Category"
-* Child Theme: **Vanilla** by ZigZagPress: Archive Page for Custom Post Type "Portfolio" - plus taxonomy "Portfolio Category"
-* Child Theme: **Bijou** by ZigZagPress: Archive Page for Custom Post Type "Portfolio" - plus taxonomy "Portfolio Category"
-* Child Theme: **Eshop** by ZigZagPress: Archive Page for Custom Post Type "Portfolio" - plus taxonomy "Portfolio Category"
-* Child Theme: **Single** by ZigZagPress: Archive Page for Custom Post Type "Portfolio" - plus taxonomy "Portfolio Category"
-* Child Theme: **Tequila** by ZigZagPress: Archive Page for Custom Post Type "Portfolio" - plus taxonomy "Portfolio Category"
+* These 10 Child Themes by **ZigZagPress brand**: *Bijou*, *Engrave*, *Eshop*, *Megalithe*, *Neo*, *Prestige*, *Single*, *Solo*, *Tequila*, *Vanilla* -- Archive Page for Custom Post Type "Portfolio" - plus taxonomy "Portfolio Category" for all these.
 * Child Theme: **Clip Cart** by Themedy Themes: Archive Page for Custom Post Type "Products" - plus taxonomy "Product Categories"
 * Child Theme: **Stage** by Themedy Themes: Taxonomy "Photo Galleries"
 
-= Localization =
+= *Translations: Internationalization (i18n) / Localization (L10n) =
 * English (default) - always included
 * German (de_DE) - always included
-* French (fr_FR) - user-submitted, thanks to [Grégoire Noyelle](http://www.gregoirenoyelle.com/) - 96% complete for v1.7.0 :)
-* Italian (it_IT) - user-submitted, thanks to [Marco Rosselli](http://www.prenotazionetraghetti.com/) - currently 72% complete for v1.7.0
-* Hindi (hi_IN - for India) - user-submitted, thanks to Love Chandel - currently 90% complete for v1.7.0
-* Spanish (es_ES) - user-submitted - currently 16% complete for v1.7.0
+* French (fr_FR) - user-submitted, thanks to [Grégoire Noyelle](http://www.gregoirenoyelle.com/) - 50% complete for v2.0.0 :)
+* Italian (it_IT) - user-submitted, thanks to [Marco Rosselli](http://www.prenotazionetraghetti.com/) - currently 36% complete for v2.0.0
+* Hindi (hi_IN - for India) - user-submitted, thanks to Love Chandel - currently 44% complete for v2.0.0
+* Spanish (es_ES) - user-submitted - currently 11% complete for v2.0.0
+* Swedish (sv_SE) - user-submitted - currently 11% complete for v2.0.0
 * .pot file (`genesis-layout-extras.pot`) for translators is also always included :)
 * Easy plugin translation platform with GlotPress tool: [Translate "Genesis Layout Extras"...](http://translate.wpautobahn.com/projects/genesis-plugins-deckerweb/genesis-layout-extras)
 * *Your translation? - [Just send it in](http://genesisthemes.de/en/contact/)*
 
 **Please note: The plugin requires the Genesis Theme Framework**
-The plugin has been tested with WordPress branches 3.4+ and before with 3.2+, 3.3+ without any issues. It also works within Multisite installs - single activated and also network activated. Running with latest versions of Genesis and WordPress is always recommended.
-
-Credit where credit is due: This plugin here is based on the work of WPChildThemes for the great "Genesis Layout Manager" plugin.
+The plugin has been tested with WordPress branches 3.6+ (and before with 3.5+, 3,4+, 3.3+...) without any issues. It also works within Multisite installs - single activated and also network activated. Running with latest versions of Genesis and WordPress is always recommended.
 
 [A plugin from deckerweb.de and GenesisThemes](http://genesisthemes.de/en/)
 
@@ -99,12 +96,21 @@ Credit where credit is due: This plugin here is based on the work of WPChildThem
 
 == Installation ==
 
-1. Upload the entire `genesis-layout-extras` folder to the `/wp-content/plugins/` directory -- or just upload the ZIP package via 'Plugins > Add New > Upload' in your WP Admin
+**NOTE:** Only works with *Genesis Framework* (GPL-2.0+) as the parent theme. This is a paid premium product by StudioPress/ Copyblogger Media LLC, available via studiopress.com.
+
+1. Manual or via wp-admin:
+ 1. *Manual FTP:* Upload the entire `genesis-layout-extras` folder to the `/wp-content/plugins/` directory
+ 2. OR *Manual ZIP:* Just upload the ZIP package via 'Plugins > Add New > Upload' in your WP Admin
+ 3. OR via */wp-admin/ search:* Search for "genesis layout extras" via 'Plugins > Add New' -- then install the proper plugin from the search results, then activate it. Done! :)
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. In your left-hand "Genesis Theme Settings" menu go to "Layout Extras", setup your default layouts and you're good to go :).
 4. General usage: Set layout options DIFFERENT from the Genesis default *for special sections*.
 
+**Note:** The "Genesis Framework" is required for this plugin in order to work. If you don't own a copy it yet, this premium parent theme has to be bought. More info about that you'll find here: http://ddwb.me/getgenesis
+
 = Choose from one of the following layouts =
+*1) Up to 6 default layouts of Genesis - when registered:*
+
 * Genesis Default (your default setting from Genesis Theme settings)
 * Content-Sidebar
 * Sidebar-Content
@@ -113,46 +119,196 @@ Credit where credit is due: This plugin here is based on the work of WPChildThem
 * Sidebar-Content-Sidebar
 * Full Width Content
 
-**Note:** This plugin has been tested with WordPress branches 3.4+ and also before with 3.2+, 3.3+ without any issues. It also works within Multisite installs - single activated and network activated, too. Remember, running with latest versions of Genesis and WordPress is *always* recommended.
+*2) Currently up to 9 additional layouts of this plugin (Genesis Layout Extras):*
 
-**Also Note:** Installed/active Genesis Framework, version 1.8 or higher (1.8.2+ recommended!), is *required* for this plugin in order to work!
+* Sidebars below Content *)
+* Primary below Content
+* Primary above Content
+* Header+Nav/Content/Sidebar (experimental!)
+* Content/Sidebar-Alt *)
+* Sidebar-Alt/Content *)
+* Content/Sidebar-Alt/Sidebar
+* Sidebar/Sidebar-Alt/Content
+* Sidebar/Content/Sidebar-Alt
+
+*) = Not with my ["Genesis Prose Extras" plugin](http://wordpress.org/plugins/genesis-prose-extras/) - that brings those layouts on its own, but with more optimized CSS :)
+
+= Additional Post Support: =
+* For public post types, enable Genesis Inpost Options (Layouts, SEO, Scripts)
+* For public post types with archive support, enable Genesis Archive Settings
+
+= Special Advise: =
+**Note:** This plugin has been tested with WordPress branches 3.6 and also 3.5 (and also before with 3.4+, 3.3+, 3.2+) without any issues. It also works within Multisite installs - single activated and network activated, too. Remember, running with latest versions of Genesis and WordPress is *always* recommended.
+
+**Also Note:** Installed/ active Genesis Framework, AT LEAST version 1.8 or higher (1.9.2+ recommended!), is *required* for this plugin in order to work!
 
 **Own translation/wording:** For custom and update-secure language files please upload them to `/wp-content/languages/genesis-layout-extras/` (just create this folder) - This enables you to use fully custom translations that won't be overridden on plugin updates. Also, complete custom English wording is possible with that, just use a language file like `genesis-layout-extras-en_US.mo/.po` to achieve that (for creating one see the tools on "Other Notes").
 
 == Frequently Asked Questions ==
 
+= Why up to 9 new layout options, aren't the default one's enough? =
+Good question, hehe :) -- Since, you are not forced to use the new options you can disable all and set the settings meta box to not display (via "Screen options" tab on top right corner), so you won't even see them on the plugin's settings page.
+
+If, however, you want some new - simplyfied or tweaked - *flavors of existing layouts*, then you might try one of the new options. So for example, the "Primary below Content" layout option is perfect for minimalistic one-column sites. Or the "Sidebars below Content" is great for content-oriented blogs and/or sites that want to drop the bloat from the SIDEbar and only offer a bit more stuff *below* the main content - in a nice 2-column outfit.
+
+
+= I don't see the new layout options in the plugin settings, what's up? =
+This could only be the case if your child theme (or another plugin or some code snippet...) has *un-registered* both Genesis default sidebars. Those two are needed for the layout options, so, if they are not there, you just cannot see and use my plugin's layout options.
+
+
+= Are the alternate layouts responsive? =
+Yes, they are! All is working like it should with minimal additions on CSS style rules (only what's really needed).
+
+
+= Help, the new layouts look not good on my site (CSS...), what can I do? =
+This may depend on the used CSS rules loaded via the plugin. Those rules are NOT based on specific child themes but use a "middle-of-the-road" general concept that is based on *percentage CSS values*. This way I can save a lot of (child theme specific) overhead.
+
+This approach may work with a lot of the official child themes by StudioPress. Sure, not all! Just try, and if needed, add additional CSS rules to your child theme style sheet to tweak the plugin styles.
+
+Also, you are free to not load the plugin styles at all (see plugin settings!). In that case you might add completely custom CSS styles to your child theme (or wherever, via another plugin or what...).
+
+
 = You can modify the layout of the plugin's AgentPress Listings post type. What does this mean? =
 Nothing spectacular, you just can set the layout option for the archive pages of the "listings" post type, plus for all terms of its built-in "features" taxonomy. - Of course, the plugin (and so the setting in there) could be used with the AgentPress child theme and also with any other Genesis child theme, so this setting might come in really handy ;-).
 
-= I noticed that some settings have no effect at all, what happens here? =
+
+= I noticed that some (layout section) settings have no effect at all, what happens here? =
 This has to do with priorities. In general, if there's a template for a specific page (archive) type, for example `image.php` for image attachment display, then Genesis & WordPress will always use that first for the content output AS LONG AS there's an layout setting function or filter in there. Only if there are no templates with layout settings found, the layout option settings will take full effect. So, if our example `image.php` has a layout filter set in this then has the higher priority but if there's no layout filter in there then the plugin's layout setting will take effect! - Well, if you experience such cases just leave these fields on "Genesis Default" and you're good to go :-). (You might call that a limitation of the plugin or whatever but that's the intended behavior of WordPress & Genesis.)
 
-= With my child theme some of the layout options have no effect, what happens here? =
-This is the case when a child theme doesn't support one or more specific layout options. For example: When a child has unregistered the layout option "Sidebar-Sidebar-Content" then the plugin setting of "Sidebar-Sidebar-Content" will have no effect at all. This is absolutely logical behavior because the plugin can only set options which are supported by the active child theme. (You can call that a limitation of the plugin or whatever but that's the behavior as of now. You could change your child theme or just re-register the specific layout option you want in your child theme.)
+
+= What does the Additional Post Type support do? =
+Nothing spectacular...
+
+a) It just would add the inpost metaboxes of Genesis for layouts (whoa!), SEO (only if no SEO plugin is used) and Scripts (since Genesis 2.0+). --- That only works for post types that are "public" which means, viewable on the frontend!
+
+b) Also possible, is the activation of the new Genesis Archive Settings (for post types; since Genesis 2.0+). So you can for example, edit the Archive Page Title, SEO Options and Layout Options for a 'download' archive page (or a 'books' archive, 'portfolio' archive...). --- That only works for post types that are "public" which means, viewable on the frontend AND have support enabled for `'has_archive' => true` in their post type registration!
+
+Note: The layout settings for archives done via these Genesis Archive settings and/or the content archive settings of THIS plugin *do just the same*. So you decide which one you use. Nothing could break, and it does no harm. So, enjoy your content archives (settings)!
+
 
 = What means Reset of settings? =
-Actually it just restores the default layout setting which is always defined in regular layout settings on the Genesis Theme Settings page.
+a) Layouts: Actually it just restores the default layout setting which is always defined in regular layout settings on the Genesis Theme Settings page.
+
+b) All other settings are set to their default state.
+
 
 = Which settings are effected when doing a reset? =
 **ALL** available options are resetted to their defaults!
 So if you for example only want to reset *one* option and leave all other as they are then only change this one section and then click the SAVE button and you're done.
 
+
 = Is this plugin Multisite compatible? =
 Yes, it is! :) Works really fine in Multisite invironment - here I just recommend to activate on a per site basis so to load things only where and when needed.
 
+
 = In Multisite, could I "network enable" this plugin? =
-Yes, you could. -- Still, a per site use is recommended.
+Yes, you could. -- Still, a per site use is recommended. -- Network activation makes the most sense if *all* sub sites are using Genesis! On the other hand, if your Multisite install has 10 sites and only 3 may run with Genesis, network activation is not recommended!
+
+
+= How could I add my own layout option to the select drop-down menu? =
+That's possible since plugin version 2.0.0! Handy feature for custom child theme development as well as for plugin developers, hehe :)
+
+Just use this sample code and modify/ enhance to your needs:
+`
+/**
+ * Adding additional custom layouts to the layout select drop-down for plugin
+ *    "Genesis Layout Extras".
+ *
+ * NOTE: This requires the Genesis Framework, plus the plugin "Genesis Layout
+ *       Extras" (available via: http://wordpress.org/plugins/genesis-layout-extras/)
+ *
+ * @author David Decker - DECKERWEB.de
+ * @link   http://genesisthemes.de/en/wp-plugins/genesis-layout-extras/
+ * @link   http://deckerweb.de/twitter
+ */
+if ( defined( 'GLE_SETTINGS_FIELD' ) && function_exists( 'genesis_get_layout' ) ) {
+
+	add_action( 'gle_layouts_drop_down', 'custom_gle_select_layout_option', 10, 1 );
+	/**
+	 * Helper function to add additional <option> markup to select drop-down.
+	 *
+	 * @uses ddw_gle_layout_select_option()
+	 *
+	 * param string $gle_layout_option
+	 */
+	function custom_gle_select_layout_option( $gle_layout_option ) {
+
+		ddw_gle_layout_select_option(
+			'my-custom-layout-type-id',							// layout ID
+			__( 'My Custom Layout Name', 'your-text-domain' ),	// layout label name
+			'#990000',											// background color in drop-down
+			$gle_layout_option 									// internal variable - DO NOT delete!
+		);
+
+	}  // function
+
+}  // if
+`
+
+
+= How can I remove the Export/ Import Info meta box? =
+Just add this line of code to your child theme's `functions.php` file, a functionality plugin or snippet management plugin:
+`
+/** Genesis Layout Extras: Remove Export/ Import Info meta box */
+define( 'GLE_NO_EXPORT_IMPORT_INFO', TRUE );
+`
+
+
+= How can I completely remove the 'Header+Nav/Content/Sidebar' layout option? =
+It's possible, yes, just add this line of code to your child theme's `functions.php` file, a functionality plugin or snippet management plugin:
+`
+/** Genesis Layout Extras: Remove HNCS layout option */
+define( 'GLE_NO_HNCS_LAYOUT_OPTION', TRUE );
+`
+
+
+All the custom & branding stuff code above can also be found as a Gist on GitHub: s://gist.github.com/deckerweb/6151740 (you can also add your questions/ feedback there :)
 
 == Screenshots ==
 
-1. Genesis Layout Extras - admin options page - WordPress default section. ([Click here for larger version of screenshot](https://www.dropbox.com/s/i5glaotevn63rpn/screenshot-1.png))
-2. Genesis Layout Extras - admin options page - optional plugin support section (CPTs). ([Click here for larger version of screenshot](https://www.dropbox.com/s/7jhkm5wft6ym5q0/screenshot-2.png))
-3. Genesis Layout Extras - admin options page - optional child theme support section (CPTs). ([Click here for larger version of screenshot](https://www.dropbox.com/s/zp1o90k745i8fhm/screenshot-3.png))
-4. Genesis Layout Extras - admin options page - layout drop-down menu. ([Click here for larger version of screenshot](https://www.dropbox.com/s/7u0qikxnxkpkrqm/screenshot-4.png))
-5. Genesis Layout Extras - screen options. ([Click here for larger version of screenshot](https://www.dropbox.com/s/w8th73d802tzy14/screenshot-5.png))
-6. Genesis Layout Extras - help tabs. ([Click here for larger version of screenshot](https://www.dropbox.com/s/4rdhuv644fqx8lo/screenshot-6.png))
+01. Genesis Layout Extras: Plugin settings page - introductory section. ([Click here for larger version of screenshot](https://www.dropbox.com/s/q5q4j97kzixmmsp/screenshot-01.png))
+
+02. Genesis Layout Extras: Settings meta box for additional layout options - up to nine (9!) are possible! :) ([Click here for larger version of screenshot](https://www.dropbox.com/s/l42dztph9hbgo0u/screenshot-02.png))
+
+03. Genesis Layout Extras: Settings meta box for additional post type support - for public post types and/or ones with 'archive' support. ([Click here for larger version of screenshot](https://www.dropbox.com/s/tvwcahkgamze15z/screenshot-03.png))
+
+04. Genesis Layout Extras: Select a default layout option for various sections, CPTs etc. -- via the drop-down menu. ([Click here for larger version of screenshot](https://www.dropbox.com/s/0lub8igetamzqap/screenshot-04.png))
+
+05. Genesis Layout Extras Set a default layout option for lots of WordPress' default cases/ pages/ views. ([Click here for larger version of screenshot](https://www.dropbox.com/s/a5e62ibhxpiyr3d/screenshot-05.png))
+
+06. Genesis Layout Extras: Supported custom post types by plugins -- just an example with Easy Digital Downloads and bbPress 2.x (there are many more included, see 'Description'!). ([Click here for larger version of screenshot](https://www.dropbox.com/s/tr5jn8kh1e17wlq/screenshot-06.png))
+
+07. Genesis Layout Extras: Supported custom post types by child themes -- just an example for "Executive 2.0" child theme (there are many more included, see 'Description'!). ([Click here for larger version of screenshot](https://www.dropbox.com/s/prjocq6tiq169pf/screenshot-07.png))
+
+08. Genesis Layout Extras: Plugin settings are hooked into the Genesis Exporter feature for easy export & import of plugin settings! :) ([Click here for larger version of screenshot](https://www.dropbox.com/s/1nxn7nb19j1k2se/screenshot-08.png))
+
+09. Genesis Layout Extras: Manage the display of the settings page meta boxes via "Screen options" tab on top right corner. ([Click here for larger version of screenshot](https://www.dropbox.com/s/dh1zj9b2eg08spn/screenshot-09.png))
+
+10. Genesis Layout Extras: Help tab system included on the plugin's settings page - tab on top right corner. ([Click here for larger version of screenshot](https://www.dropbox.com/s/nou90hwfeeb3dt8/screenshot-10.png))
+
+11. Genesis Layout Extras: Example of activated alternate layout options - that are also hooked into the inpost edit screens layout options meta box! :) (The same on Genesis Theme Settings!) ([Click here for larger version of screenshot](https://www.dropbox.com/s/h7zklln8m1claa5/screenshot-11.png))
+
+12. Genesis Layout Extras: Example of activated "Genesis Archive Settings" for a post type - for "Portfolio" in this example here. ([Click here for larger version of screenshot](https://www.dropbox.com/s/mmghtia9w75v87a/screenshot-12.png))
 
 == Changelog ==
+
+= 2.0.0 (2013-08-05) =
+* *The long-awaited, super-polished 2.0 plugin release with some new features also :)*
+* NEW: Plugin now registers up to 9 (nine!) additional layout options! Requirement for this feature: Primary Sidebar (ID `sidebar`) and/or Secondary Sidebar (Sidebar-Alt, ID `sidebar-alt`) may *not* have been unregistered!
+* NEW: Additional post type support, so you can add Genesis Layout support (plus SEO, plus Scripts) to all public custom post types; as well as the new "Archive Settings" pages (since Genesis 2.0+) for all public custom post types with archive support!
+* NEW: Plugin detects the registered (official) layout options (from the child theme, or other plugins) and *displays only those* in the layout select drop-down!
+* NEW: Added even more hooks & filters within the plugin. So for example, developers can now easily add more layout options to the select drop-down if needed! (see [FAQ here](http://wordpress.org/plugins/genesis-layout-extras/faq/) for more info)
+* NEW: Plugin now leverages the Genesis Admin Class for improved security, performance, maintenance.
+* CODE: Major code/ documentation updates & improvements.
+* INFO: Where needed, the plugin now supports HTML5 markup/CSS styles with Genesis 2.0+. For example, all optional frontend CSS style sheets load automatically their HTML5 version if HTML5 is supported by your child them.
+* NEW: Added plugin support for "Genesis Prose Extras" for the layout select drop-down.
+* NEW: Added support regular uninstall routine with WordPress standard. (So, if you delete the plugin via the button on the plugin listing page, then the plugin's settings will be deletet from the options table!)
+* UPDATE: Improved translation loading, now only within the admin area, also improved for custom translations!
+* UPDATE: Reworked, improved and updated wording, help texts and overall user guidance.
+* UPDATE: Updated and improved readme.txt file here, especially with new FAQ entries and better installation instructions.
+* UPDATE: Updated all existing screenshots, added lots of new screenshots! :)
+* NEW: Added new - partly - Swedish (sv_SE) translation - user-submitted.
+* UPDATE: Updated all existing translations plus the .pot file for all translators! --> *Please [**help updating all translations for version 2.0.0**](http://translate.wpautobahn.com/projects/genesis-plugins-deckerweb/genesis-layout-extras) too - THANKS!*
 
 = 1.7.0 (2013-03-22) =
 * NEW: Added settings export (and therefore also import) to the Genesis Exporter/ Importer feature.
@@ -244,6 +400,9 @@ Yes, you could. -- Still, a per site use is recommended.
 
 == Upgrade Notice ==
 
+= 2.0.0 =
+Major additions & improvements: Additional layouts, post type support, Genesis 2.0/HTML5 support, code refresh & improvements. Updated existing translations plus .pot file for translators.
+
 = 1.7.0 =
 Several additions & improvements: Added settings export. Extended child theme support. Improved bbPress support. Updated existing translations plus .pot file for translators.
 
@@ -271,6 +430,7 @@ All changed - Actually a whole new plugin, updated all over the place. Also the 
 == Plugin Links ==
 * [Translations (GlotPress)](http://translate.wpautobahn.com/projects/genesis-plugins-deckerweb/genesis-layout-extras)
 * [User support forums](http://wordpress.org/support/plugin/genesis-layout-extras)
+* [Code snippets archive for customizing, GitHub Gist](s://gist.github.com/deckerweb/6151740)
 
 == Donate ==
 Enjoy using *Genesis Layout Extras*? Please consider [making a small donation](http://genesisthemes.de/en/donate/) to support the project's continued development.
@@ -281,12 +441,20 @@ Enjoy using *Genesis Layout Extras*? Please consider [making a small donation](h
 * French (fr_FR): Français - user-submitted by [Grégoire Noyelle](http://www.gregoirenoyelle.com/)
 * Italian (it_IT): Italiano - user-submitted by [Marco Rosselli](http://www.prenotazionetraghetti.com/)
 * Hindi (hi_IN - for India): user-submitted by Love Chandel
+* Swedish (sv_SE): Svenska - user-submitted, only a few strings yet...
 * Spanish (es_ES): Español - user-submitted, only a few strings yet...
 * For custom and update-secure language files please upload them to `/wp-content/languages/genesis-layout-extras/` (just create this folder) - This enables you to use fully custom translations that won't be overridden on plugin updates. Also, complete custom English wording is possible with that as well, just use a language file like `genesis-layout-extras-en_US.mo/.po` to achieve that.
 
 **Easy plugin translation platform with GlotPress tool:** [**Translate "Genesis Layout Extras"...**](http://translate.wpautobahn.com/projects/genesis-plugins-deckerweb/genesis-layout-extras)
 
 *Note:* All my plugins are internationalized/ translateable by default. This is very important for all users worldwide. So please contribute your language to the plugin to make it even more useful. For translating I recommend the awesome ["Codestyling Localization" plugin](http://wordpress.org/plugins/codestyling-localization/) and for validating the ["Poedit Editor"](http://www.poedit.net/), which works fine on Windows, Mac and Linux.
+
+== Future Roadmap for Genesis Layout Extras ==
+* Adding more supported plugins that come with post types
+* If it makes sense, maybe even add more layout options...
+* When needed, adding more supported child themes
+* In general, improving the code and overall user experience
+* Hopefully, I can even offer more translations in future :)
 
 == Check out my other Genesis Plugins ==
 * [Genesis Prose Extras](http://wordpress.org/plugins/genesis-prose-extras/) - add-on for Prose child theme
@@ -312,3 +480,7 @@ Enjoy using *Genesis Layout Extras*? Please consider [making a small donation](h
 **Among the Top 7 most downloaded Genesis plugins ever :) Thank you all users and translators!**
 
 **Thanks for all user feedback that led to improvements in the plugin!**
+
+**Big thanks to all Genesis users, developers and bloggers who reviewed the plugin on their websites/ blogs!**
+
+*Credit where credit is due:* This plugin here was first based on the work of WPChildThemes for the great "Genesis Layout Manager" plugin. Now, nearly two years and a dozen updates later the basic function is still there but the code totally refactored...! :)

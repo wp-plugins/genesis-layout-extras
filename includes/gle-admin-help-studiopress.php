@@ -28,15 +28,13 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @since 1.6.0
  *
- * @uses  ddw_gle_plugin_get_data()
+ * @uses  ddw_gle_help_content_sub_head()
  * @uses  post_type_exists()
  */
 function ddw_gle_admin_help_studiopress() {
 
-	echo '<h3>' . __( 'Plugin: Genesis Layout Extras', 'genesis-layout-extras' ) . ' <small>v' . esc_attr( ddw_gle_plugin_get_data( 'Version' ) ) . '</small></h3>';
-
-		echo '<h4>' . __( 'Custom Post Types by Child Themes', 'genesis-layout-extras' ) . ' &mdash; ' . __( 'by StudioPress', 'genesis-layout-extras' ) . '</h4>';
-
+	ddw_gle_help_content_sub_head( __( 'Custom Post Types by Child Themes', 'genesis-layout-extras' ) . ' &mdash; ' . __( 'by StudioPress', 'genesis-layout-extras' ) );
+	
 		/** Child Themes by StudioPress: Minimum 2.0 / Executive 2.0 */
 		if ( post_type_exists( 'portfolio' ) ) {
 
@@ -46,10 +44,13 @@ function ddw_gle_admin_help_studiopress() {
 				$gle_sp_theme_check = 'Executive 2.0';
 			}
 
-			echo '<p>' . sprintf( __( 'Child Theme: %s by StudioPress', 'genesis-layout-extras' ), $gle_sp_theme_check ) .
+			echo '<p>' . sprintf(
+					__( 'Child Theme: %s by StudioPress', 'genesis-layout-extras' ),
+					$gle_sp_theme_check
+				) . '</p>' .
 				'<ul>' .
 					'<li>' . __( 'Portfolio Post Type Layout (archive)', 'genesis-layout-extras' ) . '</li>' .
-				'</ul></p>';
+				'</ul>';
 
 		}  // end-if StudioPress check
 

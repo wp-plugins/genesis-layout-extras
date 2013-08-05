@@ -57,13 +57,20 @@ function ddw_gle_admin_help_zigzagpress() {
 				$gle_zzp_theme_check = 'Single';
 			} elseif ( CHILD_THEME_NAME == 'Tequila' ) {
 				$gle_zzp_theme_check = 'Tequila';
+			} elseif ( CHILD_THEME_NAME == 'Prestige' ) {
+				$gle_zzp_theme_check = 'Prestige';
+			} elseif ( CHILD_THEME_NAME == 'Neo' ) {
+				$gle_zzp_theme_check = 'Neo';
 			}
 
-			echo '<p>' . sprintf( __( 'Child Theme: %s by ZigZagPress', 'genesis-layout-extras' ), $gle_zzp_theme_check ) .
+			echo '<p>' . sprintf(
+					__( 'Child Theme: %s by ZigZagPress', 'genesis-layout-extras' ),
+					$gle_zzp_theme_check
+				) . '</p>' .
 				'<ul>' .
 					'<li>' . __( 'Portfolio Post Type Layout (archive)', 'genesis-layout-extras' ) . '</li>' .
 					'<li>' . __( 'Portfolio Categories Taxonomy Layout', 'genesis-layout-extras' ) . '</li>' .
-				'</ul></p>';
+				'</ul>';
 
 		}  // end-if ZigZagPress check
 

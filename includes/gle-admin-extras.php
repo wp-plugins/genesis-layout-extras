@@ -31,11 +31,14 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @uses  get_locale()
  */
 define( 'GLE_URL_TRANSLATE',		'http://translate.wpautobahn.com/projects/genesis-plugins-deckerweb/genesis-layout-extras' );
-define( 'GLE_URL_WPORG_PLUGIN', 	'http://wordpress.org/extend/plugins/genesis-layout-extras/' );
-define( 'GLE_URL_WPORG_FAQ',		'http://wordpress.org/extend/plugins/genesis-layout-extras/faq/' );
+define( 'GLE_URL_WPORG_PLUGIN', 	'http://wordpress.org/plugins/genesis-layout-extras/' );
+define( 'GLE_URL_WPORG_FAQ',		'http://wordpress.org/plugins/genesis-layout-extras/faq/' );
 define( 'GLE_URL_WPORG_FORUM',		'http://wordpress.org/support/plugin/genesis-layout-extras' );
-define( 'GLE_URL_WPORG_DDW', 		'http://wordpress.org/extend/plugins/tags/deckerweb' );
+define( 'GLE_URL_WPORG_DDW', 		'http://wordpress.org/plugins/tags/deckerweb' );
 define( 'GLE_URL_WPORG_PROFILE',	'http://profiles.wordpress.org/daveshine/' );
+define( 'GLE_URL_SUPPORT',         	esc_url( GLE_URL_WPORG_FORUM ) );
+define( 'GLE_URL_SNIPPETS',			's://gist.github.com/deckerweb/6151740' );
+define( 'GLE_PLUGIN_LICENSE', 		'GPL-2.0+' );
 if ( get_locale() == 'de_DE' || get_locale() == 'de_AT' || get_locale() == 'de_CH' || get_locale() == 'de_LU' ) {
 	define( 'GLE_URL_DONATE', 		'http://genesisthemes.de/spenden/' );
 	define( 'GLE_URL_PLUGIN', 		'http://genesisthemes.de/plugins/genesis-layout-extras/' );
@@ -100,6 +103,8 @@ function ddw_gle_plugin_links( $gle_links, $gle_file ) {
 		$gle_links[] = '<a href="' . esc_url( GLE_URL_WPORG_FAQ ) . '" target="_new" title="' . __( 'FAQ', 'genesis-layout-extras' ) . '">' . __( 'FAQ', 'genesis-layout-extras' ) . '</a>';
 
 		$gle_links[] = '<a href="' . esc_url( GLE_URL_WPORG_FORUM ) . '" target="_new" title="' . __( 'Support', 'genesis-layout-extras' ) . '">' . __( 'Support', 'genesis-layout-extras' ) . '</a>';
+
+		$gle_links[] = '<a href="' . esc_url( GLE_URL_SNIPPETS ) . '" target="_new" title="' . __( 'Code Snippets for Customization', 'genesis-layout-extras' ) . '">' . __( 'Code Snippets', 'genesis-layout-extras' ) . '</a>';
 
 		$gle_links[] = '<a href="' . esc_url( GLE_URL_TRANSLATE ) . '" target="_new" title="' . __( 'Translations', 'genesis-layout-extras' ) . '">' . __( 'Translations', 'genesis-layout-extras' ) . '</a>';
 

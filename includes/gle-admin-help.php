@@ -24,153 +24,48 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 /**
- * Add help tabs to options page - for WordPress 3.3 and higher
+ * Add help tab content for Genesis Layout Extras Plugin.
  *
- * @since  1.2.0
+ * @since 2.0.0
  *
- * @uses   get_current_screen()
- * @uses   WP_Screen::add_help_tab()
- * @uses   WP_Screen::set_help_sidebar()
- * @uses   ddw_gle_help_sidebar_content()
- *
- * @param  $screen
- *
- * @global $_gle_settings_pagehook
- *
- * @return strings Help tabs/content
+ * @uses  ddw_gle_plugin_get_data() To display various data of this plugin.
  */
-function ddw_genesis_layout_extras_help_tabs() {
+function ddw_gle_plugin_start_help() {
 
-	global $_gle_settings_pagehook;
+	echo '<h3>' . __( 'Plugin', 'genesis-layout-extras' ) . ': ' . __( 'Genesis Layout Extras', 'genesis-layout-extras' ) . ' <small>v' . esc_attr( ddw_gle_plugin_get_data( 'Version' ) ) . '</small></h3>';
 
-	$screen = get_current_screen();
+	ddw_gle_help_content_usage();
 
-	/** Bail if not on screen or prior WordPress 3.3 */
-	if ( ! class_exists( 'WP_Screen' )
-		|| ! $screen
-		|| $screen->id != $_gle_settings_pagehook
-	) {
-		return;
-	}
+	echo '<p><a href="http://www.opensource.org/licenses/gpl-license.php" target="_new" title="' . esc_attr( GLE_PLUGIN_LICENSE ). '">' . esc_attr( GLE_PLUGIN_LICENSE ). '</a> &copy; 2011-' . date( 'Y' ) . ' <a href="' . esc_url( ddw_gle_plugin_get_data( 'AuthorURI' ) ) . '" target="_new" title="' . esc_attr__( ddw_gle_plugin_get_data( 'Author' ) ) . '">' . esc_attr__( ddw_gle_plugin_get_data( 'Author' ) ) . '</a></p>';
 
-	/** Add the help tabs */
-	$screen->add_help_tab( array(
-		'id'       => 'gle-usage',
-		'title'    => __( 'What the Plugin Does', 'genesis-layout-extras' ),
-		'callback' => apply_filters( 'gle_filter_help_content_usage', 'ddw_gle_help_content_usage' ),
-	) );
-
-	/** Help tab only if supported plugins active */
-	if ( post_type_exists( 'listing' )
-		|| class_exists( 'bbPress' )
-		|| post_type_exists( 'product' )
-		|| post_type_exists( 'video' )
-		|| post_type_exists( 'download' )
-		|| post_type_exists( 'sc_event' )
-	) {
-
-		$screen->add_help_tab( array(
-			'id'       => 'gle-plugin-support',
-			'title'    => __( 'Plugin Support', 'genesis-layout-extras' ),
-			'callback' => apply_filters( 'gle_filter_help_plugins', 'ddw_gle_admin_help_plugins' ),
-		) );
-
-		require_once( GLE_PLUGIN_DIR . '/includes/gle-admin-help-plugins.php' );
-
-	}  // end-if plugins check
-
-	/**
-	 * Help tab only if supported child themes active
-	 */
-	/** By StudioPress */
-	if ( ( function_exists( 'minimum_portfolio_post_type' ) || function_exists( 'executive_portfolio_post_type' ) )
-		&& post_type_exists( 'portfolio' )
-	) {
-
-		$screen->add_help_tab( array(
-			'id'       => 'gle-child-theme-support',
-			'title'    => __( 'Child Theme Support', 'genesis-layout-extras' ),
-			'callback' => apply_filters( 'gle_filter_help_studiopress', 'ddw_gle_admin_help_studiopress' ),
-		) );
-
-		require_once( GLE_PLUGIN_DIR . '/includes/gle-admin-help-studiopress.php' );
-
-	}  // end-if child theme studiopress check
-
-	/** By Themedy brand */
-	if ( function_exists( 'themedy_load_styles' )
-		&& ( post_type_exists( 'products' ) || post_type_exists( 'photo' ) )
-	) {
-
-		$screen->add_help_tab( array(
-			'id'       => 'gle-child-theme-support',
-			'title'    => __( 'Child Theme Support', 'genesis-layout-extras' ),
-			'callback' => apply_filters( 'gle_filter_help_themedy', 'ddw_gle_admin_help_themedy' ),
-		) );
-
-		require_once( GLE_PLUGIN_DIR . '/includes/gle-admin-help-themedy.php' );
-
-	}  // end-if child theme themedy check
-
-	/** By ZigZagPress brand */
-	if ( ( CHILD_THEME_NAME == 'Megalithe'
-			|| CHILD_THEME_NAME == 'Engrave Theme'
-			|| CHILD_THEME_NAME == 'Vanilla'
-			|| CHILD_THEME_NAME == 'Solo'
-			|| CHILD_THEME_NAME == 'Bijou'
-			|| CHILD_THEME_NAME == 'Eshop'
-			|| CHILD_THEME_NAME == 'Single'
-			|| CHILD_THEME_NAME == 'Tequila'
-		) && post_type_exists( 'portfolio' )
-	) {
-
-		$screen->add_help_tab(array(
-			'id'       => 'gle-child-theme-support',
-			'title'    => __( 'Child Theme Support', 'genesis-layout-extras' ),
-			'callback' => apply_filters( 'gle_filter_help_zigzagpress', 'ddw_gle_admin_help_zigzagpress' ),
-		) );
-
-		require_once( GLE_PLUGIN_DIR . '/includes/gle-admin-help-zigzagpress.php' );
-
-	}  // end-if child theme zigzagpress check
-
-	/** ...general help tabs cont. */
-	$screen->add_help_tab( array(
-		'id'       => 'gle-faq',
-		'title'    => __( 'FAQ - Frequently Asked Questions', 'genesis-layout-extras' ),
-		'callback' => apply_filters( 'gle_filter_help_content_faq', 'ddw_gle_help_content_faq' ),
-	) );
-
-	$screen->add_help_tab( array(
-		'id'      => 'gle-translations',
-		'title'   => __( 'Translations', 'genesis-layout-extras' ),
-		'callback' => apply_filters( 'gle_filter_help_content_translations', 'ddw_gle_help_content_translations' ),
-	) );
-
-	$screen->add_help_tab( array(
-		'id'      => 'gle-support-donation-rating-tips',
-		'title'   => __( 'Support - Donations - Rating &amp; Tips', 'genesis-layout-extras' ),
-		'callback' => apply_filters( 'gle_filter_help_content_support_donation_rating_tips', 'ddw_gle_help_content_support_donation_rating_tips' ),
-	) );
-
-	$screen->add_help_tab( array(
-		'id'      => 'gle-author-license',
-		'title'   => __( 'Author - License', 'genesis-layout-extras' ),
-		'callback' => apply_filters( 'gle_filter_help_content_author_license', 'ddw_gle_help_content_author_license' ),
-	) );
-
-	/** Add help sidebar */
-	$screen->set_help_sidebar( ddw_gle_help_sidebar_content() );
-
-}  // ddw_genesis_layout_extras_help_tabs
+}  // end of function ddw_gle_plugin_start_help
 
 
 /**
- * Create and display plugin help tab content: "Usage".
+ * Helper function for echoing the sub headline for help content as HTML string
+ *    with specific sub head paramter (title/ subject).
+ *
+ * @since 2.0.0
+ *
+ * @param $gle_subhead
+ */
+function ddw_gle_help_content_sub_head( $gle_subhead = '' ) {
+
+	echo sprintf(
+		'<h3>%1$s: %2$s</h3>',
+		__( 'Genesis Layout Extras', 'genesis-layout-extras' ),
+		esc_attr( $gle_subhead )
+	);
+
+}  // end of function ddw_gle_help_content_sub_head
+
+
+/**
+ * Create and display plugin help tab content: Plugin Info/ Usage etc..
  *
  * @since  1.0.0
  *
- * @uses   ddw_gle_plugin_get_data()
+ * @uses   ddw_gle_core_sidebars_exists()
  *
  * @param  $gle_help_usage
  *
@@ -178,11 +73,140 @@ function ddw_genesis_layout_extras_help_tabs() {
  */
 function ddw_gle_help_content_usage() {
 
-	echo '<h3>' . __( 'Plugin: Genesis Layout Extras', 'genesis-layout-extras' ) . ' <small>v' . esc_attr( ddw_gle_plugin_get_data( 'Version' ) ) . '</small></h3>' .
-			'<h4>' . __( 'What the Plugin Does', 'genesis-layout-extras' ) . '</h4>' .
-			'<p>' . __( 'This plugin for the Genesis Theme Framework allows modifying of default layouts for homepage, singular, archive, attachment, search and 404 pages via an options page under the Genesis menu. In addition you can also modify the default layout option for pages generated by the bbPress 2.x forum plugin and the AgentPress Listings plugin.', 'genesis-layout-extras' ) . '</p>';
+	echo '<h4>' . __( 'Section and Template based layout changing', 'genesis-layout-extras' ) . ':</h4>' .
+		'<p><blockquote>' . __( 'This plugin for the Genesis Theme Framework allows modifying of default layouts for homepage, singular, archive, attachment, search and 404 pages via its options page under the Genesis menu.', 'genesis-layout-extras' ) . ' ' . sprintf(
+			__( 'In addition you can also modify the default layout option for pages generated by various popular plugins - if installend - among these are: %1$s forum plugin, %2$s plugin, %3$s and %4$s.', 'genesis-layout-extras' ),
+			'bbPress 2.x',
+			'AgentPress Listings',
+			'WooCommerce, Jigoshop, Easy Digital Downloads',
+			'Sugar Events Calendar'
+		) . '</blockquote></p>';
+
+	if ( ddw_gle_core_sidebars_exists( 'sidebar' ) ) {
+
+		echo '<h4>' . __( 'Registering additional layouts', 'genesis-layout-extras' ) . ':</h4>' .
+		'<p><blockquote>' . sprintf(
+			__( 'Since version 2.0.0 of this plugin you can also register up to six (6!) additional alternate layout options. All of these make use of the %s and most also of the %s. So make sure both are registered with your child theme.', 'genesis-layout-extras' ),
+			'<em>' . __( 'Secondary Sidebar (Sidebar-Alt)', 'genesis-layout-extras' ) . '</em>',
+			'<em>' . __( 'Primary Sidebar', 'genesis-layout-extras' ) . '</em>'
+		) . '</blockquote></p>';
+
+	}  // end if
 
 }  // end of function ddw_gle_help_content_usage
+
+
+/**
+ * Create and display plugin help tab content: "Layout Extras".
+ *
+ * @since 2.0.0
+ *
+ * @uses  ddw_gle_help_content_sub_head()
+ * @uses  genesis_get_layout()
+ */
+function ddw_gle_help_content_layout_extras() {
+
+	ddw_gle_help_content_sub_head( __( 'Layouts', 'genesis-layout-extras' ) );
+
+	/** Custom CSS advise */
+	echo '<h4>' . __( 'Additional, alternate layout options', 'genesis-layout-extras' ) . ':</h4>' .
+			'<p>' . __( 'Consider these more like variations of existing layouts. So, in the end you have even more flexibility with no overhead! This could be great for content oriented blogs, marketeers websites and so much more...', 'genesis-layout-extras' ) . ' &mdash; ' . __( 'Currently enabled', 'genesis-layout-extras' ) . ':</p>';
+
+			if ( genesis_get_layout( 'sidebars-below-content' ) && ! defined( 'GPEX_PLUGIN_BASEDIR' ) ) {
+
+				echo '<div class="gle-layout-div"><img class="gle-layout-img alignleft" src="' . apply_filters( 'gle_filter_layout_image_sidebars_below_content', esc_url( plugins_url( 'images/gle_sbc.gif', dirname( __FILE__ ) ) ) ) . '" title="' . esc_html__( 'Sidebars below Content', 'genesis-layout-extras' ) . '" /><span><em>' . __( 'Sidebars below Content', 'genesis-layout-extras' ) . '</em><br />&rarr; ' . sprintf( __( 'Think of it as %s, but with Primary and Secondary sidebars below the content (as two fifty percent-wide responsive columns).', 'genesis-layout-extras' ), '"' . __( 'Full Width Content', 'genesis-layout-extras' ) . '"' ) . '</span></div>';
+
+			}  // end if SBC layout check
+
+			if ( genesis_get_layout( 'primary-below-content' ) ) {
+
+				echo '<div class="gle-layout-div"><img class="gle-layout-img alignleft" src="' . apply_filters( 'gle_filter_layout_image_primary_below_content', esc_url( plugins_url( 'images/gle_pbc.gif', dirname( __FILE__ ) ) ) ) . '" title="' . esc_html__( 'Primary below Content', 'genesis-layout-extras' ) . '" /><span><em>' . __( 'Primary below Content', 'genesis-layout-extras' ) . '</em><br />&rarr; ' . sprintf( __( 'Think of it as %s, but with Primary sidebar below the content.', 'genesis-layout-extras' ), '"' . __( 'Full Width Content', 'genesis-layout-extras' ) . '"' ) . '</span></div>';
+
+			}  // end if PBC layout check
+
+			if ( genesis_get_layout( 'primary-above-content' ) ) {
+
+				echo '<div class="gle-layout-div"><img class="gle-layout-img alignleft" src="' . apply_filters( 'gle_filter_layout_image_primary_above_content', esc_url( plugins_url( 'images/gle_pac.gif', dirname( __FILE__ ) ) ) ) . '" title="' . esc_html__( 'Primary above Content', 'genesis-layout-extras' ) . '" /><span><em>' . __( 'Primary above Content', 'genesis-layout-extras' ) . '</em><br />&rarr; ' . sprintf( __( 'Think of it as %s, but with Primary sidebar above the content.', 'genesis-layout-extras' ), '"' . __( 'Full Width Content', 'genesis-layout-extras' ) . '"' ) . '</span></div>';
+
+			}  // end if PAC layout check
+
+			if ( genesis_get_layout( 'content-sidebaralt' ) && ! defined( 'GPEX_PLUGIN_BASEDIR' ) ) {
+
+				echo '<div class="gle-layout-div"><img class="gle-layout-img alignleft" src="' . apply_filters( 'gle_filter_layout_image_content_sidebaralt', esc_url( plugins_url( 'images/gle_c-salt.gif', dirname( __FILE__ ) ) ) ) . '" title="' . esc_html__( 'Content/Sidebar-Alt', 'genesis-layout-extras' ) . '" /><span><em>' . __( 'Content/Sidebar-Alt', 'genesis-layout-extras' ) . '</em><br />&rarr; ' . sprintf( __( 'Think of it as a variation of %s.', 'genesis-layout-extras' ), '"' . __( 'Content-Sidebar', 'genesis-layout-extras' ) . '"' ) . '</span></div>';
+
+			}  // end if CSA layout check
+
+			if ( genesis_get_layout( 'sidebaralt-content' ) && ! defined( 'GPEX_PLUGIN_BASEDIR' ) ) {
+
+				echo '<div class="gle-layout-div"><img class="gle-layout-img alignleft" src="' . apply_filters( 'gle_filter_layout_image_sidebaralt_content', esc_url( plugins_url( 'images/gle_salt-c.gif', dirname( __FILE__ ) ) ) ) . '" title="' . esc_html__( 'Sidebar-Alt/Content', 'genesis-layout-extras' ) . '" /><span><em>' . __( 'Sidebar-Alt/Content', 'genesis-layout-extras' ) . '</em><br />&rarr; ' . sprintf( __( 'Think of it as a variation of %s.', 'genesis-layout-extras' ), '"' . __( 'Sidebar-Content', 'genesis-layout-extras' ) . '"' ) . '</span></div>';
+
+			}  // end if SAC layout check
+
+			if ( genesis_get_layout( 'content-sidebaralt-sidebar' ) ) {
+
+				echo '<div class="gle-layout-div"><img class="gle-layout-img alignleft" src="' . apply_filters( 'gle_filter_layout_image_content_sidebaralt_sidebar', esc_url( plugins_url( 'images/gle_c-salt-s.gif', dirname( __FILE__ ) ) ) ) . '" title="' . esc_html__( 'Content/Sidebar-Alt/Sidebar', 'genesis-layout-extras' ) . '" /><span><em>' . __( 'Content/Sidebar-Alt/Sidebar', 'genesis-layout-extras' ) . '</em><br />&rarr; ' . sprintf( __( 'Think of it as a variation of %s.', 'genesis-layout-extras' ), '"' . __( 'Content-Sidebar-Sidebar', 'genesis-layout-extras' ) . '"' ) . '</span></div>';
+
+			}  // end if CSAS layout check
+
+			if ( genesis_get_layout( 'sidebar-sidebaralt-content' ) ) {
+
+				echo '<div class="gle-layout-div"><img class="gle-layout-img alignleft" src="' . apply_filters( 'gle_filter_layout_image_sidebar_sidebaralt_content', esc_url( plugins_url( 'images/gle_s-salt-c.gif', dirname( __FILE__ ) ) ) ) . '" title="' . esc_html__( 'Sidebar/Sidebar-Alt/Content', 'genesis-layout-extras' ) . '" /><span><em>' . __( 'Sidebar/Sidebar-Alt/Content', 'genesis-layout-extras' ) . '</em><br />&rarr; ' . sprintf( __( 'Think of it as a variation of %s.', 'genesis-layout-extras' ), '"' . __( 'Sidebar-Sidebar-Content', 'genesis-layout-extras' ) . '"' ) . '</span></div>';
+
+			}  // end if SSAC layout check
+
+			if ( genesis_get_layout( 'sidebar-content-sidebaralt' ) ) {
+
+				echo '<div class="gle-layout-div"><img class="gle-layout-img alignleft" src="' . apply_filters( 'gle_filter_layout_image_sidebar_content_sidebaralt', esc_url( plugins_url( 'images/gle_s-c-salt.gif', dirname( __FILE__ ) ) ) ) . '" title="' . esc_html__( 'Sidebar/Content/Sidebar-Alt', 'genesis-layout-extras' ) . '" /><span><em>' . __( 'Sidebar/Content/Sidebar-Alt', 'genesis-layout-extras' ) . '</em><br />&rarr; ' . sprintf( __( 'Think of it as a variation of %s.', 'genesis-layout-extras' ), '"' . __( 'Sidebar-Content-Sidebar', 'genesis-layout-extras' ) . '"' ) . '</span></div>';
+
+			}  // end if SCSA layout check
+
+			if ( genesis_get_layout( 'headernav-content-sidebar' ) ) {
+
+				echo '<div class="gle-layout-div"><img class="gle-layout-img alignleft" src="' . apply_filters( 'gle_filter_layout_image_headernav_content_sidebar', esc_url( plugins_url( 'images/gle_hncs.gif', dirname( __FILE__ ) ) ) ) . '" title="' . esc_html__( 'Header+Nav/Content/Sidebar', 'genesis-layout-extras' ) . '" /><span><em>' . __( 'Header+Nav/Content/Sidebar', 'genesis-layout-extras' ) . '</em><br />&rarr; ' . __( 'Think of it as a special variation of the 3-column layouts but with fixed left column which consists of re-positioned header together with widget area and footer mixed in.', 'genesis-layout-extras' ) . '</span></div>';
+
+			}  // end if HNCS layout check
+
+		echo '</ul>' .
+			'<p>' . __( 'These alternate layouts are fully responsive. All is working like it should with minimal additions on CSS style rules (only what\'s really needed).', 'genesis-layout-extras' ) . ' ' . __( 'Those CSS additions are optional (see settings below), you can also ever integrate the style rules with your child theme.', 'genesis-layout-extras' ) . '</p>';
+
+}  // end of function ddw_gle_help_content_layout_extras
+
+
+/**
+ * Create and display plugin help tab content: "Layout Extras".
+ *
+ * @since 2.0.0
+ *
+ * @uses  ddw_gle_help_content_sub_head()
+ * @uses  genesis_get_layout()
+ */
+function ddw_gle_help_content_post_type_support() {
+
+	ddw_gle_help_content_sub_head( __( 'Additional Post Type Support', 'genesis-layout-extras' ) );
+
+	echo '<h4>' . __( 'Add Genesis Inpost options for public Custom Post Types', 'genesis-layout-extras' ) . ':</h4>' .
+		'<p><blockquote>' . __( 'A lot of plugins with post types already integrate good with Genesis but lack support for inpost screen meta boxes. That is especially needed for layout options support.', 'genesis-layout-extras' ) . ' ' . sprintf(
+				__( 'To solve this, you can add global support for all %s custom post types below, or, if you want, only for specific post types you need for the project.', 'genesis-layout-extras' ),
+				'<em>' . __( 'public', 'genesis-layout-extras' ) . '</em>'
+			) . ' ' . __( 'As a bonus, the inpost SEO and Script meta boxes are included as well. You might need those, too :).', 'genesis-layout-extras' ) . '</blockquote></p>';
+
+	if ( class_exists( 'Genesis_Admin_CPT_Archive_Settings' ) && ddw_gle_check_cpts() ) {
+
+		echo '<h4>' . __( 'Add Genesis Archive Settings for public Custom Post Types', 'genesis-layout-extras' ) . ':</h4>' .
+			'<p><blockquote>' . sprintf(
+					__( 'This optional Genesis feature can now be enabled with this plugin in global way for all public custom post types that were registered with archive support (%s).', 'genesis-layout-extras' ),
+					'<code>\'has_archive\' => true</code>'
+				) . ' ' . __( 'Alternatively, you can also only activate that for specific post types you need for the project.', 'genesis-layout-extras' ) . ' &mdash; ' . __( 'These archive settings allow for setting of: archive/page title, detailed introductory texts, SEO settings and layout options.', 'genesis-layout-extras' ) . '</blockquote></p>';
+
+		if ( ddw_gle_supported_plugins() || ddw_gle_supported_child_themes() ) {
+
+			echo '<p><blockquote>' . __( 'Note: The layout settings for archives done via these Genesis Archive settings and/or the content archive settings of THIS plugin (see below) do just the same. So you decide which one you use. Nothing could break, and it does no harm. So, enjoy your content archives (settings)!', 'genesis-layout-extras' ) . ' :)</blockquote></p>';
+
+		}  // end if supported plugins/child themes check
+
+	}  // end if Genesis 2.0+, plus not-builtin post types check
+
+}  // end of function ddw_gle_help_content_post_type_support
 
 
 /**
@@ -190,21 +214,36 @@ function ddw_gle_help_content_usage() {
  *
  * @since  1.0.0
  *
+ * @uses   ddw_gle_help_content_sub_head()
  * @uses   ddw_gle_plugin_get_data()
- *
- * @param  $gle_help_faq
  *
  * @return string/HTML of help tab content.
  */
 function ddw_gle_help_content_faq() {
 
-	echo '<h3>' . __( 'Plugin: Genesis Layout Extras', 'genesis-layout-extras' ) . ' <small>v' . esc_attr( ddw_gle_plugin_get_data( 'Version' ) ) . '</small></h3>' .
-			'<h4>' . __( 'FAQ - Frequently Asked Questions', 'genesis-layout-extras' ) . '</h4>' .
-			'<p><strong>' . __( 'Question', 'genesis-layout-extras' ) . ':</strong> <em>' . __( 'Some settings seem to have no effect at all, what happens here?', 'genesis-layout-extras' ) . '</em><br /><strong>' . __( 'Answer', 'genesis-layout-extras' ) . ':</strong> ' . __( 'This has to do with priorities. In general, if there is a template for a specific page (archive) type, for example <code>image.php</code> for image attachment display, then Genesis & WordPress will always use that first for the content output AS LONG AS there is an layout setting function or filter in there. Only if there are no templates with layout settings found, the layout option settings will take full effect. So, if our example <code>image.php</code> has a layout filter set in this then has the higher priority but if there is no layout filter in there then the layout setting of the plugin will take effect! - Well, if you experience such cases just leave these fields on "Genesis Default" and you are good to go :-).', 'genesis-layout-extras' ) . '</p>' .
-			'<p><strong>' . __( 'Question', 'genesis-layout-extras' ) . ':</strong> <em>' . __( 'There are two layout options for the plugin AgentPress Listings post type. What does that mean?', 'genesis-layout-extras' ). '</em><br /><strong>' . __( 'Answer', 'genesis-layout-extras' ) . ':</strong> ' . sprintf( __( 'You just can set the layout option for the archive pages of the "listings" post type, plus for all terms of its built-in "features" taxonomy. - &mdash; Of course, the plugin (and so the setting here) could be used with the %3$sAgentPress child theme%4$s and also with any other Genesis child theme, so this setting might come in really handy ;-).', 'genesis-layout-extras' ), '<a href="http://deckerweb.de/go/agentpress-listings/" target="_new" title="Plugin: AgentPress Listings ...">', '</a>', '<a href="http://deckerweb.de/go/genesis-agentpress-child-theme/" target="_new" title="AgentPress Genesis Child Theme ...">', '</a>' ) . '</p>' .
-			'<p><strong>' . __( 'Question', 'genesis-layout-extras' ) . ':</strong> <em>' . __( 'What means Reset of settings?', 'genesis-layout-extras' ) . '</em><br /><strong>' . __( 'Answer', 'genesis-layout-extras' ) . ':</strong> ' . __( 'Actually it just restores the default layout setting which is always defined in regular layout settings on the Genesis Theme Settings page.', 'genesis-layout-extras' ) . '</p>' .
-			'<p><strong>' . __( 'Question', 'genesis-layout-extras' ) . ':</strong> <em>' . __( 'Which settings are effected when doing a reset?', 'genesis-layout-extras' ). '</em><br /><strong>' . __( 'Answer', 'genesis-layout-extras' ) . ':</strong> ' . __( 'ALL available options <em>on this page</em> are resetted to their defaults! So if you only want to reset <em>one</em> option and leave all other as they are then only change this one section and then click the SAVE button and you are done.', 'genesis-layout-extras' ) . '</p>' .
-			'<p><strong>' . __( 'Question', 'genesis-layout-extras' ) . ':</strong> <em>' . __( 'With my child theme some of the layout options have no effect, what happens here?', 'genesis-layout-extras' ) . '</em><br /><strong>' . __( 'Answer', 'genesis-layout-extras' ) . ':</strong> ' . __( 'This is the case when a child theme does not support one or more specific layout options. For example: When a child has unregistered the layout option "Sidebar-Sidebar-Content" then the plugin setting of "Sidebar-Sidebar-Content" will have no effect at all. This is absolutely logical behavior because the plugin can only set options which are supported by the active child theme.', 'genesis-layout-extras' ) . '</p>';
+	ddw_gle_help_content_sub_head( __( 'FAQ - Frequently Asked Questions', 'genesis-layout-extras' ) );
+
+	echo '<p><strong>' . __( 'Question', 'genesis-layout-extras' ) . ':</strong> <em>' . __( 'Some settings seem to have no effect at all, what happens here?', 'genesis-layout-extras' ) . '</em>' .
+		'<blockquote><strong>' . __( 'Answer', 'genesis-layout-extras' ) . ':</strong> ' . __( 'This has to do with priorities. In general, if there is a template for a specific page (archive) type, for example <code>image.php</code> for image attachment display, then Genesis & WordPress will always use that first for the content output AS LONG AS there is an layout setting function or filter in there. Only if there are no templates with layout settings found, the layout option settings will take full effect. So, if our example <code>image.php</code> has a layout filter set in this then has the higher priority but if there is no layout filter in there then the layout setting of the plugin will take effect! - Well, if you experience such cases just leave these fields on "Genesis Default" and you are good to go :-).', 'genesis-layout-extras' ) . '</blockquote></p>';
+
+	echo ddw_gle_space_helper();
+
+	echo '<p><strong>' . __( 'Question', 'genesis-layout-extras' ) . ':</strong> <em>' . __( 'There are two layout options for the plugin AgentPress Listings post type. What does that mean?', 'genesis-layout-extras' ). '</em>' .
+		'<blockquote><strong>' . __( 'Answer', 'genesis-layout-extras' ) . ':</strong> ' . sprintf(
+				__( 'You just can set the layout option for the archive pages of the "listings" post type, plus for all terms of its built-in "features" taxonomy. - &mdash; Of course, the plugin (and so the setting here) could be used with the %3$sAgentPress child theme%4$s and also with any other Genesis child theme, so this setting might come in really handy ;-).', 'genesis-layout-extras' ),
+				'<a href="http://deckerweb.de/go/agentpress-listings/" target="_new" title="Plugin: AgentPress Listings ...">', '</a>', '<a href="http://deckerweb.de/go/genesis-agentpress-child-theme/" target="_new" title="AgentPress Genesis Child Theme ...">',
+				'</a>'
+		) . '</blockquote></p>';
+
+	echo ddw_gle_space_helper();
+
+	echo '<p><strong>' . __( 'Question', 'genesis-layout-extras' ) . ':</strong> <em>' . __( 'What means Reset of settings?', 'genesis-layout-extras' ) . '</em>' .
+		'<blockquote><strong>' . __( 'Answer', 'genesis-layout-extras' ) . ':</strong> ' . __( 'Actually it just restores the default layout setting which is always defined in regular layout settings on the Genesis Theme Settings page.', 'genesis-layout-extras' ) . '</blockquote></p>';
+
+	echo ddw_gle_space_helper();
+
+	echo '<p><strong>' . __( 'Question', 'genesis-layout-extras' ) . ':</strong> <em>' . __( 'Which settings are effected when doing a reset?', 'genesis-layout-extras' ). '</em>' .
+		'<blockquote><strong>' . __( 'Answer', 'genesis-layout-extras' ) . ':</strong> ' . __( 'ALL available options <em>on this page</em> are resetted to their defaults! So if you only want to reset <em>one</em> option and leave all other as they are then only change this one section and then click the SAVE button and you are done.', 'genesis-layout-extras' ) . '</blockquote></p>';
 
 }  // end of function ddw_gle_help_content_faq
 
@@ -222,55 +261,83 @@ function ddw_gle_help_content_faq() {
  */
 function ddw_gle_help_content_translations() {
 
-	echo '<h3>' . __( 'Plugin: Genesis Layout Extras', 'genesis-layout-extras' ) . ' <small>v' . esc_attr( ddw_gle_plugin_get_data( 'Version' ) ) . '</small></h3>' .
-			'<h4>' . __( 'Translations', 'genesis-layout-extras' ) . '</h4>' .
-			'<p>' . sprintf( __( 'Please contribute to existing or new translations on %sour free translations platform%s powered by GlotPress.', 'genesis-layout-extras' ), '<a href="' . esc_url( GLE_URL_TRANSLATE ) . '" target="_new" title="' . __( 'Translations', 'genesis-layout-extras' ) . '"><strong>', '</strong></a>' ) . '</p>' .
-		'<p><strong><em>&mdash; ' . __( 'Thank You!', 'genesis-layout-extras' ) . '</em></strong></p>';
+	ddw_gle_help_content_sub_head( __( 'Translations', 'genesis-layout-extras' ) );
+
+	echo '<p>' . sprintf( __( 'Please contribute to existing or new translations on %sour free translations platform%s powered by GlotPress.', 'genesis-layout-extras' ), '<a href="' . esc_url( GLE_URL_TRANSLATE ) . '" target="_new" title="' . __( 'Translations', 'genesis-layout-extras' ) . '"><strong>', '</strong></a>' ) . '</p>' .
+		'<p><blockquote><strong><em>&mdash; ' . __( 'Thank You!', 'genesis-layout-extras' ) . '</em></strong></blockquote></p>';
+
+	if ( get_locale() == 'de_DE' || get_locale() == 'de_AT' || get_locale() == 'de_CH' || get_locale() == 'de_LU' ) {
+		$gle_language_in_use = '<em> (' . __( 'Currently in use', 'genesis-layout-extras' ) . ' :)</em>';
+	} else {
+		$gpex_language_in_use = '';
+	}
+
+	echo ddw_gle_space_helper();
+
+	echo '<p><strong>' . __( 'Currently available languages', 'genesis-layout-extras' ) . ':</strong></p>' .
+		'<ul>' .
+			'<li>' . __( 'English (en_US)', 'genesis-layout-extras' ) . ' &ndash; ' . __( 'default, always included (by David Decker)', 'genesis-layout-extras' ) . '</li>' .
+			'<li>' . __( 'German (de_DE): Deutsch', 'genesis-layout-extras' ) . ' &ndash; ' . __( 'always included (by David Decker)', 'genesis-layout-extras' ) . $gle_language_in_use . '</li>' .
+			'<li>' . __( 'French (fr_FR): Français', 'genesis-layout-extras' ) . ' &ndash; ' . __( 'user-submitted', 'genesis-layout-extras' ) . ' &rarr; <a href="http://translate.wpautobahn.com/projects/genesis-plugins-deckerweb/genesis-layout-extras/fr/default" target="_new">' . __( 'Help translate and improve it!', 'genesis-layout-extras' ). '</a></li>' .
+			'<li>' . __( 'Spanish (es_ES): Español', 'genesis-layout-extras' ) . ' &ndash; ' . __( 'user-submitted', 'genesis-layout-extras' ) . ' &rarr; <a href="http://translate.wpautobahn.com/projects/genesis-plugins-deckerweb/genesis-layout-extras/es/default" target="_new">' . __( 'Help translate and improve it!', 'genesis-layout-extras' ). '</a></li>' .
+			'<li>' . __( 'Italian (it_IT): Italiano', 'genesis-layout-extras' ) . ' &ndash; ' . __( 'user-submitted', 'genesis-layout-extras' ) . ' &rarr; <a href="http://translate.wpautobahn.com/projects/genesis-plugins-deckerweb/genesis-layout-extras/it/default" target="_new">' . __( 'Help translate and improve it!', 'genesis-layout-extras' ). '</a></li>' .
+			'<li>' . __( 'Swedish (sv_SE): Svenska', 'genesis-layout-extras' ) . ' &ndash; ' . __( 'user-submitted', 'genesis-layout-extras' ) . ' &rarr; <a href="http://translate.wpautobahn.com/projects/genesis-plugins-deckerweb/genesis-layout-extras/sv/default" target="_new">' . __( 'Help translate and improve it!', 'genesis-layout-extras' ). '</a></li>' .
+			'<li>' . __( 'Hindi (hi_IN - for India)', 'genesis-layout-extras' ) . ' &ndash; ' . __( 'user-submitted', 'genesis-layout-extras' ) . ' &rarr; <a href="http://translate.wpautobahn.com/projects/genesis-plugins-deckerweb/genesis-layout-extras/hi/default" target="_new">' . __( 'Help translate and improve it!', 'genesis-layout-extras' ). '</a></li>' .
+		'</ul>';
 
 }  // end of function ddw_gle_help_content_translations
 
 
 /**
- * Create and display plugin help tab content: "Support, Donation, Rating, Tips".
+ * Add help tab content for Recommended Plugins.
  *
- * @since  1.0.0
- *
- * @uses   ddw_gle_plugin_get_data()
- *
- * @param  $gle_help_support_donation_rating_tips
- *
- * @return string/HTML of help tab content.
+ * @since 2.0.0
  */
-function ddw_gle_help_content_support_donation_rating_tips() {
+function ddw_gle_help_content_recommended_plugins() {
 
-	echo '<h3>' . __( 'Plugin: Genesis Layout Extras', 'genesis-layout-extras' ) . ' <small>v' . esc_attr( ddw_gle_plugin_get_data( 'Version' ) ) . '</small></h3>' .
-			'<h4>' . __( 'Support - Donations - Rating &amp; Tips', 'genesis-layout-extras' ) . '</h4>' .
-			'<p>&bull; <strong>' . __( 'Donations', 'genesis-layout-extras' ) . ':</strong> ' . sprintf( __( 'Please %1$sdonate to support the further maintenance and development%2$s of the plugin. <em>Thank you in advance!</em>', 'genesis-layout-extras' ), '<a href="' . esc_url( GLE_URL_DONATE ) . '" target="_new">', '</a>' ) . '</p>' .
-			'<p>&bull; <strong>' . __( 'Support', 'genesis-layout-extras' ). ':</strong> ' . sprintf( __( 'Done via %1$sWordPress.org plugin page support forum%2$s. - Maybe I will setup my own support forum in the future, though.', 'genesis-layout-extras' ), '<a href="' . esc_url( GLE_URL_WPORG_FORUM ) . '" target="_new" title="WordPress.org Plugin Support Forum ...">', '</a>' ) . '</p>' .
-			'<p>&bull; <strong>' . __( 'Rating &amp; Tips', 'genesis-layout-extras' ) . ':</strong> ' . sprintf( __( 'If you like the plugin please %1$srate at WordPress.org%2$s with 5 stars. <em>Thank you!</em> &mdash; %3$sMore plugins for Genesis Framework and WordPress in general by DECKERWEB%4$s', 'genesis-layout-extras' ), '<a href="' . esc_url( GLE_URL_WPORG_PLUGIN ) . '" target="_new">', '</a>', '<a href="' . esc_url( GLE_URL_WPORG_DDW ) . '" target="_new" title="DECKERWEB Genesis and WordPress Plugins ...">', '</a>' ) . '</p>';
+	echo '<h3>' . __( 'Recommended Plugins', 'genesis-layout-extras' ) . '</h3>';
 
-}  // end of function ddw_gle_help_content_support_donation_rating_tips
+	echo __( 'Optional extensions to get the best out of your Genesis powered child theme.', 'genesis-layout-extras' );
 
+	echo '<ul>';
 
-/**
- * Create and display plugin help tab content: "Author, License".
- *
- * @since  1.0.0
- *
- * @uses   ddw_gle_plugin_get_data()
- *
- * @param  $gle_help_author_license
- *
- * @return string/HTML of help tab content.
- */
-function ddw_gle_help_content_author_license() {
+		if ( ! defined( 'GWAT_PLUGIN_BASEDIR' ) ) {
+			echo '<li><a href="http://wordpress.org/plugins/genesis-widgetized-archive/" target="_new" title="Genesis Widgetized Archive ...">Genesis Widgetized Archive</a><br /><small>' . __( 'Finally, use widgets to maintain &amp; customize your Archive Page Template in Genesis Framework and Child Themes to create archive or sitemap-like listings.', 'genesis-layout-extras' ) . '</small></li>';
+			$gpex_help_plugins = 'not_installed';
+		}
 
-	echo '<h3>' . __( 'Plugin: Genesis Layout Extras', 'genesis-layout-extras' ) . ' <small>v' . esc_attr( ddw_gle_plugin_get_data( 'Version' ) ) . '</small></h3>' .
-			'<h4>' . __( 'Author - License', 'genesis-layout-extras' ) . '</h4>' .
-			'<p>&bull; <strong>' . __( 'Author', 'genesis-layout-extras' ) . ':</strong> ' . sprintf( __( 'David Decker of %1$sdeckerweb.de%2$s and %3$sGenesisThemes%4$s', 'genesis-layout-extras' ), '<a href="http://deckerweb.de/" target="_new">', '</a>', '<a href="' . __( 'http://genesisthemes.de/en/', 'genesis-layout-extras' ). '" target="_new">', '</a>' ) . '</p>' .
-			'<p>&bull; <strong>' . __( 'License', 'genesis-layout-extras' ) . ':</strong> ' . sprintf( __( 'GPLv2 or later - %1$sMore info on the GPL license ...%2$s', 'genesis-layout-extras' ), '<a href="http://www.opensource.org/licenses/gpl-license.php" target="_new" title="GPL ...">', '</a>' ) . '</p>';
+		if ( ! defined( 'GWNF_PLUGIN_BASEDIR' ) ) {
+			echo '<li><a href="http://wordpress.org/plugins/genesis-widgetized-notfound/" target="_new" title="Genesis Widgetized Not Found & 404 ...">Genesis Widgetized Not Found & 404</a><br /><small>' . __( 'Easily add widgets for these two not found edge cases. Then you\'re prepared! Again, changing content then is really easy!', 'genesis-layout-extras' ) . '</small></li>';
+			$gpex_help_plugins = 'not_installed';
+		}
 
-}  // end of function ddw_gle_help_content_author_license
+		if ( ! defined( 'GPSP_PLUGIN_BASEDIR' ) ) {
+			echo '<li><a href="http://wordpress.org/plugins/genesis-printstyle-plus/" target="_new" title="Genesis Printstyle Plus ...">Genesis Printstyle Plus</a><br /><small>' . __( 'Print out your content easily - unneeded sections are removed.', 'genesis-layout-extras' ) . '</small></li>';
+			$gpex_help_plugins = 'not_installed';
+		}
+
+		if ( ! defined( 'GTBE_PLUGIN_BASEDIR' ) ) {
+			echo '<li><a href="http://wordpress.org/plugins/genesis-toolbar-extras/" target="_new" title="Genesis Toolbar Extras ...">Genesis Toolbar Extras</a><br /><small>' . __( 'Manage Genesis Framework, active child theme and extensions from your WordPress toolbar. Massive resources links included!', 'genesis-layout-extras' ) . '</small></li>';
+			$gpex_help_plugins = 'not_installed';
+		}
+
+		if ( ! defined( 'GEST_PLUGIN_BASEDIR' ) ) {
+			echo '<li><a href="http://wordpress.org/plugins/genesis-extra-settings-transporter/" target="_new" title="Genesis Extra Settings Transporter ...">Genesis Extra Settings Transporter</a><br /><small>' . __( 'Adds support for exporting settings of various Genesis specific plugins & Child Themes via the Genesis Exporter feature.', 'genesis-layout-extras' ) . '</small></li>';
+			$gpex_help_plugins = 'not_installed';
+		}
+
+		if ( ! defined( 'GNEWI_PLUGIN_BASEDIR' ) ) {
+			echo '<li><a href="http://wordpress.org/plugins/genesis-whats-new-info/" target="_new" title="Genesis What\'s New Info ...">Genesis What\'s New Info</a><br /><small>' . __( 'Easy access of the Genesis What\'s New Admin overview page - not only on updates but everytime.', 'genesis-layout-extras' ) . '</small></li>';
+			$gpex_help_plugins = 'not_installed';
+		}
+
+		if ( 'not_installed' != $gpex_help_plugins  ) {
+			echo '<li><em>' . __( 'Perfect, you already have all our recommended plugins installed.', 'genesis-layout-extras' ) . '</em></li>';
+		}
+
+	echo '</ul>';
+
+}  // end of function ddw_gle_help_content_recommended_plugins
 
 
 /**
@@ -294,3 +361,39 @@ function ddw_gle_help_sidebar_content() {
 	return apply_filters( 'gle_filter_help_sidebar_content', $gle_help_sidebar );
 
 }  // end of function ddw_gle_help_sidebar_content
+
+
+/**
+ * Helper function for returning the Help Sidebar content - extra for plugin setting page.
+ *
+ * @since  2.0.0
+ *
+ * @param  $gle_help_sidebar_content_extra
+ *
+ * @return string Extra HTML content for help sidebar.
+ */
+function ddw_gle_help_sidebar_content_extra() {
+
+	$gle_help_sidebar_content_extra = '<p><strong>' . __( 'Actions', 'genesis-layout-extras' ) . '</strong></p>' .
+		'<p>&rarr; <a href="' . esc_url( GLE_URL_SUPPORT ) . '" target="_new">' . __( 'Support Forum', 'genesis-layout-extras' ) . '</a></p>' .
+		'<p style="margin-top: -5px;">&rarr; <a href="' . esc_url( GLE_URL_DONATE ) . '" target="_new">' . __( 'Donate', 'genesis-layout-extras' ) . '</a></p>';
+
+	return apply_filters( 'gle_filter_help_sidebar_content_extra', $gle_help_sidebar_content_extra );
+
+}  // end of function ddw_gle_help_sidebar_content_extra
+
+
+/**
+ * Helper function for echoing extra space as HTML string.
+ *
+ * @since 2.0.0
+ *
+ * @param $gle_space_helper
+ */
+function ddw_gle_space_helper() {
+
+	$gle_space_helper = '<div style="height: 5px;"></div>';
+
+	return $gle_space_helper;
+
+}  // end of function ddw_gle_space_helper
