@@ -133,9 +133,9 @@ The plugin has been tested with WordPress branches 3.6+ (and before with 3.5+, 3
 
 *) = Not with my ["Genesis Prose Extras" plugin](http://wordpress.org/plugins/genesis-prose-extras/) - that brings those layouts on its own, but with more optimized CSS :)
 
-= Additional Post Support: =
-* For public post types, enable Genesis Inpost Options (Layouts, SEO, Scripts)
-* For public post types with archive support, enable Genesis Archive Settings
+= Additional Post Type Support: =
+* For public custom post types, enable Genesis Inpost Options (Layouts, SEO, Scripts)
+* For public custom post types with archive support, enable Genesis Archive Settings
 
 = Special Advise: =
 **Note:** This plugin has been tested with WordPress branches 3.6 and also 3.5 (and also before with 3.4+, 3.3+, 3.2+) without any issues. It also works within Multisite installs - single activated and network activated, too. Remember, running with latest versions of Genesis and WordPress is *always* recommended.
