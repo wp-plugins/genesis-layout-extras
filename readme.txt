@@ -147,7 +147,7 @@ The plugin has been tested with WordPress branches 3.6+ (and before with 3.5+, 3
 == Frequently Asked Questions ==
 
 = Why up to 9 new layout options, aren't the default one's enough? =
-Good question, hehe :) -- Since, you are not forced to use the new options you can disable all and set the settings meta box to not display (via "Screen options" tab on top right corner), so you won't even see them on the plugin's settings page.
+Good question, hehe :) -- Since you are absolutely not forced to use the new options you can disable all and set the settings meta box to not display (via "Screen options" tab on top right corner), so you won't even see them on the plugin's settings page.
 
 If, however, you want some new - simplyfied or tweaked - *flavors of existing layouts*, then you might try one of the new options. So for example, the "Primary below Content" layout option is perfect for minimalistic one-column sites. Or the "Sidebars below Content" is great for content-oriented blogs and/or sites that want to drop the bloat from the SIDEbar and only offer a bit more stuff *below* the main content - in a nice 2-column outfit.
 
@@ -201,7 +201,7 @@ So if you for example only want to reset *one* option and leave all other as the
 Yes, it is! :) Works really fine in Multisite invironment - here I just recommend to activate on a per site basis so to load things only where and when needed.
 
 
-= In Multisite, could I "network enable" this plugin? =
+= In Multisite, could I "network activate" this plugin? =
 Yes, you could. -- Still, a per site use is recommended. -- Network activation makes the most sense if *all* sub sites are using Genesis! On the other hand, if your Multisite install has 10 sites and only 3 may run with Genesis, network activation is not recommended!
 
 
@@ -262,7 +262,7 @@ define( 'GLE_NO_HNCS_LAYOUT_OPTION', TRUE );
 `
 
 
-All the custom & branding stuff code above can also be found as a Gist on GitHub: s://gist.github.com/deckerweb/6151740 (you can also add your questions/ feedback there :)
+All the custom & branding stuff code above can also be found as a Gist on GitHub: https://gist.github.com/deckerweb/6151740 (you can also add your questions/ feedback there :)
 
 == Screenshots ==
 
@@ -300,9 +300,9 @@ All the custom & branding stuff code above can also be found as a Gist on GitHub
 * NEW: Added even more hooks & filters within the plugin. So for example, developers can now easily add more layout options to the select drop-down if needed! (see [FAQ here](http://wordpress.org/plugins/genesis-layout-extras/faq/) for more info)
 * NEW: Plugin now leverages the Genesis Admin Class for improved security, performance, maintenance.
 * CODE: Major code/ documentation updates & improvements.
-* INFO: Where needed, the plugin now supports HTML5 markup/CSS styles with Genesis 2.0+. For example, all optional frontend CSS style sheets load automatically their HTML5 version if HTML5 is supported by your child them.
+* INFO: Where needed, the plugin now supports HTML5 markup/CSS styles with Genesis 2.0+. For example, all optional frontend CSS style sheets load automatically their HTML5 version if HTML5 is supported by your child theme.
 * NEW: Added plugin support for "Genesis Prose Extras" for the layout select drop-down.
-* NEW: Added support regular uninstall routine with WordPress standard. (So, if you delete the plugin via the button on the plugin listing page, then the plugin's settings will be deletet from the options table!)
+* NEW: Added support for regular uninstall routine with WordPress standard. (So, if you delete the plugin via the button on the plugin listing page, then the plugin's settings will be deletet from the options table!)
 * UPDATE: Improved translation loading, now only within the admin area, also improved for custom translations!
 * UPDATE: Reworked, improved and updated wording, help texts and overall user guidance.
 * UPDATE: Updated and improved readme.txt file here, especially with new FAQ entries and better installation instructions.
@@ -430,7 +430,7 @@ All changed - Actually a whole new plugin, updated all over the place. Also the 
 == Plugin Links ==
 * [Translations (GlotPress)](http://translate.wpautobahn.com/projects/genesis-plugins-deckerweb/genesis-layout-extras)
 * [User support forums](http://wordpress.org/support/plugin/genesis-layout-extras)
-* [Code snippets archive for customizing, GitHub Gist](s://gist.github.com/deckerweb/6151740)
+* [Code snippets archive for customizing, GitHub Gist](https://gist.github.com/deckerweb/6151740)
 
 == Donate ==
 Enjoy using *Genesis Layout Extras*? Please consider [making a small donation](http://genesisthemes.de/en/donate/) to support the project's continued development.
