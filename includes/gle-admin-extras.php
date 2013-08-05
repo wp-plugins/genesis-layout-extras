@@ -37,7 +37,7 @@ define( 'GLE_URL_WPORG_FORUM',		'http://wordpress.org/support/plugin/genesis-lay
 define( 'GLE_URL_WPORG_DDW', 		'http://wordpress.org/plugins/tags/deckerweb' );
 define( 'GLE_URL_WPORG_PROFILE',	'http://profiles.wordpress.org/daveshine/' );
 define( 'GLE_URL_SUPPORT',         	esc_url( GLE_URL_WPORG_FORUM ) );
-define( 'GLE_URL_SNIPPETS',			's://gist.github.com/deckerweb/6151740' );
+define( 'GLE_URL_SNIPPETS',			'https://gist.github.com/deckerweb/6151740' );
 define( 'GLE_PLUGIN_LICENSE', 		'GPL-2.0+' );
 if ( get_locale() == 'de_DE' || get_locale() == 'de_AT' || get_locale() == 'de_CH' || get_locale() == 'de_LU' ) {
 	define( 'GLE_URL_DONATE', 		'http://genesisthemes.de/spenden/' );
