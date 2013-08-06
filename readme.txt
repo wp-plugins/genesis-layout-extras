@@ -23,6 +23,10 @@ For Genesis Framework: Allows modifying of default layouts for homepage, various
 
 **Please note:** The plugin requires the *Genesis Theme Framework* (GPL-2.0+), a paid premium product released by StudioPress/ Copyblogger Media LLC (via studiopress.com).
 
+= Video of Plugin's Settings Walkthrough (v2.0.0): =
+[youtube http://www.youtube.com/watch?v=WchU8FOJYyY]
+[**original video link**](http://www.youtube.com/watch?v=WchU8FOJYyY) *by plugin developer David Decker*
+
 = Regular WordPress Sections for a Default Layout Setting =
 * Home Page (works with `home.php` or static page as front page)
 * Search Results Page (if there are results)
@@ -98,6 +102,7 @@ The plugin has been tested with WordPress branches 3.6+ (and before with 3.5+, 3
 
 **NOTE:** Only works with *Genesis Framework* (GPL-2.0+) as the parent theme. This is a paid premium product by StudioPress/ Copyblogger Media LLC, available via studiopress.com.
 
+= Installation of Plugin: =
 1. Manual or via wp-admin:
  1. *Manual FTP:* Upload the entire `genesis-layout-extras` folder to the `/wp-content/plugins/` directory
  2. OR *Manual ZIP:* Just upload the ZIP package via 'Plugins > Add New > Upload' in your WP Admin
@@ -107,6 +112,10 @@ The plugin has been tested with WordPress branches 3.6+ (and before with 3.5+, 3
 4. General usage: Set layout options DIFFERENT from the Genesis default *for special sections*.
 
 **Note:** The "Genesis Framework" is required for this plugin in order to work. If you don't own a copy it yet, this premium parent theme has to be bought. More info about that you'll find here: http://ddwb.me/getgenesis
+
+= Video of Plugin's Settings Walkthrough (v2.0.0): =
+[youtube http://www.youtube.com/watch?v=WchU8FOJYyY]
+[**original video link**](http://www.youtube.com/watch?v=WchU8FOJYyY) *by plugin developer David Decker*
 
 = Choose from one of the following layouts =
 *1) Up to 6 default layouts of Genesis - when registered:*
