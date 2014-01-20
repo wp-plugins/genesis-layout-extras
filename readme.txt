@@ -2,7 +2,7 @@
 Contributors: daveshine, deckerweb
 Donate link: http://genesisthemes.de/en/donate/
 Tags: genesis, genesiswp, genesis framework, layout, layouts, layout manager, post, page, singular, attachment, search, taxonomoy, 404 error, 404 page, bbPress, CPT, AgentPress Listings, agentpress, deckerweb
-Requires at least: 3.4 and Genesis 1.8+
+Requires at least: 3.4 plus Genesis 1.8+
 Tested up to: 3.8
 Stable tag: 2.0.0
 License: GPL-2.0+
