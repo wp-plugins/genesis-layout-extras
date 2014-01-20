@@ -3,7 +3,7 @@ Contributors: daveshine, deckerweb
 Donate link: http://genesisthemes.de/en/donate/
 Tags: genesis, genesiswp, genesis framework, layout, layouts, layout manager, post, page, singular, attachment, search, taxonomoy, 404 error, 404 page, bbPress, CPT, AgentPress Listings, agentpress, deckerweb
 Requires at least: 3.4 and Genesis 1.8+
-Tested up to: 3.6
+Tested up to: 3.8
 Stable tag: 2.0.0
 License: GPL-2.0+
 License URI: http://www.opensource.org/licenses/gpl-license.php
@@ -75,6 +75,7 @@ The plugin has been tested with WordPress branches 3.6+ (and before with 3.5+, 3
 [A plugin from deckerweb.de and GenesisThemes](http://genesisthemes.de/en/)
 
 = Check out my other Genesis Plugins =
+* [Genesis Featured Page Extras](http://wordpress.org/plugins/genesis-featured-page-extras/) - more options for the featured page widget
 * [Genesis Prose Extras](http://wordpress.org/plugins/genesis-prose-extras/) - add-on for Prose child theme
 * [Genesis Social Profiles Menu](http://wordpress.org/plugins/genesis-social-profiles-menu/) - get social
 * [Genesis Toolbar Extras](http://wordpress.org/plugins/genesis-toolbar-extras/) - one plugin to rule them all :)
@@ -90,8 +91,8 @@ The plugin has been tested with WordPress branches 3.6+ (and before with 3.5+, 3
 
 = Feedback =
 * I am open for your suggestions and feedback - Thank you for using or trying out one of my plugins!
-* Drop me a line [@deckerweb](http://twitter.com/deckerweb) on Twitter
-* Follow me on [+David Decker](http://deckerweb.de/gplus) on Google Plus ;-)
+* Drop me a line [@deckerweb](https://twitter.com/deckerweb) on Twitter
+* Follow me on [+David Decker](https://plus.google.com/+DavidDecker/posts) on Google Plus ;-)
 
 = More =
 * [Also see my other plugins](http://genesisthemes.de/en/wp-plugins/) or see [my WordPress.org profile page](http://profiles.wordpress.org/daveshine/)
@@ -102,11 +103,11 @@ The plugin has been tested with WordPress branches 3.6+ (and before with 3.5+, 3
 
 **NOTE:** Only works with *Genesis Framework* (GPL-2.0+) as the parent theme. This is a paid premium product by StudioPress/ Copyblogger Media LLC, available via studiopress.com.
 
-= Installation of Plugin: =
-1. Manual or via wp-admin:
- 1. *Manual FTP:* Upload the entire `genesis-layout-extras` folder to the `/wp-content/plugins/` directory
- 2. OR *Manual ZIP:* Just upload the ZIP package via 'Plugins > Add New > Upload' in your WP Admin
- 3. OR via */wp-admin/ search:* Search for "genesis layout extras" via 'Plugins > Add New' -- then install the proper plugin from the search results, then activate it. Done! :)
+= Installation Steps =
+1. Installing alternatives:
+ * *via Admin Dashboard:* Go to 'Plugins > Add New', search for "Genesis Layout Extras", click "install"
+ * *OR via direct ZIP upload:* Upload the ZIP package via 'Plugins > Add New > Upload' in your WP Admin
+ * *OR via FTP upload:* Upload `genesis-featured-page-extras` folder to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. In your left-hand "Genesis Theme Settings" menu go to "Layout Extras", setup your default layouts and you're good to go :).
 4. General usage: Set layout options DIFFERENT from the Genesis default *for special sections*.
@@ -466,6 +467,7 @@ Enjoy using *Genesis Layout Extras*? Please consider [making a small donation](h
 * Hopefully, I can even offer more translations in future :)
 
 == Check out my other Genesis Plugins ==
+* [Genesis Featured Page Extras](http://wordpress.org/plugins/genesis-featured-page-extras/) - more options for the featured page widget
 * [Genesis Prose Extras](http://wordpress.org/plugins/genesis-prose-extras/) - add-on for Prose child theme
 * [Genesis Social Profiles Menu](http://wordpress.org/plugins/genesis-social-profiles-menu/) - get social
 * [Genesis Toolbar Extras](http://wordpress.org/plugins/genesis-toolbar-extras/) - one plugin to rule them all :)
@@ -493,3 +495,6 @@ Enjoy using *Genesis Layout Extras*? Please consider [making a small donation](h
 **Big thanks to all Genesis users, developers and bloggers who reviewed the plugin on their websites/ blogs!**
 
 *Credit where credit is due:* This plugin here was first based on the work of WPChildThemes for the great "Genesis Layout Manager" plugin. Now, nearly two years and a dozen updates later the basic function is still there but the code totally refactored...! :)
+
+== Last but not least ==
+**Special Thanks go out to my family for allowing me to do such spare time projects (aka free plugins) and supporting me in every possible way!**
